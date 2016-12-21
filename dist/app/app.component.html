@@ -1,11 +1,4 @@
-import { Component } from '@angular/core';
-
-@Component({
-  //moduleId:module.id,
-  selector: 'my-app',
-  //templateUrl: 'app.component.html'
-  template:`
-  <md-sidenav-layout>
+<md-sidenav-layout>
 
   <md-sidenav #sidenav mode="side" class="app-sidenav" >
     <div class="sidenav-title">
@@ -31,10 +24,3 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
   </div>
 </md-sidenav-layout>
-  
-  `
- })
-export class AppComponent {
-  
-    constructor(){ }
-}

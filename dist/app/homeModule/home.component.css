@@ -1,0 +1,37 @@
+
+/*animation */
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to { 
+    -webkit-transform: rotateY(360deg);
+  }
+}
+.rotateImg
+{
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         5s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-ANIMATION-timing-function: linear;
+}
+
+.nikhilcropimg{
+   background-image: url('public/images/nyks.jpg');
+   height: 200px;
+}
+
+.roundedBorder{
+  border-radius: 50%;
+}
+
+.nxImg{
+   height: 200px;
+   width:60%;
+   margin: 0;
+
+}
+
+
+

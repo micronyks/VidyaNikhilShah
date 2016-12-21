@@ -1,0 +1,95 @@
+
+
+/*other source*/
+
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+md-sidenav-layout {
+  height: 100%;
+}
+
+md-sidenav-layout >>> .md-sidenav-content {
+  overflow: hidden;
+}
+
+md-sidenav {
+  width: 250px;
+  height: 100%;
+  padding: 0;
+  background-color: lightgray;
+}
+
+.sidenav-title {
+  color: white;
+  background-color: darkblue;
+  line-height: 64px;
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+.sidenav-menu {
+   text-indent: 70px;
+}
+
+.app-content {
+  padding: 20px;
+  height: calc(100% - 64px);
+  overflow: auto;
+}
+
+.app-toolbar-menu {
+  padding: 0 14px 0 14px;
+  color: white;
+}
+
+.app-icon-button {
+  box-shadow: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      height:10%;
+      margin: auto;
+  }
+
+  .carousel-img{
+    width:460px;
+    height:700px !important;
+  }
+
+
+  .familyMembers{
+    background-color:lightgrey;
+  }

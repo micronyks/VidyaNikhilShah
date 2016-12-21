@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Polyfill(s) for older browsers -->
-
+   
      <link href="https://unpkg.com/@angular2-material/core/style/core.css" rel="stylesheet">
     <link href="https://unpkg.com/@angular/material/core/theming/prebuilt/indigo-pink.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+    <script src="systemjs.config.js"></script>
+    
+    
 
-
-
-
-
-      <!--<script src='lib/shim.min.js'></script>
+<!--
+      <script src='lib/shim.min.js'></script>
       <script src='lib/zone.js'></script>
       <script src='lib/Reflect.js'></script>
       <script src='lib/system.src.js'></script>-->
@@ -30,9 +30,6 @@
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
-
-
-    <script src="systemjs.config.js"></script>
    <script>
       System.import('app/main.js').catch(function(err){ console.error(err); });
       //System.import('app/main.js').catch(function(err){ console.error(err); });
