@@ -11,6 +11,7 @@
 }
 .rotateImg
 {
+    box-shadow: 10px 5px 20px grey;
     -webkit-animation-name:             rotate; 
     -webkit-animation-duration:         5s; 
     -webkit-animation-iteration-count:  infinite;
@@ -20,6 +21,7 @@
 .nikhilcropimg{
    background-image: url('public/images/nyks.jpg');
    height: 200px;
+   
 }
 
 .roundedBorder{
@@ -27,7 +29,7 @@
 }
 
 .nxImg{
-   height: 200px;
+   height: 250px;
    width:60%;
    margin: 0;
 

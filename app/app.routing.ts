@@ -1,7 +1,11 @@
 import { NgModule }             from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './homeModule/home.component';
-
+import {CoupleComponent} from './coupleModule/couple.component';
+import {EventsComponent} from './eventsModule/event.component';
+import {ParentsComponent} from './parentsModule/parent.component';
+import {GalleryComponent} from './galleryModule/gallery.component';
+import {ContactComponent} from './contactModule/contact.component';
 
 
 
@@ -11,8 +15,12 @@ const routes: Routes = [
         path: "home",
         component: HomeComponent
   },
-  //{ path: 'dashboard',  component: DashboardComponent },
-  //{ path: 'couples', loadChildren:'app/coupleModule/couple.module'},
+  { path: 'couple',  component: CoupleComponent },
+  { path: 'events',  component: EventsComponent},
+  { path: 'parents', component: ParentsComponent},
+
+  { path: 'gallery', component: GalleryComponent},
+  { path: 'contact', component: ContactComponent},
   
   //{path:'contact', loadChildren:'app/contact/contact.module' }
   

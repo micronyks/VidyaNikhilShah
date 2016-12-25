@@ -5,19 +5,71 @@
       Wedding
     </div>
     <div class="sidenav-menu">
-      <div><a routerLink="couples">The Couple</a></div>
-      <div><a routerLink="contact">Parents</a></div>
-      <div><a routerLink="events">Events</a></div>
-      <div><a routerLink="venue">Venue</a></div>
-      <div><a routerLink="gallery">Gallery</a></div>
+      <div class="child"><a routerLink="home"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<span>Home</span></a></div>
+      <div class="child">
+        <a routerLink="couple"> 
+          <i class="fa fa-heart" aria-hidden="true"></i>&nbsp;&nbsp;<span>The Couple</span>
+        </a>
+      </div>
+      <div class="child" >
+        <a routerLink="parents">
+         <i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;<span>Parents</span>
+        </a>
+      </div>
+      <div class="child">
+        <a routerLink="events">
+          <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;<span>Events</span>
+        </a>
+      </div>
+      <div class="child">
+        <a routerLink="gallery">
+          <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Gallery</span>
+        </a>
+      </div>
+      <div class="child">
+        <a routerLink="contact">
+          <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Contact</span>
+        </a>
+      </div>
     </div>
     
   </md-sidenav>
 
-  <md-toolbar color="primary" class="toolbar">
+  <md-toolbar color="warn" class="toolbar">
     <button class="app-icon-button" (click)="sidenav.toggle()">
       <i class="material-icons app-toolbar-menu">menu</i>
     </button>
+      <div class="menu">
+        <ul class="topnav" id="myTopnav">
+          <li>
+            <a routerLink="home" routerLinkActive="active" (click)="sidenav.value=close">
+            <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<span>Home</span></a>
+          </li>
+          <li>
+            <a routerLink="couple" routerLinkActive="active">
+            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp;&nbsp;<span>The Couple</span></a>
+          </li>
+          <li>
+            <a routerLink="parents" routerLinkActive="active">
+            <i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;<span>Parents</span></a>
+          </li>
+          <li>
+            <a routerLink="events" routerLinkActive="active">
+            <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;<span>Events</span></a>
+          </li>
+          <li>
+            <a routerLink="gallery" routerLinkActive="active">
+            <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Gallery</span></a>
+          </li>
+          <li>
+            <a routerLink="contact" routerLinkActive="active">
+             <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Contact</span></a>
+          </li>
+        </ul>
+    </div>
+ 
+
+  
   </md-toolbar>
 
   <div class="app-content">

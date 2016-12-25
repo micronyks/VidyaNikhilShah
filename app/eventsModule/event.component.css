@@ -1,0 +1,28 @@
+
+.nxGaneshSthapna{
+    transition: transform 1s;
+}
+
+.nxGaneshSthapna:hover{
+    border-radius: 10px;
+    transform: rotate(-390deg);
+}
+
+.nxWedding{
+     border-radius: 10px;
+     transition: all 1s;
+}
+
+.nxWedding:hover{
+    transform: scale(1.1);
+}
+
+.nxReception{
+    transition: transform 1s;
+}
+
+.nxReception:hover{
+    border-radius: 10px;
+    transform: rotate(390deg);
+}
+

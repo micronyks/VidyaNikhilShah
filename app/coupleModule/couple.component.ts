@@ -5,47 +5,45 @@ import { OnInit, HostBinding,
          style, state } from '@angular/core';
 @Component({
   moduleId: module.id,
-  selector: 'home',
-  styleUrls:['home.component.css'],
-  templateUrl: 'home.component.html',
+  //selector: 'home',
+  styleUrls:['couple.component.css'],
+  templateUrl:'couple.component.html',
   animations: [
     trigger('routeAnimation', [
-      state('*',
-        style({
-          opacity: 1,
-          transform: 'translateX(0)'
-        })
-      ),
       transition('void => *', [
         style({
           opacity: 0,
-          transform: 'translateX(-100%)'
+          transform: 'scale(0)'
         }),
-        animate('2s ease-in')
+        animate('2s')
       ]),
       transition('* => void', [
-        animate('2s ease-out', style({
-          opacity: 1,
-          transform: 'translateY(100%)'
+        animate('1s', style({
+          opacity: 0,
+          transform: 'scale(0)'
         }))
       ])
     ])
   ]
 })
-export class HomeComponent { 
+export class CoupleComponent { 
 nikhilimgpath:string="./public/images/nyks.jpg";
 vidyaimgpath:string="./public/images/vd.jpg";
-  
- @HostBinding('@routeAnimation') get routeAnimation() {
+@HostBinding('@routeAnimation') get routeAnimation() {
     return true;
   }
   @HostBinding('style.display') get display() {
     return 'block';
-  } 
+  }
   @HostBinding('style.position') get position() {
     return 'absolute';
   }
-  constructor(){
+
+  constructor(private router:Router){}
+
+  redirectToEvents()
+  {
+      this.router.navigate(['events']);
   }
  
 }

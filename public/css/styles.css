@@ -6,66 +6,31 @@
 body, html {
   margin: 0;
   height: 100%;
+  font-family: 'PT Sans', sans-serif !important;
+  font-size: 10px !important;
 }
 
-md-sidenav-layout {
-  height: 100%;
+.nxCard{
+    height:250px;
+    background: #424242;
+    box-shadow: 5px 0px 15px #4d4d4d;
+    border-radius: 10px;
 }
 
-md-sidenav-layout >>> .md-sidenav-content {
-  overflow: hidden;
+.title{
+        background:#D11250;
+        color: white;
+        font-size: 30px;
+        padding:10px;
+        border-radius:10px;
 }
 
-md-sidenav {
-  width: 250px;
-  height: 100%;
-  padding: 0;
-  background-color: lightgray;
+.cardContent{
+    background:#424242;
+    color:white;
+    font-size:16px;
+    padding: 10px;
 }
-
-.sidenav-title {
-  color: white;
-  background-color: darkblue;
-  line-height: 64px;
-  text-align: center;
-  font-size: 30px;
-  
-}
-
-.sidenav-menu {
-   text-indent: 70px;
-}
-
-.app-content {
-  padding: 20px;
-  height: calc(100% - 64px);
-  overflow: auto;
-}
-
-.app-toolbar-menu {
-  padding: 0 14px 0 14px;
-  color: white;
-}
-
-.app-icon-button {
-  box-shadow: none;
-  user-select: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  filter: none;
-  font-weight: normal;
-  height: auto;
-  line-height: inherit;
-  margin: 0;
-  min-width: 0;
-  padding: 0;
-  text-align: left;
-  text-decoration: none;
-}
-
-
-
 
 
 
