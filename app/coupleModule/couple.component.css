@@ -1,39 +1,42 @@
 
-/*animation */
 
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotateY(0deg);
-  }
-  to { 
-    -webkit-transform: rotateY(360deg);
-  }
+:host{
+  
+    /*background:url('../public/images/hearts.png');
+    background-size:     cover;               
+    background-repeat:repeat;
+    background-position: center center;  */
+    display:block;
+    width: 100%;
+    left:0;
 }
-.rotateImg
-{
-    box-shadow: 10px 5px 20px grey;
-    -webkit-animation-name:             rotate; 
-    -webkit-animation-duration:         5s; 
-    -webkit-animation-iteration-count:  infinite;
-    -webkit-ANIMATION-timing-function: linear;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 2s;
+    border-radius: 5px;
 }
 
-.nikhilcropimg{
-   background-image: url('public/images/nyks.jpg');
-   height: 200px;
-   
+.imgcontainer{
+  height: 300px;
+  width:inherit;
 }
 
-.roundedBorder{
-  border-radius: 50%;
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.nxImg{
-   height: 250px;
-   width:60%;
-   margin: 0;
-
+img {
+    border-radius: 5px 5px 0 0;
 }
 
+.container {
+    padding: 2px 16px;
+    width: inherit;
+}
 
-
+.coupleImg{
+  width: 70%;
+    /* overflow: hidden; */
+    height: inherit;
+    border-radius: 50%;
+}

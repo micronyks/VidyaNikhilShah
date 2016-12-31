@@ -1,1 +1,22 @@
-<h5>Home</h5>
+<div class="col-xs-12" *ngIf="seconds">  
+    <div class="col-sm-3 time"> 
+            <div class="">{{days}}</div>
+            <br>
+            <div class="timetext">DAYS</div>
+     </div>
+     <div class="col-sm-3 time"> 
+          <div class="">{{hours}}</div>
+            <br>
+          <div class="timetext">HOURS</div>
+     </div>
+      <div class="col-sm-3 time"> 
+          <div class="" >{{minutes}}</div>
+          
+            <br>
+          <div class="timetext">MINUTES</div>
+     </div>
+      <div class="col-sm-3 time" > <div class="" [@time]="triggerSecond">{{seconds}}</div>
+            <br>
+          <div class="timetext">SECONDS</div>
+</div>
+</div>

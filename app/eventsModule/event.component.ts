@@ -6,7 +6,7 @@ import { OnInit, HostBinding,
 @Component({
   moduleId: module.id,
   //selector: 'home',
-  encapsulation:ViewEncapsulation.None,
+  //encapsulation:ViewEncapsulation.None,
   styleUrls:['event.component.css'],
   templateUrl:'event.component.html',
   animations: [
@@ -32,13 +32,7 @@ export class EventsComponent {
   @HostBinding('@routeAnimation') get routeAnimation() {
     return true;
   }
-  @HostBinding('style.display') get display() {
-    return 'block';
-  }
-  @HostBinding('style.position') get position() {
-    return 'absolute';
-  }
-    
+  
   constructor(){}
 
   

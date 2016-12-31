@@ -32,14 +32,7 @@ vidyaimgpath:string="./public/images/vd.jpg";
 @HostBinding('@routeAnimation') get routeAnimation() {
     return true;
   }
-  @HostBinding('style.display') get display() {
-    return 'block';
-  }
-  @HostBinding('style.position') get position() {
-    return 'absolute';
-  }
-
-  constructor(private router:Router){}
+   constructor(private router:Router){}
 
   redirectToEvents()
   {

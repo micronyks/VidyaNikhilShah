@@ -1,28 +1,46 @@
-
+:host{
+  
+    /*background:url('../public/images/hearts.png');
+    background-size:     cover;               
+    background-repeat:repeat;
+    background-position: center center;  */
+    display:block;
+    width: 100%;
+    left:0;
+    padding:20px 0;
+}
 .nxGaneshSthapna{
-    transition: transform 1s;
+    transition: all 1s;
+    opacity: 0.5;
 }
 
 .nxGaneshSthapna:hover{
     border-radius: 10px;
-    transform: rotate(-390deg);
+    transform: rotate(-20deg);
+    opacity: 1;
+    z-index: 10000;
 }
 
 .nxWedding{
      border-radius: 10px;
      transition: all 1s;
+      opacity: 0.5;
 }
 
 .nxWedding:hover{
     transform: scale(1.1);
+     opacity: 1;
+     z-index: 100;
 }
 
 .nxReception{
-    transition: transform 1s;
+    transition: all 1s;
+     opacity: 0.5;
 }
 
 .nxReception:hover{
     border-radius: 10px;
-    transform: rotate(390deg);
+    transform: rotate(20deg);
+     opacity: 1;
 }
 

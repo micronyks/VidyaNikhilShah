@@ -1,45 +1,45 @@
-<md-sidenav-layout>
 
+<md-sidenav-layout>
   <md-sidenav #sidenav mode="side" class="app-sidenav" >
     <div class="sidenav-title">
       Wedding
     </div>
     <div class="sidenav-menu">
-      <div class="child"><a routerLink="home"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<span>Home</span></a></div>
+      <div class="child"><a routerLink="home" (click)="sidenav.toggle()"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<span>Home</span></a></div>
       <div class="child">
-        <a routerLink="couple"> 
+        <a routerLink="couple" (click)="sidenav.toggle()"> 
           <i class="fa fa-heart" aria-hidden="true"></i>&nbsp;&nbsp;<span>The Couple</span>
         </a>
       </div>
       <div class="child" >
-        <a routerLink="parents">
+        <a routerLink="parents" (click)="sidenav.toggle()">
          <i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;<span>Parents</span>
         </a>
       </div>
       <div class="child">
-        <a routerLink="events">
+        <a routerLink="events" (click)="sidenav.toggle()">
           <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;<span>Events</span>
         </a>
       </div>
       <div class="child">
-        <a routerLink="gallery">
+        <a routerLink="gallery" (click)="sidenav.toggle()">
           <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Gallery</span>
         </a>
       </div>
       <div class="child">
-        <a routerLink="contact">
+        <a routerLink="contact" (click)="sidenav.toggle()">
           <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Contact</span>
         </a>
       </div>
     </div>
-    
   </md-sidenav>
 
+<div class="uppderContainer">
   <md-toolbar color="warn" class="toolbar">
     <button class="app-icon-button" (click)="sidenav.toggle()">
       <i class="material-icons app-toolbar-menu">menu</i>
     </button>
-      <div class="menu">
+      <div class="menu col-xs-12">
         <ul class="topnav" id="myTopnav">
           <li>
             <a routerLink="home" routerLinkActive="active" (click)="sidenav.value=close">
@@ -71,8 +71,14 @@
 
   
   </md-toolbar>
+  </div>
 
-  <div class="app-content">
+  <div class="app-content middleContainer">
     <router-outlet></router-outlet>
+  </div>
+
+
+  <div class="bottomContainer">
+    <b>Concept & Design with Angular2 by Nikhil Shah</b>
   </div>
 </md-sidenav-layout>

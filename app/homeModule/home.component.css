@@ -1,6 +1,17 @@
 
 /*animation */
 
+ :host{
+    /*background:url('../public/images/hearts.png');
+    background-size:     cover;               
+    background-repeat:repeat;
+    background-position: center center;  */
+    display:block;
+    position:absolute;
+    width: 100%;
+    left:0;
+  }
+
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotateY(0deg);
@@ -33,5 +44,27 @@
 
 }
 
+.checkout{
+  background-image: url('../public/images/hearts.png');
+}
 
 
+
+.time{
+      height:200px;
+      background:#DC143C;
+      color:white;
+      line-height:150px;
+      border:1px solid;
+      text-align:center;
+      font-size: 80px;
+    }
+.timetext{
+    position: absolute;
+    font-size: 20px;
+    bottom: 0;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top:80px;
+}
