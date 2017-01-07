@@ -1,0 +1,10 @@
+.parentImg{
+    height:200px;
+    border:1px solid crimson;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.parentImg:hover{
+    border-radius: 0px;
+}

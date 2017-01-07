@@ -3,14 +3,16 @@
 
  :host{
     /*background:url('../public/images/hearts.png');
-    background-size:     cover;               
-    background-repeat:repeat;
+    background-size:     cover;               */
+    /*background-repeat:repeat;
     background-position: center center;  */
     display:block;
-    position:absolute;
     width: 100%;
     left:0;
+    height: 100%;
   }
+
+ 
 
 @-webkit-keyframes rotate {
   from {
@@ -48,23 +50,30 @@
   background-image: url('../public/images/hearts.png');
 }
 
-
+ .flex-container{
+    display: flex;
+    position:relative;
+    height:100%;
+    flex-direction:column;
+    justify-content: space-between;
+  }
 
 .time{
-      height:200px;
-      background:#DC143C;
-      color:white;
-      line-height:150px;
-      border:1px solid;
+      height:120px;
+      width:100%;
+      color:#DC143C;
       text-align:center;
-      font-size: 80px;
+      font-size: 50px;
+      border-radius: 5px;
+      box-shadow: 10px 10px 20px #DC143C;
     }
 .timetext{
-    position: absolute;
+    position: relative;
     font-size: 20px;
-    bottom: 0;
-    width: 100%;
-    left: 0px;
-    text-align: center;
-    top:80px;
+    
+}
+
+.invitation-card{
+  height: 100%;
+  border:1px solid;
 }

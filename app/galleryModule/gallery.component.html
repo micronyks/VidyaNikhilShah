@@ -1,0 +1,13 @@
+<div class="col-xs-12">
+       <div class="col-sm-2 cardcontainer" *ngFor="let pic of pics;let i=index" (click)="modal.show(i)">
+            <md-card>
+                <img md-card-image [src]="pic.path" class="galleryImg">
+                <md-card-content>
+                    <p>Nikhil Shah</p>
+                </md-card-content>
+            </md-card>
+            <div class="clear"></div>
+            
+        </div>
+        <nxModal [data]="pics"></nxModal>
+</div>

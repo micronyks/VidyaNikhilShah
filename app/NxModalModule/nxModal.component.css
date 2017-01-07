@@ -1,0 +1,10 @@
+:host{
+  
+    /*background:url('../public/images/hearts.png');
+    background-size:     cover;               
+    background-repeat:repeat;
+    background-position: center center;  */
+    display:block;
+    width: 100%;
+    left:0;
+}

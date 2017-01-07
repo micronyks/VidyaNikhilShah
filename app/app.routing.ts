@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent},
   { path: 'contact', component: ContactComponent},
   
-  //{path:'contact', loadChildren:'app/contact/contact.module' }
+  {path:'**', component: HomeComponent }
   
 ];
 

@@ -2,11 +2,8 @@ import { Component } from '@angular/core';
 import {Router,ActivatedRoute} from '@angular/router';
 @Component({
   moduleId: module.id,
-  //selector: 'home',
-  styleUrls:[''],
-  template: `
-     <h5>The Contact Module</h5>
-  `
+  templateUrl:'contact.component.html',
+  styleUrls:['contact.component.css'],
 })
 export class ContactComponent { 
   constructor(){}

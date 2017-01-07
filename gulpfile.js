@@ -6,10 +6,12 @@
 // npm install --save-dev gulp-clean
 // npm install --save-dev gulp-typescript
 // npm install --save-dev gulp-sourcemaps
+// npm install --save-dev gulp-imagemin
 
 
 var gulp=require('gulp');
 var uglify=require('gulp-uglify');
+var imagemin = require('gulp-imagemin');
 var concat=require('gulp-concat');
 var rename=require('gulp-rename');
 var clean=require('gulp-clean');
@@ -73,6 +75,14 @@ gulp.task('libs', function() {
 ])
     .pipe(gulp.dest('dist/lib'))
 });
+
+gulp.task('compress',function(){
+   return gulp.src('public/images/**.*')
+           .pipe(imagemin({
+                progressive: true
+           }))
+           .pipe(gulp.dest('public/images/'))
+})
 
 
 

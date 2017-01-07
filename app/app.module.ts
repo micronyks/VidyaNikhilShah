@@ -13,10 +13,12 @@ import {ParentsComponent} from './parentsModule/parent.component';
 import {GalleryComponent} from './galleryModule/gallery.component';
 import {ContactComponent} from './contactModule/contact.component';
 
-
+import {LightboxModule} from 'primeng/primeng';
+import { ModalModule } from 'ng2-bootstrap';
+import {NxModalModule} from './NxModalModule/nxModal.module';
 
 @NgModule({
-  imports:      [ BrowserModule,SharedModule,AppRoutingModule ],
+  imports:      [ BrowserModule,SharedModule,AppRoutingModule,LightboxModule,NxModalModule ],
   declarations: [ AppComponent,HomeComponent,CoupleComponent,EventsComponent,ParentsComponent,
                   GalleryComponent,ContactComponent],
   bootstrap:    [ AppComponent ]

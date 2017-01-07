@@ -3,19 +3,27 @@ import {Router,ActivatedRoute} from '@angular/router';
 import { OnInit, HostBinding,keyframes,
          trigger, transition, animate,
          style, state } from '@angular/core';
+
+
 @Component({
   moduleId: module.id,
   selector: 'home',
   //encapsulation:ViewEncapsulation.None,
   styleUrls:['home.component.css'],
   templateUrl: 'home.component.html',
+  styles:[`
+      p{
+        text-align:"center";
+      }
+      `
+  ],
+
    animations: [
    trigger('time', [
       transition("* => *", 
       animate(1000, keyframes([
-        style({color:'blue',fontSize:'40px', offset: 0.30}),
-        style({color:'pink', fontSize:'60px',  offset: 0.50}),
-        style({color:'green', fontSize:'80px',    offset: 1})
+        style({opacity:'1',  offset: 0.50}),
+        style({opacity:'0',    offset: 1})
       ]))
       )
    ]),
@@ -23,6 +31,7 @@ import { OnInit, HostBinding,keyframes,
   ]
 })
 export class HomeComponent { 
+
 time:any;
 date1:any;
 date2:any;
@@ -31,18 +40,28 @@ hours:any;
 minutes:any;
 seconds:any;
 milliseconds:any;
-    
 
+images: any[];
+messages:any;
+    
 private triggerSecond = 'zoomin';
 triggerAnimMin:string='zoomin';
 
   constructor(){
+
+     this.images = [];
+        this.images.push({source:'../public/images/13.jpg', thumbnail: '../public/images/13.jpg', title:'Sopranos 1'});
+        this.images.push({source:'../public/images/14.jpg', thumbnail: '../public/images/14.jpg', title:'Sopranos 2'});
+        this.images.push({source:'../public/images/15.jpg', thumbnail: '../public/images/15.jpg', title:'Sopranos 3'});
+        this.images.push({source:'../public/images/16.jpg', thumbnail: '../public/images/16.jpg', title:'Sopranos 4'});
+    
+    this.messages=[{}]
       
     setInterval(()=>{
         this.count()
     },1000)      
-    
-    
+
+   
   }
     
   count(){
@@ -55,7 +74,6 @@ triggerAnimMin:string='zoomin';
       this.minutes = Math.floor(diffInSeconds / 60 % 60);
       this.seconds = Math.floor(diffInSeconds % 60);
       this.milliseconds = Math.round((diffInSeconds - Math.floor(diffInSeconds)) * 1000);
-      console.log(this.triggerSecond);
       this.triggerSecond=this.triggerSecond=='zoomin'?'zoomout':'zoomin';
       this.days = ('0' + this.days).slice(-2);
       this.hours=('0' + this.hours).slice(-2);

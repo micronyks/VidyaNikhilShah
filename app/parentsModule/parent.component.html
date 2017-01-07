@@ -1,0 +1,29 @@
+<div class="col-xs-12">
+    <div class="col-sm-6">
+        <div  class="text-center well">Nikhil's Family</div>
+        <div class="col-sm-6 " *ngFor="let member of nikhilsFamilyMembers;let i=index">
+            <md-card>
+                <img md-card-image [src]="member.path" class="parentImg">
+                <md-card-content>
+                    <p class="text-center">
+                        <b>{{member.name}}</b>
+                    </p>
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="text-center well">Vidya's Family</div>
+        <div class="col-sm-6" *ngFor="let member of vidyasFamilyMembers;let i=index">
+            <md-card>
+                <img md-card-image [src]="member.path" class="parentImg">
+                <md-card-content>
+                     <p class="text-center">
+                        <b>{{member.name}}</b>
+                     </p>
+                </md-card-content>
+            </md-card>
+        </div>
+    </div>
+</div>

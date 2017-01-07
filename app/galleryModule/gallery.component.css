@@ -1,0 +1,22 @@
+ :host{
+    /*background:url('../public/images/hearts.png');
+    background-size:     cover;               
+    background-repeat:repeat;
+    background-position: center center;  */
+    display:block;
+    width: 100%;
+    left:0;
+  }
+
+  .cardcontainer{
+    padding:10px;
+    transition: all 1s;
+  }
+  .cardcontainer:hover{
+    transform: scale(1.1);    
+  }
+
+  .galleryImg{
+    height:200px;
+    border-radius: 5px;
+  }
