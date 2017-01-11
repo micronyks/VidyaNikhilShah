@@ -20,8 +20,7 @@ export class GalleryComponent {
   constructor(){
     this.pics=
     [
-      {'title':'My Heart',path:'../public/images/hearts.png'},
-      {'title':'',path:'../public/images/0.jpg'},
+     
       {'title':'',path:'../public/images/1.jpg'},
       {'title':'',path:'../public/images/2.jpg'},
       {'title':'',path:'../public/images/3.jpg'},
@@ -37,7 +36,23 @@ export class GalleryComponent {
       {'title':'',path:'../public/images/12.jpg'},
       {'title':'',path:'../public/images/13.jpg'},
       {'title':'',path:'../public/images/14.jpg'},
-      {'title':'',path:'../public/images/15.jpg'}
+      {'title':'',path:'../public/images/15.jpg'},
+      {'title':'',path:'../public/images/16.jpg'},
+      {'title':'',path:'../public/images/17.jpg'},
+      {'title':'',path:'../public/images/18.jpg'},
+      {'title':'',path:'../public/images/19.jpg'},
+      {'title':'',path:'../public/images/20.jpg'},
+      {'title':'',path:'../public/images/21.jpg'},
+      {'title':'',path:'../public/images/22.jpg'},
+      {'title':'',path:'../public/images/23.jpg'},
+      {'title':'',path:'../public/images/24.jpg'},
+      {'title':'',path:'../public/images/25.jpg'},
+      {'title':'',path:'../public/images/26.jpg'},
+      {'title':'',path:'../public/images/27.jpg'},
+      {'title':'',path:'../public/images/29.jpg'},
+      {'title':'',path:'../public/images/30.jpg'},
+      {'title':'',path:'../public/images/31.jpg'}
+
 
 
     ]

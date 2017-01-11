@@ -10,10 +10,17 @@
     width: 100%;
     left:0;
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 2s;
-    border-radius: 5px;
+.coupleCard {
+        transition: 2s;
+}
+
+
+
+.nxCardInformation{
+    padding: 2px 16px;
+    width: inherit;
+    background:rgba(0,0,0,0.2);
+    color:white
 }
 
 .imgcontainer{
@@ -31,18 +38,12 @@ img {
     border-radius: 5px 5px 0 0;
 }
 
-.container {
-    padding: 2px 16px;
-    width: inherit;
-}
 
 .coupleImg{
   width: 100%;
     /* overflow: hidden; */
     height: inherit;
-    border-radius: 50%;
 }
-
 .coupleImg:hover{
     width: 100%;
     height: inherit;

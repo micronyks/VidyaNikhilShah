@@ -1,24 +1,51 @@
-<div *ngIf="seconds">
-  <div class="col-sm-2 col-xs-4 flex-container" >
-    <div class="time">
+<div  *ngIf="seconds">
+
+
+
+    <div class="flex-container">
+    <div class="time bg-red nxBoxShadow">
       <div class="">{{days}}</div>
       <div class="timetext">DAYS</div>
     </div>
-    <div class="time">
+    <div class="time bg-yellow nxBoxShadow">
       <div class="">{{hours}}</div>
       <div class="timetext">HOURS</div>
     </div>
-    <div class="time">
+    <div class="time bg-green nxBoxShadow">
       <div class="">{{minutes}}</div>
       <div class="timetext">MINUTES</div>
     </div>
-    <div class="time">
+    <div class="time bg-purple nxBoxShadow">
       <div class="" [@time]="triggerSecond">{{seconds}}</div>
       <div class="timetext">SECONDS</div>
     </div>
   </div>
 
-  <div class="col-sm-10 col-xs-8 invitation-card">
+
+  
+
+    <div id="myCarousel" class="carousel slide album carousel-fade nxBoxShadow" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators" style="visibility: hidden">
+        <li data-target="#myCarousel" id="#myCarousel" *ngFor="let img of images;let i=index" data-slide-to="i" [ngClass]="{'active': i==selectedIndex}"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item" *ngFor="let img of images;let i=index" [ngClass]="{'active': i==0}">
+          <img [src]="img.path" class="albumhome">
+        </div>
+      </div>
+
+       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
 
 
 
@@ -27,8 +54,5 @@
 
 
 
-  <div>
-
+  
 </div>
-
-

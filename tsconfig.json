@@ -10,9 +10,11 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
     "types": [
+      "jquery",
       "jasmine",
       "hammerjs",
       "node"
+      
     ]
     }
 }

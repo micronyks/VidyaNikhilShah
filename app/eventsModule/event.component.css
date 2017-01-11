@@ -11,7 +11,7 @@
 }
 .nxGaneshSthapna{
     transition: all 1s;
-    opacity: 0.5;
+    
 }
 
 .nxGaneshSthapna:hover{
@@ -24,7 +24,7 @@
 .nxWedding{
      border-radius: 10px;
      transition: all 1s;
-      opacity: 0.5;
+      
 }
 
 .nxWedding:hover{
@@ -35,7 +35,7 @@
 
 .nxReception{
     transition: all 1s;
-     opacity: 0.5;
+    
 }
 
 .nxReception:hover{

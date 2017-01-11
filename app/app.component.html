@@ -5,7 +5,7 @@
       Wedding
     </div>
     <div class="sidenav-menu">
-      <div class="child"><a routerLink="home" (click)="sidenav.toggle()"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<span>Invitation Card</span></a></div>
+      <div class="child"><a routerLink="home" (click)="sidenav.toggle()"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<span>Invitation Card</span></a></div>
       <div class="child">
         <a routerLink="couple" (click)="sidenav.toggle()"> 
           <i class="fa fa-heart" aria-hidden="true"></i>&nbsp;&nbsp;<span>The Couple</span>
@@ -28,14 +28,14 @@
       </div>
       <div class="child">
         <a routerLink="contact" (click)="sidenav.toggle()">
-          <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Contact</span>
+          <i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;&nbsp;<span>Contact</span>
         </a>
       </div>
     </div>
   </md-sidenav>
 
 <div class="uppderContainer">
-  <md-toolbar color="warn" class="toolbar">
+  <md-toolbar  class="toolbar bg-yellow">
     <button class="app-icon-button" (click)="sidenav.toggle()">
       <i class="material-icons app-toolbar-menu">menu</i>
     </button>
@@ -43,7 +43,7 @@
         <ul class="topnav" id="myTopnav">
           <li>
             <a routerLink="home" routerLinkActive="active" (click)="sidenav.value=close">
-            <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<span>Invitation</span></a>
+            <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<span>Invitation</span></a>
           </li>
           <li>
             <a routerLink="couple" routerLinkActive="active">
@@ -63,7 +63,7 @@
           </li>
           <li>
             <a routerLink="contact" routerLinkActive="active">
-             <i class="fa fa-film" aria-hidden="true"></i>&nbsp;&nbsp;<span>Contact</span></a>
+            <i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;&nbsp;<span>Contact</span></a>
           </li>
         </ul>
     </div>
@@ -78,7 +78,7 @@
   </div>
 
 
-  <div class="bottomContainer">
-    <b>Concept & Design with Angular2 by Nikhil Shah</b>
+  <div class="bottomContainer bg-yellow">
+    Designed, developed & maintained by Nikhil Shah & Vidya Pillai<small>(with Angular2)</small>
   </div>
 </md-sidenav-layout>

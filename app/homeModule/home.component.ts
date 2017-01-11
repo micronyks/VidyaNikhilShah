@@ -41,7 +41,7 @@ minutes:any;
 seconds:any;
 milliseconds:any;
 
-images: any[];
+images: any;
 messages:any;
     
 private triggerSecond = 'zoomin';
@@ -49,13 +49,55 @@ triggerAnimMin:string='zoomin';
 
   constructor(){
 
-     this.images = [];
-        this.images.push({source:'../public/images/13.jpg', thumbnail: '../public/images/13.jpg', title:'Sopranos 1'});
-        this.images.push({source:'../public/images/14.jpg', thumbnail: '../public/images/14.jpg', title:'Sopranos 2'});
-        this.images.push({source:'../public/images/15.jpg', thumbnail: '../public/images/15.jpg', title:'Sopranos 3'});
-        this.images.push({source:'../public/images/16.jpg', thumbnail: '../public/images/16.jpg', title:'Sopranos 4'});
-    
-    this.messages=[{}]
+    this.images=[
+     
+      
+      
+      
+      
+      {'title':'',path:'../public/images/h13.jpg'},
+      {'title':'',path:'../public/images/h8.jpg'},
+      {'title':'',path:'../public/images/h9.jpg'},
+      {'title':'',path:'../public/images/h10.jpg'},
+      {'title':'',path:'../public/images/h11.jpg'},
+      {'title':'',path:'../public/images/h12.jpg'},
+      {'title':'',path:'../public/images/h2.jpg'},
+      {'title':'',path:'../public/images/h3.jpg'},
+      {'title':'',path:'../public/images/h4.jpg'},
+      {'title':'',path:'../public/images/h5.jpg'},
+      {'title':'',path:'../public/images/h6.jpg'},
+      
+      
+      {'title':'',path:'../public/images/h14.jpg'},
+      {'title':'',path:'../public/images/h15.jpg'},
+      {'title':'',path:'../public/images/h16.jpg'},
+      {'title':'',path:'../public/images/h17.jpg'},
+      {'title':'',path:'../public/images/h18.jpg'},
+      {'title':'',path:'../public/images/h19.jpg'},
+      {'title':'',path:'../public/images/h20.jpg'},
+      {'title':'',path:'../public/images/h21.jpg'},
+      {'title':'',path:'../public/images/h22.jpg'},
+      {'title':'',path:'../public/images/h23.jpg'},
+      {'title':'',path:'../public/images/h24.jpg'},
+      {'title':'',path:'../public/images/h25.jpg'},
+      {'title':'',path:'../public/images/h26.jpg'},
+      {'title':'',path:'../public/images/h27.jpg'},
+      {'title':'',path:'../public/images/h28.jpg'},
+      {'title':'',path:'../public/images/h29.jpg'},
+      {'title':'',path:'../public/images/h30.jpg'},
+      {'title':'',path:'../public/images/h31.jpg'},
+      {'title':'',path:'../public/images/h32.jpg'},
+      {'title':'',path:'../public/images/h33.jpg'},
+      {'title':'',path:'../public/images/h34.jpg'},
+      {'title':'',path:'../public/images/h35.jpg'},
+      {'title':'',path:'../public/images/h36.jpg'},
+      {'title':'',path:'../public/images/h37.jpg'},
+      {'title':'',path:'../public/images/h38.jpg'},
+      {'title':'',path:'../public/images/h39.jpg'},
+      
+        
+    ]
+   
       
     setInterval(()=>{
         this.count()

@@ -63,7 +63,8 @@
   "devDependencies": {
     "@types/hammerjs": "^2.0.33",
     "@types/jasmine": "^2.5.36",
-    "@types/node": "^6.0.52",
+    "@types/jquery": "^2.0.39",
+    "@types/node": "^6.0.58",
     "@types/selenium-webdriver": "^2.53.33",
     "canonical-path": "0.0.2",
     "concurrently": "^3.1.0",

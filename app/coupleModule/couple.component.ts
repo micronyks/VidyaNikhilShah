@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild} from '@angular/core';
 import {Router,ActivatedRoute} from '@angular/router';
 import { OnInit, HostBinding,
          trigger, transition, animate,
          style, state } from '@angular/core';
+import {NxModalComponent} from '../NxModalModule/nxModal.component';
 @Component({
   moduleId: module.id,
   //selector: 'home',
@@ -10,14 +11,13 @@ import { OnInit, HostBinding,
   templateUrl:'couple.component.html',
   animations: [
     trigger('routeAnimation', [
-      transition('void => *', [
+      transition(':enter', [
         style({
-          opacity: 0,
-          transform: 'scale(0)'
+          opacity: 1,
         }),
-        animate('2s')
+        animate('1s ease-in')
       ]),
-      transition('* => void', [
+      transition(':leave', [
         animate('1s', style({
           opacity: 0,
           transform: 'scale(0)'
@@ -27,16 +27,41 @@ import { OnInit, HostBinding,
   ]
 })
 export class CoupleComponent { 
-nikhilimgpath:string="./public/images/nyks.jpg";
+nikhilimgpath:string="./public/images/2.jpg";
 vidyaimgpath:string="./public/images/vd.jpg";
+@ViewChild(NxModalComponent) public readonly modal: NxModalComponent; 
+  pics:any;
 @HostBinding('@routeAnimation') get routeAnimation() {
     return true;
   }
-   constructor(private router:Router){}
+   constructor(private router:Router){
+
+      this.pics=
+    [
+     
+      {'title':'',path:'../public/images/vns1.jpg'},
+      {'title':'',path:'../public/images/vns2.jpg'},
+      {'title':'',path:'../public/images/vns3.jpg'},
+      {'title':'',path:'../public/images/vns4.jpg'},
+      {'title':'',path:'../public/images/vns5.jpg'},
+      {'title':'',path:'../public/images/vns6.jpg'},
+      {'title':'',path:'../public/images/vns7.jpg'},
+      {'title':'',path:'../public/images/vns8.jpg'},
+      {'title':'',path:'../public/images/vns9.jpg'},
+      {'title':'',path:'../public/images/vns10.jpg'},
+      {'title':'',path:'../public/images/vns11.jpg'},
+      {'title':'',path:'../public/images/vns12.jpg'},
+    ]
+
+
+   }
 
   redirectToEvents()
   {
       this.router.navigate(['events']);
   }
- 
+
+   
+  
+    
 }
