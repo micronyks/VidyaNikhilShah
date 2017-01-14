@@ -15,14 +15,12 @@
 }
 
 .nxGaneshSthapna:hover{
-    border-radius: 10px;
-    transform: rotate(-20deg);
+    transform: scale(1.1);
     opacity: 1;
     z-index: 10000;
 }
 
 .nxWedding{
-     border-radius: 10px;
      transition: all 1s;
       
 }
@@ -39,8 +37,13 @@
 }
 
 .nxReception:hover{
-    border-radius: 10px;
-    transform: rotate(20deg);
+    transform: scale(1.1);
      opacity: 1;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around
 }
 

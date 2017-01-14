@@ -12,15 +12,16 @@ import {EventsComponent} from './eventsModule/event.component';
 import {ParentsComponent} from './parentsModule/parent.component';
 import {GalleryComponent} from './galleryModule/gallery.component';
 import {ContactComponent} from './contactModule/contact.component';
-
+import{EngagementComponent} from './engagementModule/engagement.component';
 import {LightboxModule} from 'primeng/primeng';
 import { ModalModule } from 'ng2-bootstrap';
 import {NxModalModule} from './NxModalModule/nxModal.module';
+import {Slider} from './sliderModule/slider.component';
 
 @NgModule({
   imports:      [ BrowserModule,SharedModule,AppRoutingModule,LightboxModule,NxModalModule ],
-  declarations: [ AppComponent,HomeComponent,CoupleComponent,EventsComponent,ParentsComponent,
-                  GalleryComponent,ContactComponent],
+  declarations: [ AppComponent,HomeComponent,Slider,CoupleComponent,EventsComponent,ParentsComponent,
+                  GalleryComponent,ContactComponent,EngagementComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

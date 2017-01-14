@@ -1,45 +1,52 @@
-<div class="col-xs-12">
-    <div class="col-sm-4 text-center">
-        <div class="coupleCard bg-green">
-            <div class="imgcontainer">
-                <img [src]="nikhilimgpath" alt="Avatar" class="coupleImg">
-            </div>
-            <div class="nxCardInformation">
-                <h3><b>The Groom</b></h3>
-                <h4><b>Nikhil Shah</b></h4>
-                <h5><b>Software Engineer</b></h5>
-            </div>
+<div class="col-xs-12 couple-container">
+    <div class="col-sm-3 couple nikhilpic nxBoxShadow">
+    </div>
+    <div class="col-sm-2 couple-info nxBoxShadow">
+        <div>
+            <h1 class="text-center theCoupleTitle"> The Groom</h1>
+            <h3 class="text-center theName"> Nikhil Shah</h3><br>
+            <h5 class="text-center theDesignation"> Software Engineer</h5>
+        </div>
+    </div>
+    <div class="col-sm-1 heart nxBoxShadow">
+    </div>
+
+    <div class="col-sm-2 couple-info nxBoxShadow">
+        <div>
+        <h1 class="text-center theCoupleTitle"> The Bride</h1>
+        <h3 class="text-center theName"> Vidya Pillai</h3><br>
+        <h5 class="text-center theDesignation"> Software Engineer</h5>
         </div>
     </div>
 
-    <div class="col-sm-4">
-        <div class="nxCard nxMarriageInfor couplecard bg-blue">
-            <div class="text-center nxTitle">Nikhil Weds Vidya</div>
-            <div class="cardContent">
-                <div>This precious occacion comes once.</div>
-                <div>To give your blessing to newly married couple, please attend our marriage</div>
-                <div class="text-center">29 - April - 2017</div>
-            </div>
-            <div class="text-center">
-                <a href="javascript:void(0)" (click)="redirectToEvents()">More Information</a>
-            </div>
-        </div>
-    </div>
+    <div class="col-sm-3 couple vidyapic nxBoxShadow">
 
-    <div class="col-sm-4 text-center">
-
-        <div class="coupleCard bg-green">
-            <div class="imgcontainer">
-                <img [src]="vidyaimgpath" alt="Avatar" class="coupleImg">
-            </div>
-            <div class="nxCardInformation">
-                <h3><b>The Bride</b></h3>
-                <h4><b>Vidya Pillai</b></h4>
-                <h5><b>Software Engineer</b></h5>
-            </div>
-        </div>
     </div>
 </div>
+
+<div class="col-xs-12"  *ngIf="seconds">
+
+<div class="flex-container">
+    <div class="time nxBoxShadow text-center col-sm-3">
+      <div class="nxTitle" >Days</div>
+      <div class="nxTime">{{days}}</div>
+    </div>
+    <div class="time nxBoxShadow text-center col-sm-3">
+      <div class="nxTitle" >Hours</div>
+      <div class="nxTime">{{hours}}</div>
+      
+    </div>
+    <div class="time nxBoxShadow text-center col-sm-3">
+      <div class="nxTitle" >Minutes</div>
+      <div class="nxTime">{{minutes}}</div>
+    </div>
+    <div class="time nxBoxShadow text-center col-sm-3">
+      <div class="nxTitle" >Seconds</div>
+      <div class="nxTime" [@time]="triggerSecond">{{seconds}}</div>
+    </div>
+  </div>
+</div>
+
 
 
 <!--<div class="col-xs-12">

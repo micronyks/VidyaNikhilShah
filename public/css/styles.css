@@ -70,19 +70,27 @@ body, html {
   height: 10px;
 }
 .nxHeight20{
-  height: 10px;
+  height: 20px;
+}
+.nxHeight30{
+  height: 30px !important;
 }
 
 .nxTitle{
   color: #fff;
-  padding:10px;
-  
+  padding:10px 0;
+  color:#ee6593;
+  font-weight: bolder;
   margin:10px 0;
   font-size: 25px;
   background:rgba(0,0,0,0.2);
 }
 
 /*colors*/
+
+.bg-pink{
+  background: #ee6593 !important;
+}
 
 .bg-green{
   background : #00a65a !important;
@@ -120,6 +128,10 @@ body, html {
   background: #357ca5 !important;
 }
 
+.bg-light{
+  background:#f6f6f6 !important;
+}
+
 .nxBoxShadow{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
 
@@ -131,18 +143,20 @@ min-height: 40px !important;
 
 .uppderContainer{
    width:100%;
-  
+   z-index: 1;
+   height: 10%;
+   overflow: hidden !important;
 }
 
 .middleContainer{
   float: right;
-  height: 80%;
   width: 100%;
   overflow: auto;
+  height: 90%;
 }
 
 
-.bottomContainer{
+/*.bottomContainer{
   position: fixed;
     float: right;
     height: 5%;
@@ -151,9 +165,9 @@ min-height: 40px !important;
     width: 100%;
     text-align: center;
     /* opacity: 0.6; */
-    color: white;
+    /*color: white;
     line-height: 3;
-}
+}*/
 
 
 
@@ -179,10 +193,10 @@ min-height: 40px !important;
 
 .cardContent{
     
-    color:#fff;
+    
+    color:#ee6593;
     font-size:16px;
     padding: 10px;
-    
 }
 
 md-sidenav-layout {
@@ -208,6 +222,21 @@ md-sidenav {
   overflow: auto !important;
 }
 
+.child .fa-envelope,.child .fa-heart, .child .fa-users, .child .fa-calendar, .child .fa-film, .child .fa-id-card{
+  color:#ee6593;
+  font-size: 15px;
+  transition: 1s;
+} 
+
+.child .fa-envelope:hover,
+.child .fa-heart:hover, 
+.child .fa-users:hover, 
+.child .fa-calendar:hover, 
+.child .fa-film:hover, 
+.child .fa-id-card:hover{
+  transform:scale(1.1);
+  font-size: 20px;
+}
 
 .app-toolbar-menu {
   padding: 0 14px 0 14px;
@@ -254,11 +283,14 @@ ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none !important;
-    font-size: 17px;
+    font-size: 15px;
     height: 100%;
     transition: transform 1s;
     border-radius: 4px;
     font-family: 'PT Sans Narrow', sans-serif !important;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 2px;
 }
 
 
@@ -280,19 +312,20 @@ ul li a:hover {
 }
 
 .sidenav-menu{
-   text-indent: 10px;
     margin:0;
     padding:0;
-     background: #f39c12;
-     overflow: hidden !important;
-     height: calc(100% - (10%));
-    
+    display: flex;
+    align-items: center;
+    position:fixed;
+    left:0;
+    height: 100%;
+    z-index: 10000;
+
 }
 
 
 .sidenav-menu .child{
     margin:0;
-    padding:15px;
     background: #f39c12;
     
 }
@@ -303,19 +336,16 @@ ul li a:hover {
     left: 0;
     color:#ffffff;
     font-size: 17px;
-     padding: 14px 16px;
-     transition: left 1s;
-     
-    
+    transition: all 1s;
 }
 .sidenav-menu .child a:hover{ 
     
     text-decoration: none;
-    background:#f28d11;
     border-radius: 4px;
-    left:1em;
+    left:.20em;
     color: #fff;
     font-weight: bold;
+    
 }
 
 
@@ -334,24 +364,18 @@ a.active{
 
 .cardcontainer{
     padding:10px;
-    transition: all 1s;
+    transition: all .5s;
   }
   .cardcontainer:hover{
-    transform: scale(0.80);    
+    transform: scale(1.10);    
   }
 
   .galleryImg{
-    height:200px;
-    border-radius: 5px;
+    height:150px;
+    width:100%;
   }
 
-
-
-
-
-
-
-
+  
 
 
 .carousel-inner > .item > img,

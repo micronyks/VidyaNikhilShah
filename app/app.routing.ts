@@ -6,11 +6,11 @@ import {EventsComponent} from './eventsModule/event.component';
 import {ParentsComponent} from './parentsModule/parent.component';
 import {GalleryComponent} from './galleryModule/gallery.component';
 import {ContactComponent} from './contactModule/contact.component';
-
+import {EngagementComponent} from './engagementModule/engagement.component';
 
 
 const routes: Routes = [
- { path: '', redirectTo: 'home', pathMatch: 'full'},
+ { path: '', redirectTo: 'couple', pathMatch: 'full'},
   {
         path: "home",
         component: HomeComponent
@@ -21,7 +21,7 @@ const routes: Routes = [
 
   { path: 'gallery', component: GalleryComponent},
   { path: 'contact', component: ContactComponent},
-  
+  {path:'engagement',component: EngagementComponent},
   {path:'**', component: HomeComponent }
   
 ];
