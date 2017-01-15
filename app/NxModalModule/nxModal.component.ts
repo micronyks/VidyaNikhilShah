@@ -12,8 +12,8 @@ import {  OnInit, HostBinding, keyframes, trigger, transition, animate,  style, 
     trigger('routeAnimation', [
       transition('void => *', [
         style({
-          opacity: 0,
-          transform: 'scale(-1)'
+          opacity: 0.7,
+          transform: 'scale(2) !important'
         }),
         animate('2s')
       ]),
@@ -55,13 +55,13 @@ export class NxModalComponent {
   nextStopPropagation(event:any){
     event.stopPropagation();
    // document.getElementById("myCarousel").carousel("next");
-    //$('#myCarousel').carousel("next");
+    $('#myCarousel').carousel("next");
   }
 
   prevStopPropagation(event:any){
     event.stopPropagation();
    // document.getElementById("myCarousel").carousel("next");
-    //$('#myCarousel').carousel("prev");
+    $('#myCarousel').carousel("prev");
   }
 
 }

@@ -1,9 +1,151 @@
-.parentImg{
-    height:200px;
-    border-radius: 50%;
-    transition: all 1s;
+:host{
+    /*background:url('../public/images/hearts.png');
+    background-size:     cover;               
+    background-repeat:repeat;
+    background-position: center center;  */
+    display:block;
+    width: 100%;
+    height: 100%;
+    left:0;
 }
 
-.parentImg:hover{
-    border-radius: 0px;
+.parent-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    border-bottom: 1px solid #ee6593;
 }
+
+.familyName{
+    font-size:16px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+
+@media ( max-width: 800px ) {
+  .couple-container { flex-direction: column; align-items: stretch; }
+}
+
+.groomcircle{
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.couple-info{
+    height: 120px;
+    border-radius: 50%;
+    color:#ee6593;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.madhupic{
+    background-image: url("./public/images/21.jpg");
+    background-repeat: no-repeat;
+    background-position: -446px -222px;
+}
+.rameshpic{
+
+}
+.rajupic{
+
+}
+.heenapic{
+    background-image: url("./public/images/58.jpg");
+    background-repeat: no-repeat;
+    background-position: -784px -155px;
+}
+
+.reenapic{
+    background-image: url("./public/images/7.jpg");
+    background-repeat: no-repeat;
+    background-position: -622px -195px;
+}
+.amitpic{
+    background-image: url("./public/images/16.jpg");
+    background-repeat: no-repeat;
+    background-position: -146px -109px;
+}
+.monikapic{
+    background-image: url("./public/images/14.jpg");
+    background-repeat: no-repeat;
+    background-position:-702px -162px;
+}
+
+.prabhakaranpic{
+background-image: url("./public/images/8.jpg");
+    background-repeat: no-repeat;
+    background-position:-606px -311px;
+}
+.santhpic{
+background-image: url("./public/images/23.jpg");
+    background-repeat: no-repeat;
+    background-position:-814px -191px;
+}
+.veenitpic{
+background-image: url("./public/images/25.jpg");
+    background-repeat: no-repeat;
+    background-position:-477px -151px;
+}
+
+.theCoupleTitle{
+    
+}
+
+.theName{
+    
+}
+
+.theDesignation{
+    
+}
+
+.heart{
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("./public/images/heart.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -13px 6px;
+}
+
+
+
+
+.nikhilpic{
+    background-image: url("./public/images/16.jpg");
+    background-repeat: no-repeat;
+    background-position: -268px -58px;
+}
+
+.vidyapic{
+     background-image: url("./public/images/vd.jpg");
+    background-repeat: no-repeat;
+    background-position: -505px -181px;
+}
+
+.flex-container{
+   width:100%;
+    display: flex;
+    position:relative;
+    flex-direction:row;
+    justify-content: space-between;
+    bottom:5%;
+    z-index: 999;
+  }
+
+.nxTime{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bolder;
+  color:#ee6593;
+}
+

@@ -326,8 +326,6 @@ ul li a:hover {
 
 .sidenav-menu .child{
     margin:0;
-    background: #f39c12;
-    
 }
 
 
@@ -348,7 +346,13 @@ ul li a:hover {
     
 }
 
-
+.sideMenu{
+  display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    background: pink;
+}
 
 .menu{
     display: flex;
@@ -404,7 +408,7 @@ a.active{
 
        .carousel-fade .carousel-inner  .next,
         .prev,
-        .active.left,
+        .active.left,s
         .active.right {
             left: 0;
             transform: translate3d(10,10, 10);
@@ -414,9 +418,13 @@ a.active{
     .carousel-fade .carousel-inner .carousel-control {
         z-index: 2;
     }
+
+    @media not all, (-webkit-transform-3d){
+      .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+        height: 30%;
+        margin-top: 60%;
+      }
+}
  
 
 
-  .familyMembers{
-    background-color:lightgrey;
-  }

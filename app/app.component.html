@@ -1,7 +1,6 @@
 <md-sidenav-layout>
   <div class="sidenav-menu">
-    <div class="sideMenu" [@openClose]="open ? 'open' : 'closed'" (click)="toggle()">
-      <div>
+    <div class="sideMenu">
         <div class="child">
           <a routerLink="home" (click)="toggle()">
             <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;
@@ -42,7 +41,6 @@
             </i>&nbsp;&nbsp;<span *ngIf="open">Contact</span>
           </a>
         </div>
-      </div>
     </div>
   </div>
 

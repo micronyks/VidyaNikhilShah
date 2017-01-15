@@ -1,30 +1,55 @@
-<div class="col-xs-12">
-    <div class="col-sm-6">
-        <div  class="text-center nxTitle bg-green">Nikhil's Family</div>
-        
-        <div class="col-sm-6 " *ngFor="let member of nikhilsFamilyMembers;let i=index">
-            <md-card>
-                <img md-card-image [src]="member.path" class="parentImg">
-                <md-card-content>
-                    <p class="text-center">
-                        <b>{{member.name}}</b>
-                    </p>
-                </md-card-content>
-            </md-card>
+<div class="col-xs-12" style="height:100%">
+<div class="col-xs-12 parent-container">
+    <div class="col-sm-2  nxBoxShadow">
+        <div class="">
+            <h1 class="text-center theCoupleTitle"> The Groom</h1>
+            
+            <h5 class="text-center theDesignation"> 's Family</h5>
         </div>
+    </div>
+    <div class="col-sm-1 couple-info madhupic nxBoxShadow">
+        <div class="familyName">Mother<bR>Madhu</div>
+    </div>
+    <div class="col-sm-1 couple-info  nikhipic nxBoxShadow">
+        <div class="familyName">Father<bR><small> Late shri</small> Ramesh</div>
+    </div>
+    <div class="col-sm-1 couple-info  nikhipic nxBoxShadow">
+        <div class="familyName">Uncle<bR><small> Late shri</small> Rajesh</div>
+    </div>
+    <div class="col-sm-1 couple-info  heenapic nxBoxShadow">
+        <div class="familyName">Sister<bR>Heena</div>
+    </div>
+    <div class="col-sm-1 couple-info  reenapic nxBoxShadow">
+         <div class="familyName">Sister<bR>Reena</div>
     </div>
 
-    <div class="col-sm-6">
-        <div class="text-center nxTitle bg-purple">Vidya's Family</div>
-        <div class="col-sm-6" *ngFor="let member of vidyasFamilyMembers;let i=index">
-            <md-card>
-                <img md-card-image [src]="member.path" class="parentImg">
-                <md-card-content>
-                     <p class="text-center">
-                        <b>{{member.name}}</b>
-                     </p>
-                </md-card-content>
-            </md-card>
+    <div class="col-sm-1 couple-info amitpic nxBoxShadow">
+        <div class="familyName">Brother<bR>Amit</div>
+    </div>
+
+    <div class="col-sm-1 couple-info monikapic nxBoxShadow">
+        <div class="familyName">Sister<bR>Monika</div>
+    </div>
+</div>
+
+<div class="col-xs-12 parent-container">
+    <div class="col-sm-2 couple nxBoxShadow">
+        <div>
+            <h1 class="text-center theCoupleTitle"> The Bride</h1>
+            
+            <h5 class="text-center theDesignation"> 's Family</h5>
         </div>
     </div>
+    <div class="col-sm-1 couple-info prabhakaranpic nxBoxShadow">
+        <div class="familyName">Father<bR>Prabhakaran</div>
+    </div>
+    <div class="col-sm-1 couple-info  santhpic nxBoxShadow">
+        <div class="familyName">Mother<bR>Santh</div>
+    </div>
+    <div class="col-sm-1 couple-info  veenitpic nxBoxShadow">
+        <div class="familyName">Brother<bR>vinit</div>
+    </div>
+    
+</div>
+
 </div>
