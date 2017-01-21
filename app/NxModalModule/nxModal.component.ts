@@ -55,13 +55,13 @@ export class NxModalComponent {
   nextStopPropagation(event:any){
     event.stopPropagation();
    // document.getElementById("myCarousel").carousel("next");
-    $('#myCarousel').carousel("next");
+    //$('#myCarousel').carousel("next");
   }
 
   prevStopPropagation(event:any){
     event.stopPropagation();
    // document.getElementById("myCarousel").carousel("next");
-    $('#myCarousel').carousel("prev");
+    //$('#myCarousel').carousel("prev");
   }
 
 }

@@ -5,6 +5,7 @@
     background-position: center center;  */
     display:block;
     width: 100%;
+    height:100%;
     left:0;
 }
 
@@ -12,36 +13,81 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 65%;
 }
 
 @media ( max-width: 800px ) {
-  .couple-container { flex-direction: column; align-items: stretch; }
+  .couple-container { 
+      
+      flex-direction: column; align-items: center; 
+      height: fit-content;
+    }
+
+    
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+      .couple{
+            width:250px;
+            height: 250px;
+            border-radius: 50%;
+            border:1px solid green;
+        }
+        .couple-info{
+            width:250px;
+            height: 250px;
+        }
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+      .couple{
+            width:250px;
+            height: 250px;
+            border-radius: 50%;
+            border:1px solid green;
+        }
 }
 
 .couple{
-    height: 350px;
+    height: 250px;
     border-radius: 50%;
 }
 
 .couple-info{
+    width:200px;
     height: 200px;
     border-radius: 50%;
-    color:#ee6593;
+    color:#fff;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.coupleBox{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 .theCoupleTitle{
-    
+    font-weight: bolder;
+    color:#7D1935;
 }
 
 .theName{
-    
+      font-weight: bolder;
+    color:#7D1935;
 }
 
 .theDesignation{
-    
+    color:#7D1935;
 }
 
 .heart{
@@ -68,25 +114,8 @@
     background-position: -505px -181px;
 }
 
-.flex-container{
-   width:100%;
-    display: flex;
-    position:relative;
-    flex-direction:row;
-    justify-content: space-between;
-    bottom:5%;
-    z-index: 999;
-  }
 
-.nxTime{
-  display: flex;
-  align-items: center;
-  height: 100px;
-  justify-content: center;
-  font-size: 60px;
-  font-weight: bolder;
-  color:#ee6593;
-}
+
 
 
 
@@ -114,7 +143,7 @@
     padding: 2px 16px;
     width: inherit;
     background:rgba(0,0,0,0.2);
-    color:#ee6593
+    color:#7D1935
 }
 
 .imgcontainer{

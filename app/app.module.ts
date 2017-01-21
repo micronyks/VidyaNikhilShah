@@ -16,11 +16,11 @@ import{EngagementComponent} from './engagementModule/engagement.component';
 import {LightboxModule} from 'primeng/primeng';
 import { ModalModule } from 'ng2-bootstrap';
 import {NxModalModule} from './NxModalModule/nxModal.module';
-import {Slider} from './sliderModule/slider.component';
+
 
 @NgModule({
   imports:      [ BrowserModule,SharedModule,AppRoutingModule,LightboxModule,NxModalModule ],
-  declarations: [ AppComponent,HomeComponent,Slider,CoupleComponent,EventsComponent,ParentsComponent,
+  declarations: [ AppComponent,HomeComponent,CoupleComponent,EventsComponent,ParentsComponent,
                   GalleryComponent,ContactComponent,EngagementComponent],
   bootstrap:    [ AppComponent ]
 })

@@ -44,6 +44,40 @@
 .flex-container{
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+      .flex-container{
+       flex-direction: column;
+       align-items: stretch;
+    }
+
+    }
+
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+      .flex-container{
+           flex-direction: column;
+       align-items: stretch;
+ 
+        }
+
+    }
+
+    .nxEventCard{
+        margin-top:30px;
+    }
+
+
+
 

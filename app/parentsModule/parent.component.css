@@ -9,40 +9,114 @@
     left:0;
 }
 
-.parent-container{
+
+.nikhilfamily{
+    height: 50%;
     display: flex;
+    flex-wrap: wrap;    
     align-items: center;
     justify-content: space-between;
-    height: 50%;
-    border-bottom: 1px solid #ee6593;
 }
+.vidyafamily{
+    height: 50%;
+     display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media ( max-width: 767px ) {
+  .nikhilfamily{
+    height: fit-content;
+    flex-direction: column; align-items: stretch; 
+}
+.vidyafamily{
+     height: fit-content;
+    flex-direction: column; align-items: stretch; 
+}
+}
+
+
 
 .familyName{
     font-size:16px;
-    padding-top: 200px;
     text-align: center;
+    width:150%;
+    margin-top:20px;
+    color:#7D1935;
+
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+      .familyName{
+   width: 100%;
+}
+
+    }
+
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+      .familyName{
+   width: 100%;
+}
+
+    }
+
+
+
+
 
 
 @media ( max-width: 800px ) {
   .couple-container { flex-direction: column; align-items: stretch; }
 }
 
-.groomcircle{
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-}
-
 .couple-info{
     height: 120px;
+    width:150%;
     border-radius: 50%;
-    color:#ee6593;
+    color:#7D1935;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+ @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+      .couple-info{
+   width: 22%;
+   margin-left: 38%;
+   margin-top: 20px;
+}
+
+    }
+
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+      .couple-info{
+  width:120px;margin-left:25%; 
+      margin-top: 20px;
+}
+
+    }
+
 
 .madhupic{
     background-image: url("./public/images/21.jpg");
@@ -82,27 +156,39 @@ background-image: url("./public/images/8.jpg");
     background-repeat: no-repeat;
     background-position:-606px -311px;
 }
-.santhpic{
+.santhapic{
 background-image: url("./public/images/23.jpg");
     background-repeat: no-repeat;
     background-position:-814px -191px;
 }
-.veenitpic{
+.vinitpic{
 background-image: url("./public/images/25.jpg");
     background-repeat: no-repeat;
     background-position:-477px -151px;
 }
 
 .theCoupleTitle{
-    
+    color:#fff;
+    font-weight: bolder;
 }
 
 .theName{
-    
+    color:#fff;
+    font-weight: bolder;
 }
 
 .theDesignation{
-    
+    color:#fff;
+}
+
+.relation{
+    font-size: 20px;
+    color:#4A96AD;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .heart{
@@ -146,6 +232,6 @@ background-image: url("./public/images/25.jpg");
   justify-content: center;
   font-size: 60px;
   font-weight: bolder;
-  color:#ee6593;
+  color:#7D1935;
 }
 

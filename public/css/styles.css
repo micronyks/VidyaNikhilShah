@@ -66,6 +66,10 @@ body, html {
   
 }
 
+.nxHeight{
+  height:100%;
+}
+
 .nxHeight10{
   height: 10px;
 }
@@ -79,7 +83,7 @@ body, html {
 .nxTitle{
   color: #fff;
   padding:10px 0;
-  color:#ee6593;
+  color:#7D1935;
   font-weight: bolder;
   margin:10px 0;
   font-size: 25px;
@@ -89,7 +93,7 @@ body, html {
 /*colors*/
 
 .bg-pink{
-  background: #ee6593 !important;
+  background: #7D1935 !important;
 }
 
 .bg-green{
@@ -120,12 +124,20 @@ body, html {
   background-color: #00c0ef !important;
 }
 
+.bg-lightBlue{
+  background: #4A96AD;
+}
+
 .bg-blue{
   background:   #3c8dbc !important;
 }
 
 .bg-darkblue{
   background: #357ca5 !important;
+}
+
+.bg-maroon{
+  background: #7D1935;
 }
 
 .bg-light{
@@ -194,7 +206,7 @@ min-height: 40px !important;
 .cardContent{
     
     
-    color:#ee6593;
+    color:#7D1935;
     font-size:16px;
     padding: 10px;
 }
@@ -223,7 +235,7 @@ md-sidenav {
 }
 
 .child .fa-envelope,.child .fa-heart, .child .fa-users, .child .fa-calendar, .child .fa-film, .child .fa-id-card{
-  color:#ee6593;
+  color:#7D1935;
   font-size: 15px;
   transition: 1s;
 } 
@@ -235,7 +247,7 @@ md-sidenav {
 .child .fa-film:hover, 
 .child .fa-id-card:hover{
   transform:scale(1.1);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .app-toolbar-menu {
@@ -303,7 +315,7 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color:#f28d11;
+    background-color:#7D1935;
     transform: scale(1.2);
     border-radius: 4px;
     color: #fff !important;
@@ -324,6 +336,8 @@ ul li a:hover {
 }
 
 
+
+
 .sidenav-menu .child{
     margin:0;
 }
@@ -339,10 +353,7 @@ ul li a:hover {
 .sidenav-menu .child a:hover{ 
     
     text-decoration: none;
-    border-radius: 4px;
-    left:.20em;
     color: #fff;
-    font-weight: bold;
     
 }
 
@@ -351,7 +362,7 @@ ul li a:hover {
     height: 50%;
     flex-direction: column;
     justify-content: space-around;
-    background: pink;
+    margin-left: 5px;
 }
 
 .menu{
@@ -419,8 +430,29 @@ a.active{
         z-index: 2;
     }
 
-    @media not all, (-webkit-transform-3d){
-      .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+     .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+        height: 30%;
+        margin-top: 60%;
+      }
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+     .carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
         height: 30%;
         margin-top: 60%;
       }

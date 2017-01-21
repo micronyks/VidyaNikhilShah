@@ -1,56 +1,36 @@
-<div class="col-xs-12">
-<div class="col-xs-12 couple-container">
-    <div class="col-sm-3 couple nikhilpic nxBoxShadow">
-    </div>
-    <div class="col-sm-2 couple-info nxBoxShadow">
-        <div>
-            <h1 class="text-center theCoupleTitle"> The Groom</h1>
-            <h3 class="text-center theName"> Nikhil Shah</h3><br>
-            <h5 class="text-center theDesignation"> Software Engineer</h5>
-        </div>
-    </div>
-    <div class="col-sm-1 heart nxBoxShadow">
-    </div>
+<div class="col-xs-12 nxHeight">
+    <div class="col-xs-12 nxHeight">
+        <div class="col-xs- nxHeight">
+            <div class="col-xs-12 couple-container nxHeight">
+                <div class="col-xs-6 col-sm-2 couple nikhilpic nxBoxShadow">
+                </div>
+                <div class="col-sm-2 couple-info bg-lightBlue nxBoxShadow">
+                    <div class="coupleBox">
+                        <h1 class="text-center theCoupleTitle"> The Groom</h1>
+                        <h3 class="text-center theName"> Nikhil Shah</h3>
+                        <h4 class="text-center theDesignation"> Software Engineer</h4>
+                    </div>
+                </div>
+                <div class="col-sm-1 heart nxBoxShadow">
+                </div>
 
-    <div class="col-sm-2 couple-info nxBoxShadow">
-        <div>
-        <h1 class="text-center theCoupleTitle"> The Bride</h1>
-        <h3 class="text-center theName"> Vidya Pillai</h3><br>
-        <h5 class="text-center theDesignation"> Software Engineer</h5>
-        </div>
-    </div>
+                <div class="col-sm-2 couple-info bg-lightBlue nxBoxShadow">
+                    <div class="coupleBox">
+                        <h1 class="text-center theCoupleTitle"> The Bride</h1>
+                        <h3 class="text-center theName"> Vidya Pillai</h3>
+                        <h4 class="text-center theDesignation"> Software Engineer</h4>
+                    </div>
+                </div>
 
-    <div class="col-sm-3 couple vidyapic nxBoxShadow">
+                <div class="col-xs-6 col-sm-2 couple vidyapic nxBoxShadow">
 
-    </div>
-</div>
-
-<div class="col-xs-12"  *ngIf="seconds">
-
-<div class="flex-container">
-    <div class="time nxBoxShadow text-center col-sm-3">
-      <div class="nxTitle" >Days</div>
-      <div class="nxTime">{{days}}</div>
-    </div>
-    <div class="time nxBoxShadow text-center col-sm-3">
-      <div class="nxTitle" >Hours</div>
-      <div class="nxTime">{{hours}}</div>
-      
-    </div>
-    <div class="time nxBoxShadow text-center col-sm-3">
-      <div class="nxTitle" >Minutes</div>
-      <div class="nxTime">{{minutes}}</div>
-    </div>
-    <div class="time nxBoxShadow text-center col-sm-3">
-      <div class="nxTitle" >Seconds</div>
-      <div class="nxTime" [@time]="triggerSecond">{{seconds}}</div>
-    </div>
-  </div>
-</div>
+                </div>
+            </div>
 
 
 
-<!--<div class="col-xs-12">
+
+            <!--<div class="col-xs-12">
        <div class="col-sm-2 cardcontainer" *ngFor="let pic of pics;let i=index" (click)="modal.show(i)">
             <md-card>
                 <img md-card-image [src]="pic.path" class="galleryImg">
@@ -63,3 +43,5 @@
         </div>
         <nxModal [data]="pics"></nxModal>
 </div>--></div>
+    </div>
+</div>
