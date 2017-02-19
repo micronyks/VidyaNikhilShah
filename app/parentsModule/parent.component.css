@@ -38,13 +38,22 @@
 }
 
 
+.family{
+    height:50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
 
 .familyName{
     font-size:16px;
     text-align: center;
     width:150%;
     margin-top:20px;
-    color:#7D1935;
+    color:#e40046;
+    
 
 }
 @media only screen 
@@ -54,8 +63,8 @@
   and (orientation: portrait) {
 
       .familyName{
-   width: 100%;
-}
+        width: 100%;
+        }
 
     }
 
@@ -71,11 +80,6 @@
 
     }
 
-
-
-
-
-
 @media ( max-width: 800px ) {
   .couple-container { flex-direction: column; align-items: stretch; }
 }
@@ -84,7 +88,7 @@
     height: 120px;
     width:150%;
     border-radius: 50%;
-    color:#7D1935;
+    color:#e40046;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,10 +105,9 @@
    margin-left: 38%;
    margin-top: 20px;
 }
-
     }
 
-    @media only screen 
+  @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 767px)
   and (-webkit-min-device-pixel-ratio: 2)
@@ -116,7 +119,6 @@
 }
 
     }
-
 
 .madhupic{
     background-image: url("./public/images/21.jpg");
@@ -182,12 +184,12 @@ background-image: url("./public/images/25.jpg");
 }
 
 .relation{
-    font-size: 20px;
+    font-size: 16px;
     color:#4A96AD;
 }
 
 .name{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -199,9 +201,6 @@ background-image: url("./public/images/25.jpg");
     background-size: cover;
     background-position: -13px 6px;
 }
-
-
-
 
 .nikhilpic{
     background-image: url("./public/images/16.jpg");
@@ -232,6 +231,5 @@ background-image: url("./public/images/25.jpg");
   justify-content: center;
   font-size: 60px;
   font-weight: bolder;
-  color:#7D1935;
+  color:#e40046;
 }
-

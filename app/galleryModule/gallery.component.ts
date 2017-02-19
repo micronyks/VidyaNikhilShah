@@ -52,9 +52,6 @@ export class GalleryComponent {
       {'title':'',path:'../public/images/29.jpg'},
       {'title':'',path:'../public/images/30.jpg'},
       {'title':'',path:'../public/images/31.jpg'}
-
-
-
     ]
   }
  

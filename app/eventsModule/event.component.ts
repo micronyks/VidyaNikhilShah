@@ -15,14 +15,14 @@ import { OnInit, HostBinding,
       transition(':enter', [
         style({
           opacity: 0,
-          transform: 'translateY(-100%)'
+          transform: 'translateY(100%)'
         }),
         animate('1s ease-in')
       ]),
       transition(':leave', [
         animate('1s ease-out', style({
           opacity: 0,
-          transform: 'translateY(100%)'
+          transform: 'translateY(-100%)'
         }))
       ])
     ])

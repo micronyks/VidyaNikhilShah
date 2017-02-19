@@ -10,18 +10,19 @@
     width: 100%;
     left:0;
     height: 100%;
+    
   }
 
  
 .home-flex-container1{
   display: flex;
   align-items: center;
-  height: 50%;
+  height: 20%;
 }
 .home-flex-container2{
   display: flex;
   align-items: center;
-  height: 50%;
+  height: 100%;
   justify-content: space-around;
 }
 
@@ -31,39 +32,66 @@
 
 }
 
-.mrgText{
-  font-size: 60px;
-  color: #fff;
+
+.mrgText1{
+  font-size: 120px;
+  color:#e40046;
+  font-family: 'Sacramento', cursive;
+  font-weight: bolder;
+}
+.mrgText2{
+  font-size: 70px;
+  color: #e40046;
+  font-family: 'Sacramento', cursive;
+  font-weight: bolder;
+
+}
+.mrgText3{
+  font-size:40px;
+  color: #e40046;
+  font-weight: bolder;
+  font-family: 'Sacramento', cursive;
+}
+.mrgText4{
+  font-size: 50px;
+  color: #e40046;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: bolder;
 
 }
 
+
+
 .homepic{
-  background:url('../public/images/3.jpg');
+  background:url('../public/images/vns16.jpg');
     background-size:     cover;               
     background-repeat:no-repeat;
     background-position: center center;  
+    transition: transform 30s linear;
+    animation:move 30s infinite ease-in-out;
+    
 }
 
-.time-flex-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
-.flex-container{
-   width:80%;
-   z-index: 999;
+
+/*@keyframes move{
+0%{
+ transform: scale(1) rotate(0deg);
+}
+  100%{
+   transform: scale(2) rotate(0.1deg);
+
   }
 
+}*/
 
-.nxTime{
-  display: flex;
-  align-items: center;
-  height: 100px;
-  justify-content: center;
-  font-size: 60px;
-  font-weight: bolder;
-  color:#4A96AD;
+.heartImage{
+  background:transparent url('../public/images/download.jpg');
+    background-size: contain;               
+    background-repeat:no-repeat;
+    background-position: center center;
+    
 }
+
 
 

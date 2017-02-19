@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 65%;
+    height: 100%;
 }
 
 @media ( max-width: 800px ) {
@@ -26,20 +26,22 @@
     
 }
 
+
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 767px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
       .couple{
-            width:250px;
+            width:200px;
             height: 250px;
             border-radius: 50%;
             border:1px solid green;
         }
         .couple-info{
-            width:250px;
-            height: 250px;
+            width:300px;
+            height: 300px;
         }
 }
 @media only screen 
@@ -48,55 +50,48 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
       .couple{
-            width:250px;
+            width:200px;
             height: 250px;
             border-radius: 50%;
             border:1px solid green;
         }
+        .couple-info{
+            width:300px;
+            height: 300px;
+        }
 }
 
 .couple{
-    height: 250px;
-    border-radius: 50%;
-}
-
-.couple-info{
-    width:200px;
     height: 200px;
     border-radius: 50%;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.coupleBox{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
 
 .theCoupleTitle{
-    font-weight: bolder;
-    color:#7D1935;
+    font-weight: bold;
+    font-size: 50px;
+    color:#e40046;
 }
 
 .theName{
-      font-weight: bolder;
-    color:#7D1935;
+    font-weight: bold;
+    font-size: 30px;
+    color:#e40046;
 }
 
 .theDesignation{
-    color:#7D1935;
+    font-weight: bold;
+    font-size: 25px;
+}
+.heart{
+    height: initial;
+    width: initial;
+    opacity: 0.8;
 }
 
-.heart{
-    height: 100px;
-    border-radius: 50%;
-    background-image: url("./public/images/heart.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -13px 6px;
+.heart i.fa-heartbeat{
+   font-size:100px;
+   color:#e40046;
 }
 
 
@@ -105,13 +100,15 @@
 .nikhilpic{
     background-image: url("./public/images/16.jpg");
     background-repeat: no-repeat;
-    background-position: -268px -58px;
+    background-position: -345px -58px;
+    z-index: 10;
 }
 
 .vidyapic{
-     background-image: url("./public/images/vd.jpg");
+     background-image: url("./public/images/51.jpg");
     background-repeat: no-repeat;
-    background-position: -505px -181px;
+    background-position: -572px -158px;
+    z-index: 10;
 }
 
 
@@ -143,7 +140,7 @@
     padding: 2px 16px;
     width: inherit;
     background:rgba(0,0,0,0.2);
-    color:#7D1935
+    color:#e40046
 }
 
 .imgcontainer{

@@ -15,14 +15,13 @@ import { OnInit, HostBinding,keyframes,
     trigger('routeAnimation', [     
       transition(':enter', [
         style({
-          transform: 'translateX(100%)'
+          opacity:0,
         }),
-        animate('1s ease-out')
+        animate('2s ease-out')
       ]),
       transition(':leave', [
-        animate('1s ease-out', style({
+        animate('3s ease-out', style({
           opacity: 0,
-          transform: 'translateY(100%)'
         }))
       ])
     ])

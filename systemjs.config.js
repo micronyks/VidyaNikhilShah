@@ -29,20 +29,22 @@
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
 
       /* material desing */
-
-      '@angular2-material/core': 'npm:@angular2-material/core/core.umd.js',
-      '@angular2-material/button': 'npm:@angular2-material/button/button.umd.js',
-      '@angular2-material/menu': 'npm:@angular2-material/menu/menu.umd.js',
-      '@angular2-material/icon': 'npm:@angular2-material/icon/icon.umd.js',
-      '@angular2-material/sidenav': 'npm:@angular2-material/sidenav/sidenav.umd.js',
-      '@angular2-material/toolbar': 'npm:@angular2-material/toolbar/toolbar.umd.js',
-      '@angular2-material/card': 'npm:@angular2-material/card/card.umd.js',
-      '@angular2-material/input': 'npm:@angular2-material/input/input.umd.js',
+      '@angular/material': 'npm:@angular/material/bundles/material.umd.js',
+      //'@angular2-material/core': 'npm:@angular2-material/core/core.umd.js',
+      // '@angular2-material/button': 'npm:@angular2-material/button/button.umd.js',
+      // '@angular2-material/menu': 'npm:@angular2-material/menu/menu.umd.js',
+      // '@angular2-material/icon': 'npm:@angular2-material/icon/icon.umd.js',
+      // '@angular2-material/sidenav': 'npm:@angular2-material/sidenav/sidenav.umd.js',
+      // '@angular2-material/toolbar': 'npm:@angular2-material/toolbar/toolbar.umd.js',
+      // '@angular2-material/card': 'npm:@angular2-material/card/card.umd.js',
+      // '@angular2-material/input': 'npm:@angular2-material/input/input.umd.js',
 
       'primeng': 'npm:primeng',
       // ng2-bootstrap
       'moment': 'node_modules/moment',
       'ng2-bootstrap': 'node_modules/ng2-bootstrap',
+
+      'angular2-google-maps/core':'node_modules/angular2-google-maps/core/core.umd.js'
 
     },
     // packages tells the System loader how to load when no filename and/or no extension

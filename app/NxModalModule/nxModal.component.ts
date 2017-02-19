@@ -8,29 +8,13 @@ import {  OnInit, HostBinding, keyframes, trigger, transition, animate,  style, 
   //encapsulation:ViewEncapsulation.None,
   styleUrls: ['nxModal.component.css'],
   templateUrl: 'nxModal.component.html',
-  animations: [
-    trigger('routeAnimation', [
-      transition('void => *', [
-        style({
-          opacity: 0.7,
-          transform: 'scale(2) !important'
-        }),
-        animate('2s')
-      ]),
-      transition('* => void', [
-        animate('1s', style({
-          opacity: 0,
-          transform: 'scale(0)'
-        }))
-      ])
-    ])
-  ]
+  
 })
 
 export class NxModalComponent {
-  @HostBinding('@routeAnimation') get routeAnimation() {
-    return true;
-  }
+  // @HostBinding('@routeAnimation') get routeAnimation() {
+  //   return true;
+  // }
 
   @Input() data: any;
   selectedIndex: number;

@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation,ViewChild ,ElementRef} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {
   OnInit, HostBinding, keyframes,
@@ -24,15 +24,19 @@ import {
     trigger('time', [
       transition("* => *",
         animate(1000, keyframes([
-          style({ opacity: '1', offset: 0.50 }),
-          style({ opacity: '0', offset: 1 })
+          style({ opacity: '1', offset: 0.20 }),
+          style({ opacity: '0', offset: 0.80 })
         ]))
       )
     ]),
   ]
 })
 export class HomeComponent {
-time: any;
+  @ViewChild('weddingEle') weddingEle:ElementRef;
+  weddingStringTxt:string="We're engaged and getting married";
+  weddingEleHeight:number;
+  CoupleNameStr:boolean;
+  time: any;
   date1: any;
   date2: any;
   days: any;
@@ -66,5 +70,26 @@ time: any;
     this.minutes = ('0' + this.minutes).slice(-2);
     this.seconds = ('0' + this.seconds).slice(-2);
 
+  }
+
+  ngAfterViewInit()
+  {
+    this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200)
+  }
+
+  printLetterByLetter(destination:ElementRef, message:string, speed:number){
+    let i = 0;
+    
+    let interval = setInterval(()=>{
+      
+        destination.nativeElement.innerHTML += message.charAt(i);
+        i++;
+        if (i > message.length){
+            this.weddingEleHeight=destination.nativeElement.offsetHeight;
+            destination.nativeElement.innerHTML="";
+            this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200);
+            clearInterval(interval);
+        }
+    }, speed);
   }
 }

@@ -8,4 +8,24 @@
     left:0;
   }
 
+  .cardcontainer{
+    padding:10px !important;
+    transition: all .5s;
+    overflow: hidden;
+  }
+
+  .galleryImg{
+    height:150px;
+    width:100%;
+    transform-origin: 50% 50%;
+    transition: transform 30s linear;
+  }
+
+   .galleryImg:hover{
+    
+    transform: scale(2) rotate(0.1deg);
+  }
+
+
+
   
