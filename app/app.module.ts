@@ -18,7 +18,7 @@ import { ModalModule } from 'ng2-bootstrap';
 import {NxModalModule} from './NxModalModule/nxModal.module';
 import {MaterialModule} from '@angular/material';
 import { AgmCoreModule } from 'angular2-google-maps/core';
-
+import * as $ from 'jquery';
 
 @NgModule({
   imports:      [ BrowserModule,

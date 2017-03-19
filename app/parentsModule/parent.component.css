@@ -9,32 +9,28 @@
     left:0;
 }
 
-
-.nikhilfamily{
-    height: 50%;
+.title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.nikhilfamily-container{
+    height: 40%;
     display: flex;
     flex-wrap: wrap;    
     align-items: center;
     justify-content: space-between;
 }
-.vidyafamily{
-    height: 50%;
-     display: flex;
-    flex-wrap: wrap;    
-    align-items: center;
-    justify-content: space-between;
-}
+    .vidyafamily-container{
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;    
+        align-items: center;
+        justify-content: space-between;
+    }
 
 
 @media ( max-width: 767px ) {
-  .nikhilfamily{
-    height: fit-content;
-    flex-direction: column; align-items: stretch; 
-}
-.vidyafamily{
-     height: fit-content;
-    flex-direction: column; align-items: stretch; 
-}
+ 
 }
 
 
@@ -52,7 +48,7 @@
     text-align: center;
     width:150%;
     margin-top:20px;
-    color:#e40046;
+    color:#00a65a;
     
 
 }
@@ -62,9 +58,7 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-      .familyName{
-        width: 100%;
-        }
+     
 
     }
 
@@ -80,50 +74,26 @@
 
     }
 
-@media ( max-width: 800px ) {
-  .couple-container { flex-direction: column; align-items: stretch; }
+.familypic{
+height: 120px;
 }
 
-.couple-info{
+
+/*.couple-info{
     height: 120px;
     width:150%;
     border-radius: 50%;
-    color:#e40046;
+    color:#00a65a;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+}*/
 
- @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-      .couple-info{
-   width: 22%;
-   margin-left: 38%;
-   margin-top: 20px;
-}
-    }
-
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-      .couple-info{
-  width:120px;margin-left:25%; 
-      margin-top: 20px;
-}
-
-    }
-
+ 
 .madhupic{
     background-image: url("./public/images/21.jpg");
     background-repeat: no-repeat;
-    background-position: -446px -222px;
+    background-position: 50% 40%;
 }
 .rameshpic{
 
@@ -134,39 +104,39 @@
 .heenapic{
     background-image: url("./public/images/58.jpg");
     background-repeat: no-repeat;
-    background-position: -784px -155px;
+    background-position: 88% 29%;
 }
 
 .reenapic{
     background-image: url("./public/images/7.jpg");
     background-repeat: no-repeat;
-    background-position: -622px -195px;
+    background-position: 70% 36%;
 }
 .amitpic{
     background-image: url("./public/images/16.jpg");
     background-repeat: no-repeat;
-    background-position: -146px -109px;
+    background-position: 16% 20%;
 }
 .monikapic{
     background-image: url("./public/images/14.jpg");
     background-repeat: no-repeat;
-    background-position:-702px -162px;
+    background-position:80% 30%;
 }
 
 .prabhakaranpic{
 background-image: url("./public/images/8.jpg");
     background-repeat: no-repeat;
-    background-position:-606px -311px;
+    background-position:69% 57%;
 }
 .santhapic{
 background-image: url("./public/images/23.jpg");
     background-repeat: no-repeat;
-    background-position:-814px -191px;
+    background-position:92% 35%;
 }
 .vinitpic{
 background-image: url("./public/images/25.jpg");
     background-repeat: no-repeat;
-    background-position:-477px -151px;
+    background-position:54% 29%;
 }
 
 .theCoupleTitle{
@@ -185,11 +155,12 @@ background-image: url("./public/images/25.jpg");
 
 .relation{
     font-size: 16px;
+    font-weight: bold;
     color:#4A96AD;
 }
 
 .name{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -214,22 +185,121 @@ background-image: url("./public/images/25.jpg");
     background-position: -505px -181px;
 }
 
-.flex-container{
-   width:100%;
+.membercontainer{
     display: flex;
-    position:relative;
-    flex-direction:row;
-    justify-content: space-between;
-    bottom:5%;
-    z-index: 999;
-  }
+    flex-direction: column;
+    align-items: center;
+    width: 9%;
+}
 
-.nxTime{
-  display: flex;
-  align-items: center;
-  height: 100px;
-  justify-content: center;
-  font-size: 60px;
-  font-weight: bolder;
-  color:#e40046;
+
+/*mobile media query */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+   {
+        .nikhilfamily-container{
+    height: fit-content;
+    flex-direction: column; 
+}
+.vidyafamily-container{
+     height: fit-content;
+    flex-direction: column; 
+}
+
+
+      
+    }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+        .membercontainer{
+    
+    width: 25%;
+}
+  }
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+.membercontainer{
+    
+    width: 50%;
+}
+    }
+
+
+/*tablet media query */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+   
+ .membercontainer{
+    
+    width: 14%;
+}
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+     
+/*
+   .prabhakaranpic, .santhapic, .vinitpic, .madhupic, .rameshpic, .rajupic, .heenapic, .reenapic, .amitpic, .monikapic{
+       zoom:70%;
+   }
+   .couple-info{
+       
+        width:310%;
+       
+    }
+
+    .familyName{
+        width:340%;
+    }
+
+    .name, .title{
+        font-size: 14px;
+    }
+   
+   .theCoupleTitle{
+       font-size: 30px;
+   }*/
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+     /*.couple-info{
+        width:230%;
+    }
+    .familyName{
+        width:255%;
+    }*/
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 1)
+{
+     /*.couple-info{
+       
+        width:235%;
+       
+    }
+     .prabhakaranpic, .santhapic, .vinitpic, .madhupic, .rameshpic, .rajupic, .heenapic, .reenapic, .amitpic, .monikapic{
+       zoom:100%;
+   }*/
 }

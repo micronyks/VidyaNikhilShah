@@ -1,10 +1,10 @@
 import { Component, ViewEncapsulation, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {  OnInit, HostBinding, keyframes, trigger, transition, animate,  style, state} from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
   moduleId: module.id,
-  selector: 'nxModal',
+  selector: 'nxModal',  
   //encapsulation:ViewEncapsulation.None,
   styleUrls: ['nxModal.component.css'],
   templateUrl: 'nxModal.component.html',
@@ -38,13 +38,11 @@ export class NxModalComponent {
 
   nextStopPropagation(event:any){
     event.stopPropagation();
-   // document.getElementById("myCarousel").carousel("next");
     //$('#myCarousel').carousel("next");
   }
 
   prevStopPropagation(event:any){
     event.stopPropagation();
-   // document.getElementById("myCarousel").carousel("next");
     //$('#myCarousel').carousel("prev");
   }
 

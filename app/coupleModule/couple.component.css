@@ -13,20 +13,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    
 }
 
 @media ( max-width: 800px ) {
   .couple-container { 
       
       flex-direction: column; align-items: center; 
-      height: fit-content;
+      height: fit-content !important;
     }
 
     
 }
 
+.couplebackground{
+    background:url('../public/images/couplebackground.jpg');
+    background-size:contain;               
+    background-repeat:no-repeat;
+    background-position: center;
+    
+}
 
+
+
+
+.couple-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+            width:200px;
+            height: 200px;
+        }
 
 @media only screen 
   and (min-device-width: 320px) 
@@ -37,11 +55,19 @@
             width:200px;
             height: 250px;
             border-radius: 50%;
-            border:1px solid green;
         }
         .couple-info{
-            width:300px;
-            height: 300px;
+            width:250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+        .theName{
+            font-size: 60px !important;
+        
+        }
+        .thesurname{
+            font-size: 40px;
+            
         }
 }
 @media only screen 
@@ -53,11 +79,18 @@
             width:200px;
             height: 250px;
             border-radius: 50%;
-            border:1px solid green;
         }
         .couple-info{
-            width:300px;
-            height: 300px;
+            width:250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+        .theName{
+            font-size: 60px !important;
+         }
+        .thesurname{
+            font-size: 40px;
+            
         }
 }
 
@@ -68,15 +101,26 @@
 
 
 .theCoupleTitle{
-    font-weight: bold;
-    font-size: 50px;
-    color:#e40046;
+    font-size: 30px;
+    color:#fff;
+    
 }
 
 .theName{
-    font-weight: bold;
-    font-size: 30px;
-    color:#e40046;
+    font-size: 60px;
+    color:#fff;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
+    letter-spacing: 2px;
+    
+}
+.thesurname{
+    font-size: 40px;
+    letter-spacing: 2px;
+    color:#fff;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
+    
 }
 
 .theDesignation{
@@ -92,6 +136,8 @@
 .heart i.fa-heartbeat{
    font-size:100px;
    color:#e40046;
+   font-weight: bolder;
+  
 }
 
 
@@ -100,14 +146,14 @@
 .nikhilpic{
     background-image: url("./public/images/16.jpg");
     background-repeat: no-repeat;
-    background-position: -345px -58px;
+    background-position: 44% 12%;
     z-index: 10;
 }
 
 .vidyapic{
      background-image: url("./public/images/51.jpg");
     background-repeat: no-repeat;
-    background-position: -572px -158px;
+    background-position: 73% 32%;
     z-index: 10;
 }
 
@@ -140,7 +186,7 @@
     padding: 2px 16px;
     width: inherit;
     background:rgba(0,0,0,0.2);
-    color:#e40046
+    color:#00a65a
 }
 
 .imgcontainer{
@@ -171,3 +217,4 @@ img {
     height: inherit;
     border-radius: 0px;
 }
+

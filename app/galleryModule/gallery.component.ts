@@ -21,7 +21,7 @@ export class GalleryComponent {
     this.pics=
     [
      
-      {'title':'',path:'../public/images/1.jpg'},
+      // {'title':'',path:'../public/images/1.jpg'},
       {'title':'',path:'../public/images/2.jpg'},
       {'title':'',path:'../public/images/3.jpg'},
       {'title':'',path:'../public/images/4.jpg'},

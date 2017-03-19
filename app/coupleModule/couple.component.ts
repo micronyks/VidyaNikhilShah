@@ -34,12 +34,13 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
           opacity: 1,
           transform: 'scale(0)'
         }),
-        animate('1s ease')
+        animate('3s ease')
       ]),
        transition('*<=>*', [
-         animate(5000, keyframes([
-          style({ transform: 'scale(0.10)', offset: 0.40 }),
-          style({ transform: 'scale(2)', offset: 0.99 }),
+         animate(3000, keyframes([
+          style({ transform: 'scale(0.10)', offset: 0.30 }),
+          // style({ transform: 'scale(0.10)', offset: 0.80 }),
+          style({ transform: 'scale(1.5)', offset: 0.90 }),
         ]))
       ]),
      ]),
@@ -52,9 +53,10 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
         animate('5s ease')
       ]),
        transition('*<=>*', [
-         animate(5000, keyframes([
-          style({ left: '85px', offset: 0.40 }),
-          style({ left: '-10px', offset: 0.99 }),
+         animate(3000, keyframes([
+          style({ left: '140px', offset: 0.30 }),
+          // style({ left: '85px', offset: 0.80 }),
+          style({ left: '40px', offset: 0.90 }),
         ]))
       ]),
      ]),
@@ -67,9 +69,10 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
         animate('5s ease')
       ]),
        transition('*<=>*', [
-         animate(5000, keyframes([
-          style({ right: '85px', offset: 0.40 }),
-          style({ right: '-10px', offset: 0.99 }),
+         animate(3000, keyframes([
+          style({ right: '140px', offset: 0.30 }),
+          // style({ right: '85px', offset: 0.80 }),
+          style({ right: '40px', offset:  0.90}),
         ]))
       ]),
      ]),
@@ -79,14 +82,14 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
           opacity: 1,
           transform: 'scale(0)'
         }),
-        animate('8s ease')
+        animate('10s ease')
       ]),
-       transition('*<=>*', [
-         animate(5000, keyframes([
-          style({ top: '-150px', offset: 0.40 }),
-          style({ top: '150px', offset: 0.99 }),
-        ]))
-      ]),
+      //  transition('*<=>*', [
+      //    animate(5000, keyframes([
+      //     style({ top: '-150px', offset: 0.40 }),
+      //     style({ top: '150px', offset: 0.99 }),
+      //   ]))
+      // ]),
      ]),
      trigger('vidyainfoanimation', [
       transition('void=>*', [
@@ -94,14 +97,14 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
           opacity: 1,
           transform: 'scale(0)'
         }),
-        animate('8s ease')
+        animate('10s ease')
       ]),
-       transition('*<=>*', [
-         animate(5000, keyframes([
-          style({ bottom: '-150px', offset: 0.40 }),
-          style({ bottom: '150px', offset: 0.99 }),
-        ]))
-      ]),
+      //  transition('*<=>*', [
+      //    animate(5000, keyframes([
+      //     style({ bottom: '-150px', offset: 0.40 }),
+      //     style({ bottom: '150px', offset: 0.99 }),
+      //   ]))
+      // ]),
      ]),
   ],
 
@@ -126,7 +129,7 @@ export class CoupleComponent {
 
     setInterval(() => {
       this.heartState = !this.heartState;
-    }, 5000)
+    }, 3000)
 
     this.pics =
       [

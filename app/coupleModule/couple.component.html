@@ -1,34 +1,30 @@
 <div class="col-xs-12 nxHeight">
-    <div class="col-xs-12 nxHeight">
-        <div class="col-xs- nxHeight">
+    <div class="col-xs-12 nxHeight ">
+        <div class="col-xs-12 nxHeight ">
+            <div class="">Nikhil Weds Vidya</div>
             <div class="col-xs-12 couple-container nxHeight">
-
-                <md-card class="col-sm-3  couple-info nxBoxShadow" [@nikhilinfoanimation]="heartState">
-                    <h3 class="text-center theCoupleTitle">The Groom</h3>
-                    <h5 class="text-center theName">Nikhil Shah</h5>
+                <md-card class="col-sm-3 bg-pink  couple-info nxBoxShadow grey-border" [@nikhilinfoanimation]>
+                    <!--<h3 class="text-center theCoupleTitle">The Groom</h3>-->
+                    <p class="text-center theName">Nikhil</p>
+                    <p class="text-center thesurname">Shah</p>
                 </md-card>
-
                 <md-card class="col-xs-6 col-sm-2 couple nikhilpic nxBoxShadow" [@nikhilpicanimation]="heartState">
                 </md-card>
-
                 <div class="col-sm-1 heart">
                     <i class="fa fa-heartbeat" aria-hidden="true" [@heartanimation]="heartState"></i>
                 </div>
-
-
                 <md-card class="col-xs-6 col-sm-2 couple vidyapic nxBoxShadow" [@vidyapicanimation]="heartState">
                 </md-card>
-
-
-                <md-card class="col-sm-3 couple-info  nxBoxShadow" [@vidyainfoanimation]="heartState">
-                    <h3 class="text-center theCoupleTitle">The Bride</h3>
-                    <h5 class="text-center theName">Vidya Pillai</h5>
+                <md-card class="col-sm-3 couple-info bg-pink  nxBoxShadow grey-border" [@vidyainfoanimation]>
+                    <!--<h3 class="text-center theCoupleTitle">The Bride</h3>-->
+                    <P class="text-center theName">Vidya </P><br>
+                    <p class="text-center thesurname">Pillai</p>
                 </md-card>
             </div>
 
 
 
-
+<div class="">Save the date</div>
             <!--<div class="col-xs-12">
        <div class="col-sm-2 cardcontainer" *ngFor="let pic of pics;let i=index" (click)="modal.show(i)">
             <md-card>

@@ -10,14 +10,13 @@
     left:0;
 }
 
-.nxEventTitle{
-  color: #fff;
-  padding:10px 0;
-  font-weight: bolder;
-  margin:10px 0;
-  font-size: 25px;
-  background:rgba(0,0,0,0.2);
+
+
+.nxEventCard{
+  margin-top: 10px;
+  height: 160px;
 }
+
 
 
 

@@ -68,7 +68,7 @@ body, html {
 }
 
 .nxHeight{
-  height:100%;
+  height:100% !important;
 }
 
 .nxHeight10{
@@ -84,7 +84,64 @@ body, html {
 
 .vnscontainer{
    text-align: center;
+   
 }
+
+.vnscontainer a{
+  padding-top: 16%;
+  background:rgba(0,0,0,0.2) !important;
+}
+.vnscontainer a:hover{
+  text-decoration: none;
+  background:rgba(0,0,0,0.2) !important;
+}
+.vnscontainer a:focus{
+  outline: 0;
+}
+.vnscontainer a.active{
+  text-decoration: none;
+}
+
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+      .vnscontainer{
+              height: 80px !important;
+   
+}
+
+    }
+
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+      .flex-container{
+           flex-direction: column;
+            align-items: stretch;
+            justify-content: space-around;
+            height: fit-content;
+        }
+
+    }
+
+
+
+
+.loadingImg{
+  background: url('public/images/couple2.gif');
+  background-position: center;
+  background-size: contain;
+}
+
 .vns{
     font-size: 30px;
     color:#fff;  
@@ -94,13 +151,10 @@ body, html {
 
 
 .nxTitle{
-  color: #fff;
-  padding:10px 0;
+  padding:2px 0;
   color:#e40046;
   font-weight: bolder;
-  margin:10px 0;
-  font-size: 25px;
-  background:rgba(0,0,0,0.2);
+  font-size: 2em;
 }
 
 /*colors*/
@@ -109,12 +163,9 @@ body, html {
   background: #e40046 !important;
 }
 
-.bg-green{
-  background : #00a65a !important;
-}
 
 .bg-red{
- background:  #e40046 !important;
+ background:  #00a65a !important;
 }
 
 .bg-yellow{
@@ -149,8 +200,12 @@ body, html {
   background: #357ca5 !important;
 }
 
+.bg-intelblue{
+  background: #0071c5 !important;
+}
+
 .bg-maroon{
-  background: #e40046 !important;
+  background: #00a65a !important;
 }
 
 .bg-light{
@@ -183,6 +238,7 @@ body, html {
        flex-direction: column;
        align-items: center;
     justify-content: space-around;
+    height: fit-content;
     }
 
     }
@@ -197,20 +253,17 @@ body, html {
            flex-direction: column;
             align-items: center;
             justify-content: space-around;
+            height: fit-content;
         }
 
     }
 
-md-toolbar{
-min-height: 20px !important;  
 
-}
 
 .uppderContainer{
    width:100%;
    z-index: 1;
-   min-height: 10%;
-   height: auto;
+   height: 10%;
    overflow: hidden !important;
 }
 
@@ -218,50 +271,24 @@ min-height: 20px !important;
   float: right;
   width: 100%;
   overflow: auto;
-  height: 90%;
+  height: 85%;
 }
 
 
 .bottomContainer{
-  position: absolute;
     float: right;
-    height: 3%;
+    height: 5%;
     font-size: 12px;
-    bottom: 0;
-    width: 100%;
     text-align: center;
-    line-height:22px;
-}
-.time-flex-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+    color:#fff;
+    width:100%;
+    background: black;
 }
 
-
-.nxTime{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bolder;
-  color:#e40046;
+.mat-toolbar-row{
+  height: 68px !important;
 }
 
-.nxDayTime{
-    border-right: 1px solid rgba(0,0,0,0.07); 
-}
-
-
-.nxDayTime:last-child{
-  border-right: none !important;
-}
-
-.nxTimeString{
-  font-size: 20px;
-  color:#e40046;
-  font-weight: bolder;
-}
 .nxCard{
     height:200px;    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -275,7 +302,7 @@ min-height: 20px !important;
   border:1px solid #813772; 
 }
 .cardContent{
-    color:#e40046;
+    color:#00a65a;
     font-size:16px;
     padding: 10px;
 }
@@ -297,6 +324,31 @@ md-sidenav {
  }
 
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  
+      .navbar{
+           min-height: 25px !important
+        }
+
+    }
+
+    @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+      .navbar{
+           min-height: 25px !important
+        }
+
+    }
+
 
 .md-sidenav-content{
   overflow: auto !important;
@@ -308,10 +360,15 @@ md-sidenav {
 .child .fa-calendar, 
 .child .fa-film, 
 .child .fa-id-card{
-  color:#e40046;
+  color:#fff;
   font-size: 15px;
   transition: 2s;
+      padding: 5px 5px;
+   
+    background-color: #e40046;
 } 
+
+
 
 ul li a span i.fa-envelope,
 ul li a span i.fa-heart,
@@ -319,7 +376,7 @@ ul li a span i.fa-users,
 ul li a span i.fa-calendar,
 ul li a span i.fa-film,
 ul li a span i.fa-id-card{
-  transform: scale(1);
+  transform: scale(1.5);
   transition: 5s;
 } 
 
@@ -330,13 +387,13 @@ ul li a.active span i.fa-users,
 ul li a.active span i.fa-calendar,
 ul li a.active span i.fa-film,
 ul li a.active span i.fa-id-card{
-  transform: scale(1.5);
+  color:#fff;
 } 
 
 ul{
     margin:0px;
     padding: 0px;
-    margin-bottom: 0px !important;
+    margin-bottom: 5px !important;
 }
 
 ul li{
@@ -344,8 +401,11 @@ ul li{
     /*padding: 10px;*/
     float: left;
     list-style-type: none;
-    height: 100%;
-    border-right: 4px solid rgba(0,0,0,0.07);
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+ul li:first-child {
+ 
+ border-left: 1px solid rgba(0,0,0,0.2);;
 }
 
 ul li a {
@@ -354,26 +414,26 @@ ul li a {
     text-align: center;
     padding: 0 16px;
     text-decoration: none !important;
-    font-size: 20px;
-    height: 100%;
+    font-size: 16px !important;
+    font-weight: bold !important;
     transition: transform 1s;
     font-family: 'PT Sans Narrow', sans-serif !important;
-    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
     letter-spacing: 1px;
     
 }
 
 
+
 @media only screen 
   and (max-width: 837px) {
   
-    .menu {
+    .menu-container {
        display: none !important;
     }
 }
 
 ul li a:focus { outline: 0; }
-
 
 a.active{
   text-decoration:none;
@@ -396,6 +456,8 @@ a.active{
 
 .sidenav-menu .child{
     margin:0;
+    background-color: #e40046;
+    margin:0 auto;
 }
 .sidenav-menu .child a{ 
     position: relative;
@@ -407,11 +469,13 @@ a.active{
 }
 .sidenav-menu .child i:hover{ 
     text-decoration: none;
-    transform: scale(1.50);
+    /*transform: scale(1.2);*/
 }
 
 .sidenav-menu .child i.active{
-  transform: scale(1.50);
+  /*transform: scale(1.2);*/
+  /*color:#e40046;*/
+  background:rgba(0,0,0,0.2) !important;
 }
 
 .sideMenu{
@@ -419,24 +483,13 @@ a.active{
     height: 50%;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 5px;
 }
 
-.menu{
+.menu-container{
     display: flex;
-    align-items:baseline;
     flex-direction: row-reverse;
 }
-.dotted {
-  padding: 2.25em 1.6875em;
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  background-size: 3px 3px;
-  }
+
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       min-width: 100%;
@@ -506,9 +559,13 @@ a.active{
 {
   background: #ffffff !important;
     border-radius: 50% !important;
-    height: 6% !important;
+    height: 7% !important;
     width: 20% !important;
     margin: 0 auto !important;
     color:#e40046 !important;
-    opacity: 1 !important;
+}
+
+
+grey-border{
+  color:1px solid #565656 !important;
 }

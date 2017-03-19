@@ -72,24 +72,24 @@ export class HomeComponent {
 
   }
 
-  ngAfterViewInit()
-  {
-    this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200)
-  }
+  // ngAfterViewInit()
+  // {
+  //   this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200)
+  // }
 
-  printLetterByLetter(destination:ElementRef, message:string, speed:number){
-    let i = 0;
+  // printLetterByLetter(destination:ElementRef, message:string, speed:number){
+  //   let i = 0;
     
-    let interval = setInterval(()=>{
+  //   let interval = setInterval(()=>{
       
-        destination.nativeElement.innerHTML += message.charAt(i);
-        i++;
-        if (i > message.length){
-            this.weddingEleHeight=destination.nativeElement.offsetHeight;
-            destination.nativeElement.innerHTML="";
-            this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200);
-            clearInterval(interval);
-        }
-    }, speed);
-  }
+  //       destination.nativeElement.innerHTML += message.charAt(i);
+  //       i++;
+  //       if (i > message.length){
+  //           this.weddingEleHeight=destination.nativeElement.offsetHeight;
+  //           destination.nativeElement.innerHTML="";
+  //           this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200);
+  //           clearInterval(interval);
+  //       }
+  //   }, speed);
+  // }
 }
