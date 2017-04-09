@@ -10,7 +10,7 @@ import {EngagementComponent} from './engagementModule/engagement.component';
 
 
 const routes: Routes = [
- { path: '', redirectTo: 'couple', pathMatch: 'full'},
+ { path: '', redirectTo: 'home', pathMatch: 'full'},
   {
         path: "home",
         component: HomeComponent

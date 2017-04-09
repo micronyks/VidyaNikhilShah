@@ -1,14 +1,44 @@
-:host{
-  
-    /*background:url('../public/images/hearts.png');
+:host {
+  /*background:url('../public/images/hearts.png');
     background-size:     cover;               
     background-repeat:repeat;
     background-position: center center;  */
-    display:block;
-    width: 100%;
-    left:0;
+  display: block;
+  width: 100%;
+  left: 0;
 }
 
 .sebm-google-map-container {
-  height: 350px;
+  height: 260px;
 }
+
+.nxContactTitle {
+  color: #DAA520;
+  font-weight: bolder;
+  font-size: 4em !important;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Clicker Script', cursive !important; 
+}
+
+.contactcard {
+  height: 150px;
+  width: 50%;
+}
+
+.contactcardcontent {
+  font-size: 20px;
+  color: #e40046;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .nxContactTitle {
+    font-size: 2.4em !important;
+  }
+  .contactcard {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}

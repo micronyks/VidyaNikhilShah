@@ -1,204 +1,212 @@
-:host{
+:host {
     /*background:url('../public/images/hearts.png');
     background-size:     cover;               
     background-repeat:repeat;
     background-position: center center;  */
-    display:block;
+    display: block;
     width: 100%;
-    height:100%;
-    left:0;
+    height: 100%;
+    left: 0;
 }
 
-.couple-container{
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 32%;
+}
+
+.couple-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    height: 35%;
 }
 
-@media ( max-width: 800px ) {
-  .couple-container { 
-      
-      flex-direction: column; align-items: center; 
-      height: fit-content !important;
-    }
-
-    
+.couple {
+    border-radius: 50% !important;
 }
 
-.couplebackground{
-    background:url('../public/images/couplebackground.jpg');
-    background-size:contain;               
-    background-repeat:no-repeat;
+.nariyel {
+    background: url('../public/images/nariyel.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    
 }
 
+.tabla {
+    background: url('../public/images/tabla.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.band {
+    background: url('../public/images/band.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+.knot {
+    background: url('../public/images/knot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-.couple-info{
+.hastmelap {
+    background: url('../public/images/hastmelap.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.doli {
+    background: url('../public/images/doli.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kalash {
+    background: url('../public/images/kalash.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    .couple-container {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content !important;
+    }
+    .flex-container {
+        height: fit-content !important;
+    }
+    .otherimg {
+        width: 200px;
+    }
+}
+
+.couplebackground {
+    background: url('../public/images/hastmelap.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.couple-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-            width:200px;
-            height: 200px;
-        }
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-      .couple{
-            width:200px;
-            height: 250px;
-            border-radius: 50%;
-        }
-        .couple-info{
-            width:250px;
-            height: 250px;
-            border-radius: 50%;
-        }
-        .theName{
-            font-size: 60px !important;
-        
-        }
-        .thesurname{
-            font-size: 40px;
-            
-        }
-}
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-      .couple{
-            width:200px;
-            height: 250px;
-            border-radius: 50%;
-        }
-        .couple-info{
-            width:250px;
-            height: 250px;
-            border-radius: 50%;
-        }
-        .theName{
-            font-size: 60px !important;
-         }
-        .thesurname{
-            font-size: 40px;
-            
-        }
-}
-
-.couple{
+    width: 200px;
     height: 200px;
-    border-radius: 50%;
 }
 
+.otherimg {
+    height: 140px;
+}
 
-.theCoupleTitle{
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .couple-info {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .theName {
+        font-size: 60px !important;
+    }
+    .thesurname {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .couple {
+        width: 200px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .couple-info {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .theName {
+        font-size: 60px !important;
+    }
+    .thesurname {
+        font-size: 40px;
+    }
+}
+
+.theCoupleTitle {
     font-size: 30px;
-    color:#fff;
-    
+    color: #fff;
 }
 
-.theName{
+.theName {
     font-size: 60px;
-    color:#fff;
-    font-family: 'Fredericka the Great', cursive;
-    font-family: 'Yanone Kaffeesatz', sans-serif !important;
-    letter-spacing: 2px;
-    
+    color: #e40046;
+    /*font-family: 'Fredericka the Great', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;*/
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: bolder;
+    letter-spacing: -6px;
 }
-.thesurname{
+
+.thesurname {
     font-size: 40px;
     letter-spacing: 2px;
-    color:#fff;
-    font-family: 'Fredericka the Great', cursive;
-    font-family: 'Yanone Kaffeesatz', sans-serif !important;
-    
+    color: #e40046;
+    font-weight: bolder;
+    /*font-family: 'Fredericka the Great', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;*/
+    font-family: 'Raleway', sans-serif !important;
+    letter-spacing: -4px;
 }
 
-.theDesignation{
+.theDesignation {
     font-weight: bold;
     font-size: 25px;
 }
-.heart{
+
+.heart {
     height: initial;
     width: initial;
     opacity: 0.8;
 }
 
-.heart i.fa-heartbeat{
-   font-size:100px;
-   color:#e40046;
-   font-weight: bolder;
-  
+.heart i.fa-heartbeat {
+    font-size: 100px;
+    color: #e40046;
+    font-weight: bolder;
 }
-
-
-
-
-.nikhilpic{
-    background-image: url("./public/images/16.jpg");
-    background-repeat: no-repeat;
-    background-position: 44% 12%;
-    z-index: 10;
-}
-
-.vidyapic{
-     background-image: url("./public/images/51.jpg");
-    background-repeat: no-repeat;
-    background-position: 73% 32%;
-    z-index: 10;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .coupleCard {
-        transition: 2s;
+    transition: 2s;
 }
 
-.nxCardInformation{
+.nxCardInformation {
     padding: 2px 16px;
     width: inherit;
-    background:rgba(0,0,0,0.2);
-    color:#00a65a
+    background: rgba(0, 0, 0, 0.2);
+    color: #00a65a
 }
 
-.imgcontainer{
-  height: 300px;
-  width:inherit;
+.imgcontainer {
+    height: 300px;
+    width: inherit;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.couplecard a{
+.couplecard a {
     font-size: 20px;
 }
 
@@ -206,15 +214,29 @@ img {
     border-radius: 5px 5px 0 0;
 }
 
-.coupleImg{
-  width: 100%;
+.coupleImg {
+    width: 100%;
     /* overflow: hidden; */
     height: inherit;
 }
 
-.coupleImg:hover{
+.coupleImg:hover {
     width: 100%;
     height: inherit;
     border-radius: 0px;
 }
 
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .couple-container {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content !important;
+    }
+    .flex-container {
+        height: fit-content !important;
+        flex-direction: column;
+    }
+    .otherimg {
+        width: 200px;
+    }
+}

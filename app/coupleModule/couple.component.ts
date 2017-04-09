@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation, HostListener } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {
   OnInit, HostBinding,
@@ -6,8 +6,10 @@ import {
   style, state, keyframes
 } from '@angular/core';
 import { NxModalComponent } from '../NxModalModule/nxModal.component';
+import { SharedService } from '../sharedModule/shared.service';
 @Component({
   moduleId: module.id,
+  encapsulation: ViewEncapsulation.None,
   //selector: 'home',
   styleUrls: ['couple.component.css'],
   templateUrl: 'couple.component.html',
@@ -36,14 +38,13 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
         }),
         animate('3s ease')
       ]),
-       transition('*<=>*', [
-         animate(3000, keyframes([
+      transition('*<=>*', [
+        animate(3000, keyframes([
           style({ transform: 'scale(0.10)', offset: 0.30 }),
-          // style({ transform: 'scale(0.10)', offset: 0.80 }),
           style({ transform: 'scale(1.5)', offset: 0.90 }),
         ]))
       ]),
-     ]),
+    ]),
     trigger('nikhilpicanimation', [
       transition('void=>*', [
         style({
@@ -52,15 +53,14 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
         }),
         animate('5s ease')
       ]),
-       transition('*<=>*', [
-         animate(3000, keyframes([
+      transition('*<=>*', [
+        animate(3000, keyframes([
           style({ left: '140px', offset: 0.30 }),
-          // style({ left: '85px', offset: 0.80 }),
-          style({ left: '40px', offset: 0.90 }),
+          style({ left: '60px', offset: 0.90 }),
         ]))
       ]),
-     ]),
-     trigger('vidyapicanimation', [
+    ]),
+    trigger('vidyapicanimation', [
       transition('void=>*', [
         style({
           opacity: 1,
@@ -68,15 +68,15 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
         }),
         animate('5s ease')
       ]),
-       transition('*<=>*', [
-         animate(3000, keyframes([
+      transition('*<=>*', [
+        animate(3000, keyframes([
           style({ right: '140px', offset: 0.30 }),
           // style({ right: '85px', offset: 0.80 }),
-          style({ right: '40px', offset:  0.90}),
+          style({ right: '60px', offset: 0.90 }),
         ]))
       ]),
-     ]),
-     trigger('nikhilinfoanimation', [
+    ]),
+    trigger('nikhilinfoanimation', [
       transition('void=>*', [
         style({
           opacity: 1,
@@ -90,8 +90,8 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
       //     style({ top: '150px', offset: 0.99 }),
       //   ]))
       // ]),
-     ]),
-     trigger('vidyainfoanimation', [
+    ]),
+    trigger('vidyainfoanimation', [
       transition('void=>*', [
         style({
           opacity: 1,
@@ -105,7 +105,7 @@ import { NxModalComponent } from '../NxModalModule/nxModal.component';
       //     style({ bottom: '150px', offset: 0.99 }),
       //   ]))
       // ]),
-     ]),
+    ]),
   ],
 
 })
@@ -116,8 +116,7 @@ export class CoupleComponent {
   images: any;
   messages: any;
   heartState: boolean = true;
-
-
+  deviceWidth: number;
   nikhilimgpath: string = "./public/images/2.jpg";
   vidyaimgpath: string = "./public/images/vd.jpg";
   @ViewChild(NxModalComponent) public readonly modal: NxModalComponent;
@@ -125,12 +124,22 @@ export class CoupleComponent {
   @HostBinding('@routeAnimation') get routeAnimation() {
     return true;
   }
-  constructor(private router: Router) {
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    console.log(event.target.innerWidth);
+    this.deviceWidth = event.target.innerWidth;
+  }
 
-    setInterval(() => {
-      this.heartState = !this.heartState;
-    }, 3000)
+  constructor(private router: Router, private ss: SharedService) {
 
+
+    this.deviceWidth = window.innerWidth;
+    if (!(this.deviceWidth <= 1024)) {
+      console.log('Firining');
+      setInterval(() => {
+        this.heartState = !this.heartState;
+      }, 3000);
+    }
     this.pics =
       [
 
@@ -149,6 +158,14 @@ export class CoupleComponent {
       ]
 
 
+  }
+
+  ngOnInit() {
+    this.ss.hideLoader();
+  }
+
+  ngDestroy() {
+    this.ss.showLoader();
   }
 
   redirectToEvents() {

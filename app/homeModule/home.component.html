@@ -1,34 +1,86 @@
-<div class="col-xs-12 nxHeight">
-    <div class="col-xs-12 nxHeight">
-        <div class="col-xs-12 nxHeight">
-            <div class="home-flex-container">
-                <div class="mrgText1 text-center">Nikhil <span class="weds">Weds</span> Vidya
+<div class="nxHeight" [ngClass]="{'col-xs-12':!(deviceWidth>319 && deviceWidth<568)}">
+    <div class="nxHeight" [ngClass]="{'col-xs-12':!(deviceWidth>319 && deviceWidth<568)}">
+        <div class="nxHeight" [ngClass]="{'col-xs-12':!(deviceWidth>319 && deviceWidth<568)}">
+            <div class="home-flex-container ">
+                <div class="mrgText1 text-center">
+                    <span style="color:#e40046">N</span>
+                    <span style="color:#4A96AD">i</span>
+                    <span style="color:#e40046">k</span>
+                    <span style="color:#4A96AD">h</span>
+                    <span style="color:#e40046">i</span>
+                    <span style="color:#4A96AD">l</span>
+                    <span class="weds"> &nbsp;&nbsp;Weds</span>
+                    <span style="color:#4A96AD">V</span>
+                    <span style="color:#e40046">i</span>
+                    <span style="color:#4A96AD">d</span>
+                    <span style="color:#e40046">y</span>
+                    <span style="color:#4A96AD">a</span>
+
                     <!--<div class="mrgText1 ">Nikhil</div>
                         <div class="mrgText1 text-center"> Weds</div>
                         <div class="mrgText1 text-center">Vidya</div>-->
                 </div>
-                <div class="mrgText2 text-center">We're engaged and getting married</div>
-                <div class="mrgText3 text-center">Save the date</div>
-                <div class="mrgText4 text-center">30<sup>th</sup> March 2017</div>
+                <div class="col-xs-12 home-inner-flex-container nxHeight">
+                    <div class="col-sm-2 col-xs-12 nxHeight nxBoxShadow nikhilpic couple"></div>
+                    <div class="col-sm-8 col-xs-12 nxHeight">
+                        <div class="mrgText2 text-center">We're engaged & getting married</div>
+                        <div class="mrgText3 text-center">Save the date</div>
+                        <div class="mrgText4 text-center">
+                            <span style="color:#e40046">W</span>
+                            <span style="color:#4A96AD">E</span>
+                            <span style="color:#e40046">D</span>
+                            <span style="color:#4A96AD">N</span>
+                            <span style="color:#e40046">E</span>
+                            <span style="color:#4A96AD">S</span>
+                            <span style="color:#e40046">D</span>
+                            <span style="color:#4A96AD">A</span>
+                            <span style="color:#e40046">Y</span>
+                        </div>
+                        <div class="mrgText5 text-center">
+                            <span style="color:#4A96AD">2</span>
+                            <span style="color:#e40046">8</span>
+                            <span style="color:#4A96AD"><sup>t</sup></span>
+                            <span style="color:#e40046"><sup>h</sup></span>
+                            <span style="color:#4A96AD">-</span>
+                            <span style="color:#e40046">J</span>
+                            <span style="color:#4A96AD">u</span>
+                            <span style="color:#e40046">n</span>
+                            <span style="color:#4A96AD">e</span>
+                            <span style="color:#e40046">-</span>
+                            <span style="color:#4A96AD">2</span>
+                            <span style="color:#e40046">0</span>
+                            <span style="color:#4A96AD">1</span>
+                            <span style="color:#e40046">7</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-12 nxHeight nxBoxShadow vidyapic couple"></div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-12 time-flex-container">
-                <div class="text-center col-xs-3 nxDayTime col-sm-2 ">
+            <div class="time-flex-container">
+                <div class="text-center col-xs-3 nxDayTime col-sm-2">
                     <span class="nxTime">{{days}}</span>
                     <span class="nxTimeString">Days</span>
                 </div>
                 <div class="text-center nxDayTime col-xs-3 col-sm-2">
-                    <div class="nxTime">{{hours}}</div>
+                    <div class="nxTime" style="color:#4A96AD">{{hours}}</div>
                     <div class="nxTimeString">Hours</div>
                 </div>
                 <div class="text-center nxDayTime col-xs-3 col-sm-2">
-                    <span class="nxTime">{{minutes}}</span>
+                    <span class="nxTime" style="color:#4A96AD">{{minutes}}</span>
                     <span class="nxTimeString">Minutes</span>
                 </div>
                 <div class="text-center nxDayTime col-xs-3 col-sm-2">
+
                     <span class="nxTime" [@time]="triggerSecond">{{seconds}}</span>
                     <span class="nxTimeString">Seconds</span>
+
                 </div>
+                <!--<md-progress-circle class="col-xs-7" style="height:50px" mode="determinate" value="+{{(seconds*100)/60}}" [attr.aria-valuemax]="max">
+                    <span class="ab">{{seconds}}</span>
+                    <span>Seconds</span>
+                </md-progress-circle>-->
             </div>
         </div>
     </div>
 </div>
+<nxModal [data]="data" [showWhat]="what" *ngIf="showModal"></nxModal>

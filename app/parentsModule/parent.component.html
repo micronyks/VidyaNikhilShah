@@ -1,7 +1,7 @@
 <div class="col-xs-12 nxHeight">
     <div class="col-xs-12 nxHeight">
-        <div class="text-center">
-            <h4 class="nxTitle">Groom's Family</h4>
+        <div class="text-center nxTitle">
+            Groom's Family
         </div>
 
         <div class="nikhilfamily-container">
@@ -10,73 +10,81 @@
                 <h5 class="text-center theDesignation"> Family</h5>
             </div>-->
             <div class="text-center membercontainer">
+                <div class="relation">Mother</div>
                 <div class="madhupic nxBoxShadow familypic col-xs-12"></div>
-                <div class="familyName"> <span class="relation">Mother</span>
-                    <bR><span class="name"><span class="title">Mrs.</span> Madhu</span>
-                </div>
+                <div class="name"><span class="title">Smt.</span></div>
+                <div class="familyName">Madhu</div> 
+                <div (click)="show(paretsTestimony)" class="myFamily">Invitation</div>
             </div>
             <div class="text-center membercontainer">
+                <div class="relation">Father</div>
                 <div class="familypic col-xs-12 rameshpic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation"> Father</span>
-                    <bR><span class="name"><span class="title">Late Mr.</span> Ramesh</span>
-                </div>
+                <div class="name"><span class="title">Late Shri.</span></div>
+                <div class="familyName">Rameshchandra</div>
+                <div (click)="show(paretsTestimony)" class="myFamily">Invitation</div>
             </div>
             <div class="text-center membercontainer">
+                <div class="relation">Uncle</div>
                 <div class="familypic col-xs-12 rajupic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Uncle</span>
-                    <bR><span class="name"><span class="title">Late Mr.</span> Rajesh</span>
-                </div>
+                <div class="name"><span class="title">Late Shri.</span></div>
+                <div class="familyName">Rajesh</div>
+                <div (click)="show(rajeshTestimony)" class="myFamily">Invitation</div>
             </div>
             <div class="text-center membercontainer">
+                <div class="relation">Sister</div>
                 <div class="familypic col-xs-12  heenapic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Sister</span>
-                    <bR><span class="name"><span class="title">Mrs.</span> Heena</span>
-                </div>
+                <div class="name"><span class="title">Mrs.</span></div>
+                <div class="familyName">Heena</div>
+                <div (click)="show(heenaFamily)" class="myFamily">My Family</div>
             </div>
-
             <div class="text-center membercontainer">
+                <div class="relation">Sister</div>
                 <div class="familypic col-xs-12 reenapic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Sister</span>
-                    <bR><span class="name"><span class="title">Mrs.</span> Reena</span>
-                </div>
+                <div class="name"><span class="title">Mrs.</span></div>
+                <div class="familyName">Reena</div>
+                <div (click)="show(reenaFamily)" class="myFamily">My Family</div>
             </div>
             <div class="text-center membercontainer">
+                <div class="relation">Brother</div>
                 <div class="familypic col-xs-12 amitpic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Brother</span>
-                    <bR><span class="name"><span class="title">Mr.</span> Amit</span>
-                </div>
+                <div class="name"><span class="title">Mr.</span></div>
+                <div class="familyName">Amit</div>
+                <div (click)="show(amitFamily)" class="myFamily">My Family</div>
             </div>
             <div class="text-center membercontainer">
+                <div class="relation">Sister</div>
                 <div class="familypic col-xs-12 monikapic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Sister</span>
-                    <bR><span class="name"><span class="title">Mrs.</span> Monika</span>
-                </div>
+                <div class="name"><span class="title">Mrs.</span></div>
+                <div class="familyName">Monika</div>
+                <div (click)="show(monikaFamily)" class="myFamily">My Family</div>
             </div>
         </div>
 
-        <div class="text-center">
-            <h4 class="nxTitle">Bride's Family</h4>
+        <div class="text-center nxTitle">
+            Bride's Family
         </div>
         <div class="col-xs-12 vidyafamily-container">
-
             <div class="text-center membercontainer">
+                <div class="relation">Mother</div>
                 <div class="familypic col-xs-12 santhapic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Mother</span>
-                    <bR><span class="name"><span class="title">Mrs.</span> Santha</span>
-                </div>
+                <div class="name"><span class="title">Smt.</span></div>
+                <div class="familyName">Santha</div>
+                <div (click)="show(vidyaParetsInvitation)" class="myFamily">Invitation</div>
             </div>
             <div class="text-center membercontainer">
+                <div class="relation">Father</div>
                 <div class="familypic col-xs-12 prabhakaranpic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Father</span>
-                    <bR><span class="name"><span class="title">Mr.</span> Prabhakaran</span>
-                </div>
+                <div class="name"><span class="title">Shri.</span></div>
+                <div class="familyName">Prabhakaran</div>
+                <div (click)="show(vidyaParetsInvitation)" class="myFamily">Invitation</div>
             </div>
 
             <div class="text-center membercontainer">
+                <div class="relation">Brother</div>
                 <div class="familypic col-xs-12 vinitpic nxBoxShadow"></div>
-                <div class="familyName"><span class="relation">Brother</span>
-                    <bR><span class="name"><span class="title">Mr.</span> Vineet</span>
-                </div>
+                <div class="name"><span class="title">Mr.</span></div>
+                <div class="familyName">Vineet</div>
+                <div (click)="show(vineetInvitation)" class="myFamily">Invitation</div>
             </div>
 
         </div>
@@ -97,5 +105,5 @@
     </div>
    -->
     </div>
-
+    <nxModal [data]="data" [showWhat]="what" *ngIf="showModal"></nxModal>
 </div>

@@ -1,11 +1,13 @@
-import { Component, ViewEncapsulation,ViewChild ,ElementRef} from '@angular/core';
+
+import { Component, ViewEncapsulation, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {
   OnInit, HostBinding, keyframes,
   trigger, transition, animate,
   style, state
 } from '@angular/core';
-
+import { NxModalComponent } from '../NxModalModule/nxModal.component';
+import { SharedService } from '../sharedModule/shared.service';
 
 @Component({
   moduleId: module.id,
@@ -19,8 +21,22 @@ import {
       }
       `
   ],
-
   animations: [
+    trigger('routeAnimation', [
+      transition(':enter', [
+        style({
+          opacity: 0,
+          transform: 'scale(1.5)'
+        }),
+        animate('1s ease-in')
+      ]),
+      transition(':leave', [
+        animate('1s ease-out', style({
+          opacity: 0,
+          transform: 'scale(1.5)'
+        }))
+      ])
+    ]),
     trigger('time', [
       transition("* => *",
         animate(1000, keyframes([
@@ -32,10 +48,22 @@ import {
   ]
 })
 export class HomeComponent {
-  @ViewChild('weddingEle') weddingEle:ElementRef;
-  weddingStringTxt:string="We're engaged and getting married";
-  weddingEleHeight:number;
-  CoupleNameStr:boolean;
+  @ViewChild(NxModalComponent) public readonly modal: NxModalComponent;
+  deviceWidth: number;
+
+  @HostBinding('@routeAnimation') get routeAnimation() {
+    return true;
+  }
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    console.log(event.target.innerWidth);
+    this.deviceWidth = event.target.innerWidth;
+  }
+
+  @ViewChild('weddingEle') weddingEle: ElementRef;
+  weddingStringTxt: string = "We're engaged and getting married";
+  weddingEleHeight: number;
+  CoupleNameStr: boolean;
   time: any;
   date1: any;
   date2: any;
@@ -44,18 +72,21 @@ export class HomeComponent {
   minutes: any;
   seconds: any;
   milliseconds: any;
+  showModal: boolean = true;
+  what: string = "card";
 
-   private triggerSecond = 'zoomin';
+  private triggerSecond = 'zoomin';
   triggerAnimMin: string = 'zoomin';
 
-  constructor(private router:Router){
-     setInterval(() => {
+  constructor(private router: Router, private ss: SharedService) {
+    this.deviceWidth = window.innerWidth;
+    setInterval(() => {
       this.count()
     }, 1000)
   }
 
   count() {
-    this.date1 = new Date('2016-12-31 24:00');
+    this.date1 = new Date('2017-05-28 09:00');
     this.date2 = new Date();
 
     var diffInSeconds = Math.abs(this.date1 - this.date2) / 1000;
@@ -79,9 +110,9 @@ export class HomeComponent {
 
   // printLetterByLetter(destination:ElementRef, message:string, speed:number){
   //   let i = 0;
-    
+
   //   let interval = setInterval(()=>{
-      
+
   //       destination.nativeElement.innerHTML += message.charAt(i);
   //       i++;
   //       if (i > message.length){
@@ -92,4 +123,16 @@ export class HomeComponent {
   //       }
   //   }, speed);
   // }
+  ngAfterViewInit() {
+    console.log('this is working as of now');
+    this.modal.show();
+  }
+
+  ngOnInit() {
+    this.ss.hideLoader();
+  }
+
+  ngDestroy() {
+    this.ss.showLoader();
+  }
 }

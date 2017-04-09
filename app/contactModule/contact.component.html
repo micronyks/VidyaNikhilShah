@@ -1,44 +1,42 @@
 <div class="nxHeight20"></div>
 <div class="container col-xs-12">
-<div class=" col-xs-12">
-<div class="flex-container">
+    <div class=" col-xs-12">
+        <div class="flex-container">
 
-    <md-card class="col-sm-4 col-xs-12">
-        <md-card-title-group>
-            <md-card-title>Prabhakaran Pillai</md-card-title>
-            <md-card-subtitle>9427001423</md-card-subtitle>
-        </md-card-title-group>
-    </md-card>
+            <div class="contactcard nxBoxShadow text-center">
+                <div class="nxContactTitle col-xs-12">Shri. Prabhakaran</div>
+                <div class="contactcardcontent col-xs-12">9427001423</div>
+            </div>
 
-    
+            <div class="contactcard nxBoxShadow text-center">
+                <div class="nxContactTitle col-sm-8">Late Shri. Rameshchandra</div>
+                <div class="nxContactTitle col-sm-4">Mr. Amit</div>
+                <div class="contactcardcontent col-xs-12">989842421</div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="col-xs-12 container">
+                <h1 class="text-center nxContactTitle">
+                    Venue
+                    <br>
+                    <h4><strong>W Five Petals Hotel & Banquets, Near Chanakya Puri Bridge, Ghatlodiya,
+Ahmedabad, Gujarat 380061
+India</strong></h4>
+                </h1>
+                <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+                    <sebm-google-map-marker [latitude]="lat" [longitude]="lng">
 
-
-    <md-card class="col-sm-4 col-xs-12">
-        <md-card-title-group>
-            <md-card-title>Amit Shah</md-card-title>
-            <md-card-subtitle>989842421</md-card-subtitle>
-        </md-card-title-group>
-    </md-card>
-
-
-</div>
-<div class="flex-container">
-    <div class="col-xs-12 container">
-        <h1 class="text-center">Venue</h1>
-        <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
-            <sebm-google-map-marker [latitude]="lat" [longitude]="lng">
-          
-        <sebm-google-map-info-window>
-          <strong>W Five Petals Hotel & Banquets, Near Chanakya Puri Bridge, Ghatlodiya
+                        <sebm-google-map-info-window>
+                            <strong>Five Petals Hotel & Banquets, Near Chanakya Puri Bridge, Ghatlodiya
 Ghatlodiya
 Ahmedabad, Gujarat 380061
 India</strong>
-        </sebm-google-map-info-window>
+                        </sebm-google-map-info-window>
 
-            </sebm-google-map-marker>
-        </sebm-google-map>
+                    </sebm-google-map-marker>
+                </sebm-google-map>
+            </div>
+
+        </div>
     </div>
-
-</div>
-</div>
 </div>

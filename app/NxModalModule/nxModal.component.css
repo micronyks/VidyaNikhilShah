@@ -1,11 +1,286 @@
-:host{
-  
+:host {
     /*background:url('../public/images/hearts.png');
     background-size:     cover;               
     background-repeat:repeat;
     background-position: center center;  */
-    display:block;
+    display: block;
     width: 100%;
-    height:100%;
-    left:0;
+    height: 100%;
+    left: 0;
+}
+
+.vinithpic {
+    background-image: url("./public/images/25.jpg");
+    background-repeat: no-repeat;
+    background-position: 53.6% 26%;
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.invitationcardcontainer {}
+
+.rajeshpic {
+    background-image: url("./public/images/rk.jpg");
+    background-repeat: no-repeat;
+    background-position: 49% 18%;
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.nxTitle {
+    font-size: 3em!important;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.eventimgcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px !important;
+}
+
+.nxEventCard {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.modal-content {
+    border: 0 !important;
+}
+
+.nxCardContent {
+    color: #e40046;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+    font-family: 'Clicker Script', cursive !important;
+    /*font-family: 'Raleway', sans-serif;*/
+}
+
+img {
+    /*padding: 20px;*/
+    height: 50%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.showBr {
+    display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    .nxEventCard {
+        flex-direction: column;
+        width: 100%;
+    }
+    .event-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .nxTitle {
+        font-size: 2.8em;
+        text-align: center;
+    }
+    .eventimgcontainer {
+        /*height: 200px !important;*/
+        width: 200px !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .eventimgcontainer {
+        width: 200px !important;
+    }
+    .vinithpic, .rajeshpic {
+        width: 100%;
+    }
+    .showBr {
+        display: block;
+    }
+    .mrgText1 {
+        line-height: 20px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    img {
+        width: 50%;
+    }
+    .vinithpic, .rajeshpic {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .nxEventCard {
+        flex-direction: column;
+        width: 100%;
+    }
+    .event-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .nxTitle {
+        font-size: 3.5em;
+    }
+    .eventimgcontainer {
+        height: 200px !important;
+        width: 200px !important;
+    }
+}
+
+
+/*animation */
+
+.invitationCard {
+    background-image: url("./public/images/namecard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.invitationcardcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.mrgText1 {
+    letter-spacing: 0;
+    font-size: 8em;
+    color: #e40046;
+    font-family: 'Sacramento', cursive !important;
+    font-family: 'Clicker Script', cursive !important;
+}
+
+.weds {
+    font-size: 60px;
+    letter-spacing: 0;
+    color: #4A96AD;
+}
+
+.mrgText2 {
+    font-size: 4em;
+    color: #e40046;
+    font-family: 'Russo One', sans-serif !important;
+    font-family: 'Great Vibes', cursive !important;
+    font-family: 'Yanone Kaffeesatz', sans-serif !important;
+    font-family: 'Clicker Script', cursive !important;
+}
+
+.mrgText2-2 {
+    font-size: 3em;
+    color: #4A96AD;
+    font-weight: bold;
+    font-family: 'Clicker Script', cursive !important;
+}
+
+.mrgText3 {
+    font-size: 3em;
+    color: #4A96AD;
+    font-weight: bold;
+    font-family: 'Clicker Script', cursive !important;
+}
+
+.mrgText4 {
+    font-size: 5em;
+    color: #e40046;
+    font-family: 'Clicker Script', cursive !important;
+}
+
+.mrgText5 {
+    font-size: 2em;
+    color: #4A96AD;
+    font-weight: bold;
+    font-family: 'Clicker Script', cursive !important;
+}
+
+.mrgText6 {
+    font-size: 2em;
+    color: #4A96AD;
+    font-weight: bolder;
+    font-family: 'Clicker Script', cursive !important;
+}
+
+
+/*mobile media query */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .mrgText1 {
+        font-size: 3.6em;
+        letter-spacing: 0;
+        font-weight: bold;
+    }
+    .mrgText2 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+    .mrgText2-2 {
+        font-size: 2.7em;
+        font-weight: bold;
+    }
+    .mrgText3 {
+        font-size: 2.5em;
+    }
+    .mrgText4 {
+        font-size: 2.6em;
+        font-weight: bold;
+    }
+    .mrgText5 {
+        font-size: 2.1em;
+    }
+    .weds {
+        font-size: .5em !important;
+    }
+    .invitationcardcontainer {
+        height: fit-content;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .weds {
+        font-size: .5em !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .mrgText3 {
+        font-size: 2em !important;
+        font-weight: bold;
+    }
+    .mrgText2-2 {
+        font-size: 2.5em;
+    }
+    .mrgText5 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .mrgText1 {
+        font-size: 86px;
+    }
+    .mrgText2 {
+        font-size: 3.6em;
+    }
 }

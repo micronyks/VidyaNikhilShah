@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Nikhil Weds Vidya</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="public/css/styles.css">
-    
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Russo+One|Baloo+Bhaina|Great+Vibes|Fredericka+the+Great|Sacramento|Yanone+Kaffeesatz"" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sail" rel="stylesheet">
+
+<head>
+  <title>Nikhil Weds Vidya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="public/css/styles.css">
+
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marmelad" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Clicker+Script|Russo+One|Baloo+Bhaina|Great+Vibes|Fredericka+the+Great|Sacramento|Yanone+Kaffeesatz"
+    " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css?family=Sail " rel="stylesheet ">
     <!-- Polyfill(s) for older browsers -->
 
-     <link href="https://unpkg.com/@angular2-material/core/style/core.css" rel="stylesheet">
-    <link href="https://unpkg.com/@angular/material/core/theming/prebuilt/indigo-pink.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script>
+     <link href="https://unpkg.com/@angular2-material/core/style/core.css " rel="stylesheet ">
+    <link href="https://unpkg.com/@angular/material/core/theming/prebuilt/indigo-pink.css " rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons " rel="stylesheet ">
+    <script src="node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js "></script>
 
 
 
@@ -33,25 +35,27 @@
       <script src='lib/system.src.js'></script>-->
 
 
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js "></script>
+    <script src="node_modules/zone.js/dist/zone.js "></script>
+    <script src="node_modules/reflect-metadata/Reflect.js "></script>
+    <script src="node_modules/systemjs/dist/system.src.js "></script>
 
 
 
-    <script src="systemjs.config.js"></script>
+    <script src="systemjs.config.js "></script>
    <script>
-      System.import('app/main.js').catch(function(err){ console.error(err); });
+    System.import('app/main.js').catch(function (err) { console.error(err); });
       //System.import('app/main.js').catch(function(err){ console.error(err); });
-    </script>
+  </script>
   </head>
 
   <body>
     <my-app>
-    <div class="loadingImg" style="height:100%;width:100%">
-      </div>
-    
+      <div class="loaderContainer loaderBackground " *ngIf="ss.showingLoader ">
+  <div class="loader " [hidden]="showingLoader "></div>
+</div>
+
+
     </my-app>
   </body>
 </html>

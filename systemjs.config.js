@@ -38,13 +38,14 @@
       // '@angular2-material/toolbar': 'npm:@angular2-material/toolbar/toolbar.umd.js',
       // '@angular2-material/card': 'npm:@angular2-material/card/card.umd.js',
       // '@angular2-material/input': 'npm:@angular2-material/input/input.umd.js',
-
+      // 'jquery': 'npm:jquery/dist/jquery.min.js',
+      // 'bootstrap': 'npm:boostrap/dist/bootstrap.min.js',
       'primeng': 'npm:primeng',
       // ng2-bootstrap
       'moment': 'node_modules/moment',
       'ng2-bootstrap': 'node_modules/ng2-bootstrap',
 
-      'angular2-google-maps/core':'node_modules/angular2-google-maps/core/core.umd.js'
+      'angular2-google-maps/core': 'node_modules/angular2-google-maps/core/core.umd.js'
 
     },
     // packages tells the System loader how to load when no filename and/or no extension

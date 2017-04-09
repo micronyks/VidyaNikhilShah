@@ -1,41 +1,60 @@
-:host{
+:host {
     /*background:url('../public/images/hearts.png');
     background-size:     cover;               
     background-repeat:repeat;
     background-position: center center;  */
-    display:block;
+    display: block;
     width: 100%;
     height: 100%;
-    left:0;
+    left: 0;
 }
 
-.title{
-    font-size: 16px;
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #4A96AD;
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
-.nikhilfamily-container{
+
+.myFamily {
+    /*margin-top: 10px;*/
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: #4A96AD !important;
+    font-family: 'Raleway', sans-serif;
+}
+
+.myFamily:hover {
+    cursor: pointer;
+}
+
+.nikhilfamily-container {
     height: 40%;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-    .vidyafamily-container{
-        height: 40%;
-        display: flex;
-        flex-wrap: wrap;    
-        align-items: center;
-        justify-content: space-between;
-    }
 
-
-@media ( max-width: 767px ) {
- 
+.vidyafamily-container {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.nxTitle {
+    color: #DAA520;
+    font-weight: bolder;
+    font-size: 3.8em !important;
+    text-align: center;
+    font-family: 'Clicker Script', cursive !important;
+}
 
-.family{
-    height:50%;
+.family {
+    height: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -43,39 +62,41 @@
     border-radius: 10px;
 }
 
-.familyName{
-    font-size:16px;
+.familyName {
+    font-size: 20px;
     text-align: center;
-    width:150%;
-    margin-top:20px;
-    color:#00a65a;
-    
-
-}
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-     
-
-    }
-
-    @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-      .familyName{
-   width: 100%;
+    /*width: 150%;
+    margin-bottom: 10px;*/
+    color: #e40046;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-family: 'Clicker Script', cursive !important;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+    .membercontainer {
+        margin-top: 50px;
     }
+    .membercontainer:first-child {
+        margin-top: 5px;
+    }
+}
 
-.familypic{
-height: 120px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .nxTitle {
+        font-size: 2.8em;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .familyName {
+        width: 100%;
+    }
+}
+
+.familypic {
+    height: 120px;
+    border-radius: 50%;
 }
 
 
@@ -89,82 +110,95 @@ height: 120px;
     justify-content: center;
 }*/
 
- 
-.madhupic{
+.madhupic {
     background-image: url("./public/images/21.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 40%;
+    background-position: 50.6% 40%;
 }
-.rameshpic{
 
+.rameshpic {
+    background-image: url("./public/images/papa.jpg");
+    background-repeat: no-repeat;
+    background-position: 49% 1%;
 }
-.rajupic{
 
+.rajupic {
+    background-image: url("./public/images/rk.jpg");
+    background-repeat: no-repeat;
+    background-position: 49% 18%;
 }
-.heenapic{
+
+.heenapic {
     background-image: url("./public/images/58.jpg");
     background-repeat: no-repeat;
-    background-position: 88% 29%;
+    background-position: 88.6% 27%;
 }
 
-.reenapic{
+.reenapic {
     background-image: url("./public/images/7.jpg");
     background-repeat: no-repeat;
-    background-position: 70% 36%;
+    background-position: 70% 35%;
 }
-.amitpic{
+
+.amitpic {
     background-image: url("./public/images/16.jpg");
     background-repeat: no-repeat;
-    background-position: 16% 20%;
+    background-position: 16% 19%;
 }
-.monikapic{
+
+.monikapic {
     background-image: url("./public/images/14.jpg");
     background-repeat: no-repeat;
-    background-position:80% 30%;
+    background-position: 79% 29%;
 }
 
-.prabhakaranpic{
-background-image: url("./public/images/8.jpg");
+.prabhakaranpic {
+    background-image: url("./public/images/8.jpg");
     background-repeat: no-repeat;
-    background-position:69% 57%;
-}
-.santhapic{
-background-image: url("./public/images/23.jpg");
-    background-repeat: no-repeat;
-    background-position:92% 35%;
-}
-.vinitpic{
-background-image: url("./public/images/25.jpg");
-    background-repeat: no-repeat;
-    background-position:54% 29%;
+    background-position: 68.6% 55%;
 }
 
-.theCoupleTitle{
-    color:#fff;
+.santhapic {
+    background-image: url("./public/images/23.jpg");
+    background-repeat: no-repeat;
+    background-position: 91.6% 32%;
+}
+
+.vinitpic {
+    background-image: url("./public/images/25.jpg");
+    background-repeat: no-repeat;
+    background-position: 53.6% 26%;
+}
+
+.theCoupleTitle {
+    color: #fff;
     font-weight: bolder;
 }
 
-.theName{
-    color:#fff;
+
+/*.theName {
+    color: #fff;
     font-weight: bolder;
+}*/
+
+.theDesignation {
+    color: #fff;
 }
 
-.theDesignation{
-    color:#fff;
-}
-
-.relation{
-    font-size: 16px;
+.relation {
+    font-size: 25px;
     font-weight: bold;
-    color:#4A96AD;
+    color: #4A96AD;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Clicker Script', cursive !important;
 }
 
-.name{
-    font-size: 16px;
+.name {
+    font-size: 15px;
     font-weight: bold;
 }
 
-.heart{
+.heart {
     height: 100px;
     border-radius: 50%;
     background-image: url("./public/images/heart.jpg");
@@ -173,86 +207,71 @@ background-image: url("./public/images/25.jpg");
     background-position: -13px 6px;
 }
 
-.nikhilpic{
+.nikhilpic {
     background-image: url("./public/images/16.jpg");
     background-repeat: no-repeat;
     background-position: -268px -58px;
 }
 
-.vidyapic{
-     background-image: url("./public/images/vd.jpg");
+.vidyapic {
+    background-image: url("./public/images/vd.jpg");
     background-repeat: no-repeat;
     background-position: -505px -181px;
 }
 
-.membercontainer{
+.membercontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 9%;
+    height: 215px;
 }
 
 
 /*mobile media query */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-   {
-        .nikhilfamily-container{
-    height: fit-content;
-    flex-direction: column; 
-}
-.vidyafamily-container{
-     height: fit-content;
-    flex-direction: column; 
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .nikhilfamily-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .vidyafamily-container {
+        height: fit-content;
+        flex-direction: column;
+    }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .membercontainer {
+        width: 25%;
+    }
+}
 
-      
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .membercontainer {
+        width: 50%;
     }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-        .membercontainer{
-    
-    width: 25%;
 }
-  }
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 767px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-.membercontainer{
-    
-    width: 50%;
-}
-    }
 
 
 /*tablet media query */
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-   
- .membercontainer{
-    
-    width: 14%;
-}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .membercontainer {
+        width: 14%;
+    }
+    .nikhilfamily-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .vidyafamily-container {
+        height: fit-content;
+        flex-direction: column;
+    }
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-     
-/*
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    /*
    .prabhakaranpic, .santhapic, .vinitpic, .madhupic, .rameshpic, .rajupic, .heenapic, .reenapic, .amitpic, .monikapic{
        zoom:70%;
    }
@@ -275,12 +294,8 @@ background-image: url("./public/images/25.jpg");
    }*/
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-     /*.couple-info{
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    /*.couple-info{
         width:230%;
     }
     .familyName{
@@ -288,13 +303,8 @@ background-image: url("./public/images/25.jpg");
     }*/
 }
 
-@media only screen 
-and (min-device-width : 1024px) 
-and (max-device-width : 1366px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1)
-{
-     /*.couple-info{
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    /*.couple-info{
        
         width:235%;
        

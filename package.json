@@ -49,6 +49,7 @@
     "angular-in-memory-web-api": "~0.2.0",
     "angular2-google-maps": "^0.17.0",
     "core-js": "^2.4.1",
+    "jquery": "^3.2.1",
     "ng2-bootstrap": "^1.1.16-11",
     "primeng": "^1.1.4",
     "reflect-metadata": "^0.1.8",
@@ -57,9 +58,10 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
+    "@types/bootstrap": "^3.3.32",
     "@types/hammerjs": "^2.0.33",
     "@types/jasmine": "^2.5.36",
-    "@types/jquery": "^2.0.40",
+    "@types/jquery": "^2.0.41",
     "@types/node": "^6.0.52",
     "@types/selenium-webdriver": "^2.53.33",
     "canonical-path": "0.0.2",
