@@ -9,7 +9,7 @@ import { SharedService } from '../sharedModule/shared.service';
 @Component({
   moduleId: module.id,
   //selector: 'home',
-  //encapsulation:ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   styleUrls: ['event.component.css'],
   templateUrl: 'event.component.html',
   animations: [

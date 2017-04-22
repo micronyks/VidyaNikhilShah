@@ -42,7 +42,6 @@ export class EngagementComponent {
   constructor(private ss: SharedService) {
     this.images = [
       { 'title': '', path: '../public/images/h13.jpg' },
-      { 'title': '', path: '../public/images/h10.jpg' },
       { 'title': '', path: '../public/images/h11.jpg' },
       { 'title': '', path: '../public/images/h12.jpg' },
       { 'title': '', path: '../public/images/h2.jpg' },

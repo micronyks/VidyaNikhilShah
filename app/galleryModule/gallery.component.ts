@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {
   OnInit, HostBinding, keyframes,
@@ -11,7 +11,7 @@ import { SharedService } from '../sharedModule/shared.service';
 @Component({
   moduleId: module.id,
   selector: 'home',
-  //encapsulation:ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None,
   styleUrls: ['gallery.component.css'],
   templateUrl: 'gallery.component.html',
 })
@@ -31,7 +31,6 @@ export class GalleryComponent {
         { 'title': '', path: '../public/images/5.jpg' },
         { 'title': '', path: '../public/images/6.jpg' },
         { 'title': '', path: '../public/images/7.jpg' },
-        { 'title': '', path: '../public/images/7.jpg' },
         { 'title': '', path: '../public/images/8.jpg' },
         { 'title': '', path: '../public/images/9.jpg' },
         { 'title': '', path: '../public/images/10.jpg' },
@@ -43,7 +42,6 @@ export class GalleryComponent {
         { 'title': '', path: '../public/images/16.jpg' },
         { 'title': '', path: '../public/images/17.jpg' },
         { 'title': '', path: '../public/images/18.jpg' },
-        { 'title': '', path: '../public/images/19.jpg' },
         { 'title': '', path: '../public/images/20.jpg' },
         { 'title': '', path: '../public/images/21.jpg' },
         { 'title': '', path: '../public/images/22.jpg' },

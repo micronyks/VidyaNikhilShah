@@ -61,7 +61,6 @@ export class HomeComponent {
   }
 
   @ViewChild('weddingEle') weddingEle: ElementRef;
-  weddingStringTxt: string = "We're engaged and getting married";
   weddingEleHeight: number;
   CoupleNameStr: boolean;
   time: any;
@@ -86,7 +85,7 @@ export class HomeComponent {
   }
 
   count() {
-    this.date1 = new Date('2017-05-28 09:00');
+    this.date1 = new Date('2017-06-28 09:00');
     this.date2 = new Date();
 
     var diffInSeconds = Math.abs(this.date1 - this.date2) / 1000;

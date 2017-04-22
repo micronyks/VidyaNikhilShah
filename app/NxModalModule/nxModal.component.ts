@@ -37,14 +37,14 @@ export class NxModalComponent {
   }
 
   public hide(event: any): void {
-    if (this.el != undefined) {
-      this.el.forEach(t => {
-        t.nativeElement.childNodes.forEach(m => {
-          if (m.className = "item active")
-            m.className = "item";
-        })
-      });
-    }
+    // if (this.el != undefined) {
+    //   this.el.forEach(t => {
+    //     t.nativeElement.childNodes.forEach(m => {
+    //       if (m.className = "item active")
+    //         m.className = "item";
+    //     })
+    //   });
+    // }
     event.stopPropagation();
     this.visibleAnimate = false;
     this.selectedIndex = -1;

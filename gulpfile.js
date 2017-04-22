@@ -7,6 +7,7 @@
 // npm install --save-dev gulp-typescript
 // npm install --save-dev gulp-sourcemaps
 // npm install --save-dev gulp-imagemin
+//npm install --save-dev gulp-ruby-sass
 
 
 var gulp = require('gulp');
@@ -15,6 +16,8 @@ var imagemin = require('gulp-imagemin');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
+var sass = require('gulp-sass');
+
 var tsFiles = 'app/**/*.ts';
 var jsFiles = "dist/app";
 var staticJSDestination = "dist/public/libs";
@@ -60,10 +63,11 @@ gulp.task('compile',
 
 gulp.task('assets', function () {
     return gulp.src(['app/**/*',
-        //'node_modules/**/*',
+        'node_modules/**/*',
         'index.html',
-        //'systemjs.config.js',
-        //'tsconfig.json',
+        'systemjs.config.js',
+        'systemjs-angular-loader.js',
+        'tsconfig.json',
         '!app/**/*.ts',
         'public/**/*'
     ],
@@ -89,8 +93,18 @@ gulp.task('compress', function () {
             progressive: true
         }))
         .pipe(gulp.dest('public/images/'))
-})
+});
 
+
+gulp.task('sass', function () {
+    return gulp.src('public/scss/**/*.scss')
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(gulp.dest('public/css/'));
+});
+
+gulp.task('sass:watch', function () {
+    gulp.watch('public/scss/**/*.scss', ['sass']);
+});
 
 
 gulp.task('build', ['compile']);
