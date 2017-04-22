@@ -15,7 +15,6 @@ interface marker {
 
 export class ContactComponent {
   zoom: number = 18;
-
   lat: number = 23.071020;
   lng: number = 72.539392;
 
@@ -28,5 +27,4 @@ export class ContactComponent {
   ngDestroy() {
     this.ss.showLoader();
   }
-
 }

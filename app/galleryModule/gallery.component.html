@@ -1,16 +1,15 @@
 <div class="col-xs-12 nxHeight">
-        <div class="col-xs-12 nxHeight" style="padding-right: 0 !important">
-                <div class="nxHeight">
-                        <div *ngFor="let pic of data;let i=index" class="col-sm-2 galleryCard" (click)="modal.show(i)">
-                                <img md-card-image [src]="pic.path" class="galleryImg">
-                        </div>
-                        <!--<template ngFor let-pic [ngForOf]="data" let-i="index">
+    <div class="col-xs-12 nxHeight" style="padding-right: 0 !important">
+        <div class="nxHeight">
+            <div *ngFor="let pic of data;let i=index" class="col-sm-2 galleryCard" (click)="modal.show(i)">
+                <img md-card-image [src]="pic.path" class="galleryImg">
+            </div>
+            <!--<template ngFor let-pic [ngForOf]="data" let-i="index">
                                 <md-card class="col-md-2 galleryCard" (click)="modal.show(i)">
                                         <img md-card-image [src]="pic.path" class="galleryImg">
                                 </md-card>
                         </template>-->
-                        <nxModal [data]="data" [showWhat]="what"></nxModal>
-                </div>
+            <nxModal [data]="data" [showWhat]="what"></nxModal>
         </div>
-
+    </div>
 </div>

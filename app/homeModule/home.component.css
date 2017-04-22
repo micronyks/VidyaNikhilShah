@@ -1,258 +1,212 @@
 /*animation */
 
 :host {
-  /*background:url('../public/images/hearts.png');
+    /*background:url('../public/images/hearts.png');
     background-size:     cover;               */
-  /*background-repeat:repeat;
+    /*background-repeat:repeat;
     background-position: center center;  */
-  display: block;
-  width: 100%;
-  left: 0;
-  /*height: 100%;*/
+    display: block;
+    width: 100%;
+    left: 0;
+    /*height: 100%;*/
 }
 
 .home-flex-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 70%;
-  justify-content: space-around;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .home-inner-flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: inherit;
 }
 
 .mrgText1 {
-  font-size: 15em;
-  font-weight: 200;
-  color: #e40046;
-  font-family: 'Sacramento', cursive !important;
-  font-family: 'Clicker Script', cursive !important;
+    font-size: 15em;
+    font-weight: 200;
+    color: #e40046;
+    font-family: 'Sacramento', cursive !important;
+    font-family: 'Clicker Script', cursive !important;
 }
 
 .topMargin10 {
-  margin-top: -30px;
+    margin-top: -30px;
 }
 
 .weds {
-  font-size: 60px;
-  letter-spacing: 0;
+    font-size: 60px;
+    letter-spacing: 0;
 }
 
 .mrgText2 {
-  font-size: 4em;
-  color: #DAA520;
-  font-family: 'Russo One', sans-serif !important;
-  font-family: 'Clicker Script', cursive !important;
-  font-weight: bolder;
+    font-size: 4em;
+    color: #DAA520;
+    font-family: 'Russo One', sans-serif !important;
+    font-family: 'Clicker Script', cursive !important;
+    font-weight: bolder;
 }
 
 .mrgText3 {
-  font-size: 3em;
-  color: #DAA520;
-  font-weight: bolder;
-  font-family: 'Russo One', sans-serif !important;
-  font-family: 'Baloo Bhaina', cursive !important;
-  font-family: 'Clicker Script', cursive !important;
+    font-size: 3em;
+    color: #DAA520;
+    font-weight: bolder;
+    font-family: 'Russo One', sans-serif !important;
+    font-family: 'Baloo Bhaina', cursive !important;
+    font-family: 'Clicker Script', cursive !important;
 }
 
 .mrgText4 {
-  font-size: 5em;
-  color: #4A96AD;
-  font-family: 'Baloo Bhaina', cursive !important;
-  font-family: 'Clicker Script', cursive !important;
-  font-weight: bold;
+    font-size: 5em;
+    color: #4A96AD;
+    font-family: 'Baloo Bhaina', cursive !important;
+    font-family: 'Clicker Script', cursive !important;
+    font-weight: bold;
 }
 
 .mrgText5 {
-  font-size: 5em;
-  color: #4A96AD;
-  font-family: 'Baloo Bhaina', cursive !important;
-  font-family: 'Clicker Script', cursive !important;
-  font-weight: bold;
+    font-size: 5em;
+    color: #4A96AD;
+    font-family: 'Baloo Bhaina', cursive !important;
+    font-family: 'Clicker Script', cursive !important;
+    font-weight: bold;
 }
 
 .namecard {
-  background: url('../public/images/namecard.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+    background: url('../public/images/namecard.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-
-
-/*.homepic:after {
-content: "";
-position: absolute;
-display: block;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.2) linear-gradient(to top, rgba(0, 0, 0, 0.2) 0px, rgba(0, 0, 0, 0.2) 100%) repeat 0 0;
-/*background:rgba(0,0,0,0.2);*/
-
-
-/*z-index: 1;*/
-
-
-/*}*/
-
-
-/*@keyframes move{
-0%{
- transform: scale(1) rotate(0deg);
-}
-  100%{
-   transform: scale(2) rotate(0.1deg);
-
-  }
-
-}*/
 
 .wedscontainer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .time-flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
 }
 
 .nxTime {
-  font-weight: bolder;
-  color: #e40046;
-  font-size: 4em;
-  font-family: 'Fredericka the Great', cursive !important;
-  /*font-family: 'Russo One', sans-serif !important;
+    font-weight: bolder;
+    color: #e40046;
+    font-size: 4em;
+    font-family: 'Fredericka the Great', cursive !important;
+    /*font-family: 'Russo One', sans-serif !important;
   font-family: 'Clicker Script', cursive !important;*/
 }
 
 .nxDayTime {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 50%;
-  border: 5px solid #e40046;
-  height: 140px;
-  width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    border: 5px solid #e40046;
+    height: 140px;
+    width: 140px;
 }
 
 .nxTimeString {
-  font-size: 3em;
-  color: #e40046;
-  font-weight: bolder;
-  font-family: 'Clicker Script', cursive !important;
+    font-size: 3em;
+    color: #e40046;
+    font-weight: bolder;
+    font-family: 'Clicker Script', cursive !important;
 }
-
-
-/*.dotted {
-  /*padding: 2.25em 1.6875em;*/
-
-
-/*background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  background-size: 3px 3px;
-  height: fit-content !important;
-  }
-  */
 
 
 /*mobile media query */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
-  .remainingTime {
-    width: 100%;
-  }
-  .mrgText1 {
-    font-size: 5em;
-    letter-spacing: 0;
-    font-weight: 900;
-  }
-  .mrgText2 {
-    font-size: 2.8em;
-  }
-  .mrgText3 {
-    font-size: 3em;
-  }
-  .mrgText4 {
-    font-size: 4em;
-    letter-spacing: -1px;
-    font-weight: bold;
-  }
-  .mrgText5 {
-    font-size: 4em;
-    letter-spacing: -1px;
-    font-weight: bold;
-  }
-  .nxTime {
-    font-size: 3em;
-    height: 33px;
-  }
-  .nxTimeString {
-    font-size: 1.4em;
-  }
-  .weds {
-    font-size: .5em !important;
-  }
-  .home-flex-container {
-    height: fit-content;
-  }
-  .home-inner-flex-container {
-    flex-direction: column;
-  }
+    .remainingTime {
+        width: 100%;
+    }
+    .mrgText1 {
+        font-size: 5em;
+        letter-spacing: 0;
+        font-weight: 900;
+    }
+    .mrgText2 {
+        font-size: 2.8em;
+    }
+    .mrgText3 {
+        font-size: 3em;
+    }
+    .mrgText4 {
+        font-size: 4em;
+        letter-spacing: -1px;
+        font-weight: bold;
+    }
+    .mrgText5 {
+        font-size: 4em;
+        letter-spacing: -1px;
+        font-weight: bold;
+    }
+    .nxTime {
+        font-size: 3em;
+        height: 33px;
+    }
+    .nxTimeString {
+        font-size: 1.4em;
+    }
+    .weds {
+        font-size: .5em !important;
+    }
+    .home-flex-container {
+        height: fit-content;
+    }
+    .home-inner-flex-container {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  .weds {
-    font-size: .5em !important;
-  }
+    .weds {
+        font-size: .5em !important;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .time-flex-container {
-    height: 60%;
-  }
-  .nxDayTime {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px
-  }
-  .nxTimeString {
-    font-size: 2.5em;
-  }
+    .time-flex-container {
+        height: 60%;
+    }
+    .nxDayTime {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px
+    }
+    .nxTimeString {
+        font-size: 2.5em;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .nxDayTime {
-    border: 5px solid #e40046;
-    height: 80px;
-    width: 25%;
-  }
-  .nxTimeString {
-    font-size: 1.8em;
-  }
+    .nxDayTime {
+        border: 5px solid #e40046;
+        height: 80px;
+        width: 25%;
+    }
+    .nxTimeString {
+        font-size: 1.8em;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .mrgText1 {
-    font-size: 86px;
-  }
-  .mrgText2 {
-    font-size: 3.6em;
-  }
+    .mrgText1 {
+        font-size: 86px;
+    }
+    .mrgText2 {
+        font-size: 3.6em;
+    }
 }

@@ -1,4 +1,3 @@
-
 import { Component, ViewEncapsulation, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import {
@@ -15,12 +14,6 @@ import { SharedService } from '../sharedModule/shared.service';
   //encapsulation:ViewEncapsulation.Native,
   styleUrls: ['home.component.css'],
   templateUrl: 'home.component.html',
-  styles: [`
-      p{
-        text-align:"center";
-      }
-      `
-  ],
   animations: [
     trigger('routeAnimation', [
       transition(':enter', [
@@ -50,7 +43,6 @@ import { SharedService } from '../sharedModule/shared.service';
 export class HomeComponent {
   @ViewChild(NxModalComponent) public readonly modal: NxModalComponent;
   deviceWidth: number;
-
   @HostBinding('@routeAnimation') get routeAnimation() {
     return true;
   }
@@ -59,7 +51,6 @@ export class HomeComponent {
     console.log(event.target.innerWidth);
     this.deviceWidth = event.target.innerWidth;
   }
-
   @ViewChild('weddingEle') weddingEle: ElementRef;
   weddingEleHeight: number;
   CoupleNameStr: boolean;
@@ -87,7 +78,6 @@ export class HomeComponent {
   count() {
     this.date1 = new Date('2017-06-28 09:00');
     this.date2 = new Date();
-
     var diffInSeconds = Math.abs(this.date1 - this.date2) / 1000;
     this.days = Math.floor(diffInSeconds / 60 / 60 / 24);
     this.hours = Math.floor(diffInSeconds / 60 / 60 % 24);
@@ -101,27 +91,6 @@ export class HomeComponent {
     this.seconds = ('0' + this.seconds).slice(-2);
 
   }
-
-  // ngAfterViewInit()
-  // {
-  //   this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200)
-  // }
-
-  // printLetterByLetter(destination:ElementRef, message:string, speed:number){
-  //   let i = 0;
-
-  //   let interval = setInterval(()=>{
-
-  //       destination.nativeElement.innerHTML += message.charAt(i);
-  //       i++;
-  //       if (i > message.length){
-  //           this.weddingEleHeight=destination.nativeElement.offsetHeight;
-  //           destination.nativeElement.innerHTML="";
-  //           this.printLetterByLetter(this.weddingEle, this.weddingStringTxt, 200);
-  //           clearInterval(interval);
-  //       }
-  //   }, speed);
-  // }
   ngAfterViewInit() {
     console.log('this is working as of now');
     this.modal.show();

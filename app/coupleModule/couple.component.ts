@@ -110,9 +110,6 @@ import { SharedService } from '../sharedModule/shared.service';
 
 })
 export class CoupleComponent {
-
-
-
   images: any;
   messages: any;
   heartState: boolean = true;
@@ -131,8 +128,6 @@ export class CoupleComponent {
   }
 
   constructor(private router: Router, private ss: SharedService) {
-
-
     this.deviceWidth = window.innerWidth;
     if (!(this.deviceWidth <= 1024)) {
       console.log('Firining');
@@ -156,8 +151,6 @@ export class CoupleComponent {
         { 'title': '', path: '../public/images/vns11.jpg' },
         { 'title': '', path: '../public/images/vns12.jpg' },
       ]
-
-
   }
 
   ngOnInit() {
@@ -167,14 +160,8 @@ export class CoupleComponent {
   ngDestroy() {
     this.ss.showLoader();
   }
-
+  
   redirectToEvents() {
     this.router.navigate(['events']);
   }
-
-
-
-
-
-
 }

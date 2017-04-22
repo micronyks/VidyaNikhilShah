@@ -35,6 +35,7 @@ export class AppComponent {
       this.count();
     }, 1000)
   }
+
   count() {
     this.date1 = new Date('2016-12-31 24:00');
     this.date2 = new Date();
@@ -50,6 +51,7 @@ export class AppComponent {
     this.minutes = ('0' + this.minutes).slice(-2);
     this.seconds = ('0' + this.seconds).slice(-2);
   }
+  
   ngOnInit() {
     this.ss.hideLoader();
   }

@@ -1,32 +1,27 @@
 import { Component, ViewEncapsulation, Input, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { OnInit, HostBinding, keyframes, trigger, transition, animate, style, state } from '@angular/core';
-//import * as $ from 'jquery';
+
 @Component({
   moduleId: module.id,
   selector: 'nxModal',
   encapsulation: ViewEncapsulation.Emulated,
   styleUrls: ['nxModal.component.css'],
   templateUrl: 'nxModal.component.html',
-
 })
 
 export class NxModalComponent {
-  // @HostBinding('@routeAnimation') get routeAnimation() {
-  //   return true;
-  // }
-
   @ViewChildren('pickele') el: QueryList<ElementRef>;
-
-  constructor() {
-    console.log('constructor');
-  };
-
   @Input() data: any;
   selectedIndex: number;
   @Input() showWhat: string;
   public visible = false;
   private visibleAnimate = false;
+
+  constructor() {
+    console.log('constructor');
+  };
+
 
   public show(selectedIndex?: number): void {
     this.selectedIndex = selectedIndex;

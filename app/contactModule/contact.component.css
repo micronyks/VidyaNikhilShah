@@ -1,68 +1,66 @@
 :host {
-  /*background:url('../public/images/hearts.png');
+    /*background:url('../public/images/hearts.png');
     background-size:     cover;               
     background-repeat:repeat;
     background-position: center center;  */
-  display: block;
-  width: 100%;
-  left: 0;
+    display: block;
+    width: 100%;
+    left: 0;
 }
 
 .nxAddress {
-  font-size: 2.5em;
-  color: #DAA520;
-  font-weight: bolder;
-  font-family: 'Clicker Script', cursive !important;
+    font-size: 2.5em;
+    color: #DAA520;
+    font-weight: bolder;
+    font-family: 'Clicker Script', cursive !important;
 }
 
 .nxSubAdress {
-  font-size: 2em;
-  color: #DAA520;
-  font-weight: bolder;
-  font-family: 'Clicker Script', cursive !important;
+    font-size: 2em;
+    color: #DAA520;
+    font-weight: bolder;
+    font-family: 'Clicker Script', cursive !important;
 }
 
 .sebm-google-map-container {
-  height: 260px;
+    height: 260px;
 }
 
 .nxContactTitle {
-  color: #DAA520;
-  font-weight: bolder;
-  font-size: 4em !important;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Clicker Script', cursive !important;
+    color: #DAA520;
+    font-weight: bolder;
+    font-size: 4em !important;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Clicker Script', cursive !important;
 }
 
 .contactcard {
-  height: 100px;
-  width: 50%;
+    height: 100px;
+    width: 50%;
 }
 
 .contactcardcontent {
-  font-size: 20px;
-  color: #e40046;
+    font-size: 20px;
+    color: #e40046;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-  .nxContactTitle {
-    font-size: 2.4em !important;
-  }
-  .contactcard {
-    width: 80%;
-    height: 150px;
-    margin-top: 10px;
-  }
-  .nxAddress {
-    font-size: 2.3em;
-  }
-  .nxSubAdress {
-    font-size: 1.5em;
-  }
+    .nxContactTitle {
+        font-size: 2.4em !important;
+    }
+    .contactcard {
+        width: 80%;
+        height: 150px;
+        margin-top: 10px;
+    }
+    .nxAddress {
+        font-size: 2.3em;
+    }
+    .nxSubAdress {
+        font-size: 1.5em;
+    }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}

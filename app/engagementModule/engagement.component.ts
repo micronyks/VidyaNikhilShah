@@ -5,8 +5,6 @@ import {
   trigger, transition, animate,
   style, state
 } from '@angular/core';
-
-
 import { SharedService } from '../sharedModule/shared.service';
 
 @Component({
@@ -32,7 +30,6 @@ import { SharedService } from '../sharedModule/shared.service';
   ]
 })
 export class EngagementComponent {
-
   images: any;
   messages: any;
   @HostBinding('@routeAnimation') get routeAnimation() {
@@ -74,6 +71,7 @@ export class EngagementComponent {
       { 'title': '', path: '../public/images/h43  .jpg' },
     ]
   }
+
   ngOnInit() {
     this.ss.hideLoader();
   }
@@ -81,5 +79,4 @@ export class EngagementComponent {
   ngDestroy() {
     this.ss.showLoader();
   }
-
 }

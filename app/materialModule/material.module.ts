@@ -1,12 +1,10 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { CommonModule }        from '@angular/common';
-
- import { MdButtonModule } from '@angular/material';
+import { CommonModule } from '@angular/common';
+import { MdButtonModule } from '@angular/material';
 // import {MdIconModule} from '@angular2-material/icon';
 // import {MdMenuModule} from '@angular2-material/menu';
 // import {MdIconRegistry} from '@angular2-material/icon';
 // import {OverlayModule } from '@angular2-material/core';
-
 //import {MdButtonToggleModule} from '@angular2-material/button-toggle/button-toggle';
 //import {MdProgressCircleModule} from '@angular2-material/progress-circle/progress-circle';
 //import {MdProgressBarModule} from '@angular2-material/progress-bar/progress-bar';
@@ -26,7 +24,7 @@ import { CommonModule }        from '@angular/common';
 ////import {MdListModule} from '@angular2-material/list/list';
 //import {MdGridListModule} from '@angular2-material/grid-list/grid-list';
 //import {MdCardModule} from '@angular2-material/card';
- //import {ModalOpenDirective} from './myDirective';
+//import {ModalOpenDirective} from './myDirective';
 const MATERIAL_MODULES = [
   MdButtonModule,
   // MdIconModule,
@@ -52,22 +50,20 @@ const MATERIAL_MODULES = [
     //MdSliderModule.forRoot(),
     //MdSlideToggleModule.forRoot(),
     //OverlayModule.forRoot(),
-    
   ],
-  declarations:[],
+  declarations: [],
   exports: [MATERIAL_MODULES]
 })
-export class MaterialRootModule {}
-
+export class MaterialRootModule { }
 /***************************************************************** */
 @NgModule({
   imports: MATERIAL_MODULES,
   exports: MATERIAL_MODULES
 })
 export class MaterialModule {
-  static forRoot() : ModuleWithProviders {
-      return {
-            ngModule: MaterialRootModule
-      }
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: MaterialRootModule
+    }
   }
 }

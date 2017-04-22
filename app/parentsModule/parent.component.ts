@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { NxModalComponent } from '../NxModalModule/nxModal.component';
 import { SharedService } from '../sharedModule/shared.service';
+
 @Component({
   moduleId: module.id,
   encapsulation: ViewEncapsulation.None,
@@ -14,7 +15,6 @@ import { SharedService } from '../sharedModule/shared.service';
   templateUrl: 'parent.component.html',
   animations: [
     trigger('routeAnimation', [
-
       transition(':enter', [
         style({
           opacity: 0,
@@ -31,6 +31,7 @@ import { SharedService } from '../sharedModule/shared.service';
     ])
   ]
 })
+
 export class ParentsComponent {
   @ViewChild(NxModalComponent) public readonly modal: NxModalComponent;
   what: string = "family";
@@ -44,12 +45,12 @@ export class ParentsComponent {
   vidyaParetsTestimony: any;
   vineetTestimony: any;
   showModal: boolean = false;
-
   data: any;
   heenaFamily: any;
   reenaFamily: any;
   amitFamily: any;
   monikaFamily: any;
+
   constructor(private ss: SharedService) {
     this.nikhilsFamilyMembers =
       [
@@ -93,14 +94,6 @@ export class ParentsComponent {
       this.rajeshTestimony = {
         husband: {
           husbandName: "Late Shri. Rajesh",
-          // husbandPic: {
-          //   background: "url('../public/images/rk.jpg')",
-          //   backgroundRepeat: 'no-repeat',
-          //   backgroundPosition: "49% 17%",
-          //   borderRadius: '50%',
-          //   width: "70%",
-          //   height: "90%"
-          // },
           husbandPic: 'rajeshpic',
           comment: `"I cordially invite your gracious presence and blessings at the wedding ceremony of my son"`
         }
@@ -137,15 +130,6 @@ export class ParentsComponent {
       this.vineetTestimony = {
         husband: {
           husbandName: "Mr. Vineet",
-          // husbandPic: {
-          //   background: "url('../public/images/25.jpg')",
-          //   backgroundRepeat: 'no-repeat',
-          //   backgroundPosition: "53.6% 26%",
-          //   borderRadius: '50%',
-          //   width: "70%",
-          //   height: "90%"
-          // },
-
           husbandPic: "vinithpic",
           comment: `"I cordially invite your gracious presence and blessings at the wedding ceremony of my sister"`
         }

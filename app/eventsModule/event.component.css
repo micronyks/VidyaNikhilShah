@@ -1,115 +1,115 @@
 :host {
-  /*background:url('../public/images/hearts.png');
+    /*background:url('../public/images/hearts.png');
     background-size:     cover;               
     background-repeat:repeat;
     background-position: center center;  */
-  display: block;
-  width: 100%;
-  height: 100%;
-  left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
 }
 
 .flex-container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .event-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .eventimgcontainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nxEventCard {
-  display: flex;
-  align-items: center;
-  /*height: 100%;
+    display: flex;
+    align-items: center;
+    /*height: 100%;
   width: 100%;*/
 }
 
 .nxCardContent {
-  color: #e40046;
-  font-size: 20px;
-  text-align: center;
+    color: #e40046;
+    font-size: 20px;
+    text-align: center;
 }
 
 .nxEventTitle {
-  padding: 2px 0;
-  color: #DAA520;
-  /*color: #fff;*/
-  font-weight: bolder;
-  font-size: 4em;
-  /*background-color: #4A96AD;*/
-  /*border-bottom: 1px solid #4A96AD;*/
-  font-family: 'Clicker Script', cursive !important;
+    padding: 2px 0;
+    color: #DAA520;
+    /*color: #fff;*/
+    font-weight: bolder;
+    font-size: 4em;
+    /*background-color: #4A96AD;*/
+    /*border-bottom: 1px solid #4A96AD;*/
+    font-family: 'Clicker Script', cursive !important;
 }
 
 img {
-  width: 100%;
-  padding: 10px;
-  border-radius: 0 !important;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 !important;
 }
 
 .mat-card-image:first-child {
-  margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 .mat-card-image {
-  margin: 0 !important;
+    margin: 0 !important;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-  .flex-container {
-    height: fit-content !important;
-  }
-  .nxEventCard {
-    margin-top: 20px;
-    flex-direction: column;
-  }
-  .event-container {
-    height: fit-content;
-    flex-direction: column;
-  }
-  .nxEventTitle {
-    font-size: 4em;
-  }
+    .flex-container {
+        height: fit-content !important;
+    }
+    .nxEventCard {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .event-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .nxEventTitle {
+        font-size: 4em;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .nxEventTitle {
-    font-size: 3.3em;
-  }
-  .nxCardContent {
-    font-size: 18px;
-  }
+    .nxEventTitle {
+        font-size: 3.3em;
+    }
+    .nxCardContent {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  img {
-    width: 50%;
-  }
+    img {
+        width: 50%;
+    }
 }
 
 
-/*table*/
+/*tablet*/
 
 @media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  .nxEventCard {
-    margin-top: 20px;
-    flex-direction: column;
-  }
-  .event-container {
-    height: fit-content;
-    flex-direction: column;
-  }
-  .nxEventTitle {
-    font-size: 3.5em;
-  }
+    .nxEventCard {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .event-container {
+        height: fit-content;
+        flex-direction: column;
+    }
+    .nxEventTitle {
+        font-size: 3.5em;
+    }
 }

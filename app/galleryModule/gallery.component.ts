@@ -16,8 +16,6 @@ import { SharedService } from '../sharedModule/shared.service';
   templateUrl: 'gallery.component.html',
 })
 export class GalleryComponent {
-
-
   @ViewChild(NxModalComponent) public readonly modal: NxModalComponent;
   what: string = "album";
   data: any;

@@ -1,70 +1,70 @@
 /*animation */
 
 :host {
-  /*background:url('../public/images/hearts.png');
+    /*background:url('../public/images/hearts.png');
     background-size:     cover;               */
-  /*background-repeat:repeat;
+    /*background-repeat:repeat;
     background-position: center center;  */
-  display: block;
-  width: 100%;
-  left: 0;
-  height: 100%;
+    display: block;
+    width: 100%;
+    left: 0;
+    height: 100%;
 }
 
 @-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-  }
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(360deg);
+    }
 }
 
 .rotateImg {
-  -webkit-animation-name: rotate;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-ANIMATION-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-ANIMATION-timing-function: linear;
 }
 
 .nikhilcropimg {
-  background-image: url('public/images/nyks.jpg');
-  height: 200px;
+    background-image: url('public/images/nyks.jpg');
+    height: 200px;
 }
 
 .roundedBorder {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .nxImg {
-  height: 200px;
-  width: 60%;
-  margin: 0;
+    height: 200px;
+    width: 60%;
+    margin: 0;
 }
 
 .checkout {
-  background-image: url('../public/images/hearts.png');
+    background-image: url('../public/images/hearts.png');
 }
 
 .flex-container {
-  width: 100%;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-between;
-  bottom: 5%;
-  z-index: 999;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 5%;
+    z-index: 999;
 }
 
 .album {
-  position: relative;
-  z-index: 99;
+    position: relative;
+    z-index: 99;
 }
 
 .item {
-  height: 100%;
+    height: 100%;
 }
 
 .albumhome {
-  height: 100% !important;
+    height: 100% !important;
 }
