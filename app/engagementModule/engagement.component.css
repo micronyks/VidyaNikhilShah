@@ -28,7 +28,7 @@
 }
 
 .nikhilcropimg {
-    background-image: url('public/images/nyks.jpg');
+    background-image: url('/public/images/nyks1.JPG');
     height: 200px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .checkout {
-    background-image: url('../public/images/hearts.png');
+    background-image: url('/public/images/leaf1.png');
 }
 
 .flex-container {

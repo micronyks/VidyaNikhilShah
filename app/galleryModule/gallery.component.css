@@ -1,54 +1,56 @@
-  :host {
-     /*background:url('../public/images/hearts.png');
-    background-size:     cover;               
-    background-repeat:repeat;
-    background-position: center center;  */
-     display: block;
-     width: 100%;
-     /*height: 100%;  */
-     left: 0;
- }
- 
- .gallerycontainer {
-     display: flex;
-     justify-content: center;
-     align-content: center;
- }
- 
- .galleryCard {
-     padding: 0 !important;
-     transition: all .5s;
-     height: 150px;
-     overflow: hidden;
-     display: flex;
-     justify-content: center;
-     align-content: center;
- }
- 
- .galleryImg {
-     height: 100%;
-     width: 100%;
-     transform-origin: 50% 50%;
-     transition: transform 5s linear;
-     border-radius: 0 !important;
- }
- 
- .mat-card-image:first-child {
-     margin-top: 0 !important;
- }
- 
- .galleryImg:hover {
-     transform: scale(2) rotate(0.1deg);
-     box-shadow: 0 8px 16px 0 #e40046, 0 6px 20px 0 #e40046!important;
- }
- 
- @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-     .gallerycontainer {
-         align-content: center;
-         justify-content: center;
-         flex-direction: column;
-     }
-     .galleryImg {
-         width: 270px;
-     }
- }
+:host {
+    display: block;
+    width: 100%;
+    left: 0;
+}
+
+.gallery-page {
+    padding: 16px 10px 32px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 14px;
+}
+
+.galleryCard {
+    padding: 0 !important;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.galleryImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .35s ease;
+    border-radius: 0 !important;
+}
+
+.mat-card-image:first-child {
+    margin-top: 0 !important;
+}
+
+.galleryCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(228, 0, 70, 0.18);
+}
+
+.galleryCard:hover .galleryImg {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 767px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}

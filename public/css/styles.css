@@ -82,10 +82,15 @@ html {
 
 .vnscontainer {
     text-align: center;
+    flex: 0 0 90px;
+    height: 100%;
 }
 
 .vnscontainer a {
-    padding-top: 16%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     background: rgba(0, 0, 0, 0.2) !important;
     font-family: 'Clicker Script', cursive !important;
 }
@@ -125,7 +130,7 @@ html {
 }
 
 .loadingImg {
-    background: url('public/images/couple2.gif');
+    background: url('../images/couple2.gif');
     background-position: center;
     background-size: contain;
 }
@@ -227,22 +232,34 @@ html {
 .uppderContainer {
     width: 100%;
     z-index: 1;
-    height: 10%;
+    min-height: 72px;
+    height: auto;
     overflow: hidden !important;
 }
 
+.header-shell {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 72px;
+}
+
 .middleContainer {
-    float: right;
     width: 100%;
     overflow: auto;
-    height: 85%;
+    height: calc(100% - 112px);
 }
 
 .bottomContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5%;
+    min-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 13px;
     color: #fff;
     font-weight: 600;
@@ -355,7 +372,10 @@ ul li:first-child {
 }
 
 ul li a {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #f2f2f2 !important;
     text-align: center;
     padding: 0 16px;
@@ -368,9 +388,10 @@ ul li a {
     font-family: 'Clicker Script', cursive !important;
     letter-spacing: 1px;
     line-height: 32px !important;
+    min-height: 72px;
 }
 
-@media only screen and (max-width: 837px) {
+@media only screen and (max-width: 767px) {
     .menu-container {
         display: none !important;
     }
@@ -397,6 +418,7 @@ a.active {
     left: 0;
     height: 100%;
     z-index: 10000;
+    width: 40px;
 }
 
 .sideMenu {
@@ -428,7 +450,26 @@ a.active {
 
 .menu-container {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: auto;
+    min-width: 0;
+}
+
+.menu-container ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    width: auto;
+    min-width: max-content;
+    height: 100%;
+}
+
+.menu-container ul li {
+    flex: 0 0 auto;
 }
 
 .carousel-inner>.item>img,
@@ -484,9 +525,6 @@ a.active {
     .carousel-control .icon-prev {
         top: 46% !important;
     }
-    .vnscontainer a {
-        padding-top: 50%;
-    }
     .nxTitle {
         font-size: 4.9em;
     }
@@ -518,17 +556,14 @@ grey-border {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .vnscontainer a {
-        padding-top: 3%;
-    }
     .sideMenu {
         height: 60%;
     }
     .uppderContainer {
-        height: 11%;
+        min-height: 80px;
     }
     .middleContainer {
-        height: 83%;
+        height: calc(100% - 120px);
     }
     .bottomContainer {
         height: 6%;
@@ -542,14 +577,52 @@ grey-border {
 }
 
 @media only screen and (min-device-width: 676px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-    .vnscontainer a {
-        padding-top: 9% !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+    .vnscontainer {
+        flex-basis: 72px;
+    }
+    ul li a {
+        padding: 0 10px;
+        font-size: 17px !important;
+        line-height: 22px !important;
+    }
+    .uppderContainer {
+        min-height: 84px;
+    }
+    .middleContainer {
+        height: calc(100% - 124px);
     }
 }
 
-@media only screen and (min-device-width: 676px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    ul li a span {
+        font-size: 0.86em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-shell {
+        min-height: 64px;
+    }
+    .vnscontainer {
+        flex-basis: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sidenav-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .sidenav-menu {
+        display: flex;
+    }
     .vnscontainer a {
-        padding-top: 100% !important;
+        padding-top: 0 !important;
     }
 }
 

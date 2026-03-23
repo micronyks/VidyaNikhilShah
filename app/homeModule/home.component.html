@@ -1,54 +1,43 @@
-<div class="nxHeight homepic" [ngClass]="{'col-xs-12':!(deviceWidth>319 && deviceWidth<568)}">
-    <div class="nxHeight" [ngClass]="{'col-xs-12':!(deviceWidth>319 && deviceWidth<568)}">
-        <div class="nxHeight" [ngClass]="{'col-xs-12':!(deviceWidth>319 && deviceWidth<568)}">
-            <div class="home-flex-container ">
-                <div class="mrgText2 text-center" style="color:#4A96AD">We're engaged & getting married</div>
-                <div class="col-xs-12 home-inner-flex-container nxHeight" [ngClass]="{'topMargin10':(deviceWidth>768)}">
-                    <div class="col-sm-2 col-xs-12 nxHeight nxBoxShadow nikhilpic couple"></div>
-                    <div class="col-sm-8 mrgText1 text-center">
-                        <span style="color:#e40046">Nikhil</span>
-                        <span class="weds" style="color:#4A96AD"> Weds</span>
-                        <span style="color:#e40046">Vidya</span>
-                    </div>
-                    <div class="col-sm-2 col-xs-12 nxHeight nxBoxShadow vidyapic couple"></div>
-                </div>
-                <div class="col-xs-12 home-inner-flex-container nxHeight">
-                    <div class="col-sm-8 col-xs-12 nxHeight" [ngClass]="{'topMargin10':(deviceWidth>768)}">
-                        <div class="mrgText3 text-center" style="color:#4A96AD">Save the date </div>
-                        <div class="mrgText4 text-center" style="color:#e40046">
-                            Wednesday
-                        </div>
-                        <div class="mrgText5 text-center" style="color:#e40046">
-                            28<sup>th</sup> June 2017
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="time-flex-container">
-                <div class="text-center col-xs-3 nxDayTime col-sm-2">
-                    <span class="nxTime" style="color:#4A96AD">{{days}}</span>
-                    <span class="nxTimeString">Days</span>
-                </div>
-                <div class="text-center nxDayTime col-xs-3 col-sm-2">
-                    <div class="nxTime" style="color:#4A96AD">{{hours}}</div>
-                    <div class="nxTimeString">Hours</div>
-                </div>
-                <div class="text-center nxDayTime col-xs-3 col-sm-2">
-                    <span class="nxTime" style="color:#4A96AD">{{minutes}}</span>
-                    <span class="nxTimeString">Minutes</span>
-                </div>
-                <div class="text-center nxDayTime col-xs-3 col-sm-2">
+<div class="home-page homepic">
+    <section class="home-hero">
+        <div class="mrgText2 text-center">We're engaged & getting married</div>
 
-                    <span class="nxTime" style="color:#4A96AD" [@time]="triggerSecond">{{seconds}}</span>
-                    <span class="nxTimeString">Seconds</span>
+        <div class="home-couple-row" [ngClass]="{'topMargin10': (deviceWidth > 768)}">
+            <div class="home-portrait nikhilpic couple nxBoxShadow" aria-label="Nikhil"></div>
 
-                </div>
-                <!--<md-progress-circle class="col-xs-7" style="height:50px" mode="determinate" value="+{{(seconds*100)/60}}" [attr.aria-valuemax]="max">
-                    <span class="ab">{{seconds}}</span>
-                    <span>Seconds</span>
-                </md-progress-circle>-->
+            <div class="home-title text-center">
+                <span style="color:#e40046">Nikhil</span>
+                <span class="weds" style="color:#4A96AD"> Weds </span>
+                <span style="color:#e40046">Vidya</span>
             </div>
+
+            <div class="home-portrait vidyapic couple nxBoxShadow" aria-label="Vidya"></div>
         </div>
-    </div>
+
+        <div class="home-date-block" [ngClass]="{'topMargin10': (deviceWidth > 768)}">
+            <div class="mrgText3 text-center">Save the date</div>
+            <div class="mrgText4 text-center">Wednesday</div>
+            <div class="mrgText5 text-center">28<sup>th</sup> June 2017</div>
+        </div>
+    </section>
+
+    <section class="time-flex-container">
+        <div class="text-center nxDayTime">
+            <span class="nxTime" style="color:#4A96AD">{{days}}</span>
+            <span class="nxTimeString">Days</span>
+        </div>
+        <div class="text-center nxDayTime">
+            <div class="nxTime" style="color:#4A96AD">{{hours}}</div>
+            <div class="nxTimeString">Hours</div>
+        </div>
+        <div class="text-center nxDayTime">
+            <span class="nxTime" style="color:#4A96AD">{{minutes}}</span>
+            <span class="nxTimeString">Minutes</span>
+        </div>
+        <div class="text-center nxDayTime">
+            <span class="nxTime" style="color:#4A96AD" [@time]="triggerSecond">{{seconds}}</span>
+            <span class="nxTimeString">Seconds</span>
+        </div>
+    </section>
 </div>
 <nxModal [data]="data" [showWhat]="what" *ngIf="showModal"></nxModal>

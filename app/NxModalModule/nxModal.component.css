@@ -11,7 +11,7 @@
 }
 
 .vinithpic {
-    background-image: url("./public/images/25.jpg");
+    background-image: url("/public/images/25.JPG");
     background-repeat: no-repeat;
     background-position: 53.6% 26%;
     height: 100%;
@@ -22,7 +22,7 @@
 .invitationcardcontainer {}
 
 .rajeshpic {
-    background-image: url("./public/images/rk.jpg");
+    background-image: url("/public/images/rk.jpg");
     background-repeat: no-repeat;
     background-position: 49% 18%;
     height: 100%;
@@ -156,7 +156,7 @@ img {
 /*animation */
 
 .invitationCard {
-    background-image: url("./public/images/namecard.jpg");
+    background-image: url("/public/images/namecard.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

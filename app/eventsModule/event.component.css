@@ -1,60 +1,74 @@
 :host {
-    /*background:url('../public/images/hearts.png');
-    background-size:     cover;               
-    background-repeat:repeat;
-    background-position: center center;  */
     display: block;
     width: 100%;
     height: 100%;
     left: 0;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+.events-page {
+    padding: 18px 14px 30px;
 }
 
-.event-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.eventimgcontainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .nxEventCard {
     display: flex;
-    align-items: center;
-    /*height: 100%;
-  width: 100%;*/
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.event-card-wide {
+    grid-column: 1 / -1;
+}
+
+.eventimgcontainer {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.eventimgcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    padding: 0;
+    border-radius: 0 !important;
+}
+
+.event-copy {
+    padding: 18px 20px 22px;
 }
 
 .nxCardContent {
     color: #e40046;
     font-size: 20px;
     text-align: center;
+    line-height: 1.55;
+}
+
+.nxCardContent p {
+    margin: 0 0 6px;
+}
+
+.nxCardContent p:last-child {
+    margin-bottom: 0;
 }
 
 .nxEventTitle {
-    padding: 2px 0;
+    padding: 2px 0 10px;
     color: #DAA520;
-    /*color: #fff;*/
     font-weight: bolder;
     font-size: 4em;
-    /*background-color: #4A96AD;*/
-    /*border-bottom: 1px solid #4A96AD;*/
     font-family: 'Clicker Script', cursive !important;
-}
-
-img {
-    width: 100%;
-    padding: 10px;
-    border-radius: 0 !important;
 }
 
 .mat-card-image:first-child {
@@ -65,51 +79,34 @@ img {
     margin: 0 !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-    .flex-container {
-        height: fit-content !important;
+@media only screen and (max-width: 900px) {
+    .events-grid {
+        grid-template-columns: 1fr;
     }
-    .nxEventCard {
-        margin-top: 20px;
-        flex-direction: column;
-    }
-    .event-container {
-        height: fit-content;
-        flex-direction: column;
-    }
-    .nxEventTitle {
-        font-size: 4em;
+
+    .event-card-wide {
+        grid-column: auto;
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .nxEventTitle {
-        font-size: 3.3em;
+@media only screen and (max-width: 767px) {
+    .events-page {
+        padding: 12px 8px 24px;
     }
+
+    .events-grid {
+        gap: 14px;
+    }
+
+    .event-copy {
+        padding: 14px 14px 18px;
+    }
+
+    .nxEventTitle {
+        font-size: 3.1em;
+    }
+
     .nxCardContent {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    img {
-        width: 50%;
-    }
-}
-
-
-/*tablet*/
-
-@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-    .nxEventCard {
-        margin-top: 20px;
-        flex-direction: column;
-    }
-    .event-container {
-        height: fit-content;
-        flex-direction: column;
-    }
-    .nxEventTitle {
-        font-size: 3.5em;
+        font-size: 17px;
     }
 }

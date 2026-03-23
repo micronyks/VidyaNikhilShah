@@ -28,49 +28,49 @@
 }
 
 .nariyel {
-    background: url('../public/images/nariyel.jpg');
+    background: url('/public/images/nariyel.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .tabla {
-    background: url('../public/images/tabla.png');
+    background: url('/public/images/tabla.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .band {
-    background: url('../public/images/band.png');
+    background: url('/public/images/band.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .knot {
-    background: url('../public/images/knot.png');
+    background: url('/public/images/knot.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .hastmelap {
-    background: url('../public/images/hastmelap.png');
+    background: url('/public/images/hastmelap.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .doli {
-    background: url('../public/images/doli.png');
+    background: url('/public/images/doli.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .kalash {
-    background: url('../public/images/kalash.png');
+    background: url('/public/images/kalash.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@
 }
 
 .couplebackground {
-    background: url('../public/images/hastmelap.png');
+    background: url('/public/images/hastmelap.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

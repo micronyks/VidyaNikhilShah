@@ -114,8 +114,8 @@ export class CoupleComponent {
   messages: any;
   heartState: boolean = true;
   deviceWidth: number;
-  nikhilimgpath: string = "./public/images/2.jpg";
-  vidyaimgpath: string = "./public/images/vd.jpg";
+  nikhilimgpath: string = "/public/images/2.jpg";
+  vidyaimgpath: string = "/public/images/vd.jpg";
   @ViewChild(NxModalComponent) public readonly modal: NxModalComponent;
   pics: any;
   @HostBinding('@routeAnimation') get routeAnimation() {
@@ -138,18 +138,18 @@ export class CoupleComponent {
     this.pics =
       [
 
-        { 'title': '', path: '../public/images/vns1.jpg' },
-        { 'title': '', path: '../public/images/vns2.jpg' },
-        { 'title': '', path: '../public/images/vns3.jpg' },
-        { 'title': '', path: '../public/images/vns4.jpg' },
-        { 'title': '', path: '../public/images/vns5.jpg' },
-        { 'title': '', path: '../public/images/vns6.jpg' },
-        { 'title': '', path: '../public/images/vns7.jpg' },
-        { 'title': '', path: '../public/images/vns8.jpg' },
-        { 'title': '', path: '../public/images/vns9.jpg' },
-        { 'title': '', path: '../public/images/vns10.jpg' },
-        { 'title': '', path: '../public/images/vns11.jpg' },
-        { 'title': '', path: '../public/images/vns12.jpg' },
+        { 'title': '', path: '/public/images/vns1.JPG' },
+        { 'title': '', path: '/public/images/vns2.JPG' },
+        { 'title': '', path: '/public/images/vns3.JPG' },
+        { 'title': '', path: '/public/images/vns4.JPG' },
+        { 'title': '', path: '/public/images/vns5.JPG' },
+        { 'title': '', path: '/public/images/vns6.JPG' },
+        { 'title': '', path: '/public/images/vns7.JPG' },
+        { 'title': '', path: '/public/images/vns8.JPG' },
+        { 'title': '', path: '/public/images/vns9.JPG' },
+        { 'title': '', path: '/public/images/vns10.JPG' },
+        { 'title': '', path: '/public/images/vns11.JPG' },
+        { 'title': '', path: '/public/images/vns12.JPG' },
       ]
   }
 

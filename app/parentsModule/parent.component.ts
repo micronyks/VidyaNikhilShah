@@ -54,21 +54,21 @@ export class ParentsComponent {
   constructor(private ss: SharedService) {
     this.nikhilsFamilyMembers =
       [
-        { 'name': 'Ramesh Shah', path: '../public/images/nyks.jpg' },
-        { 'name': 'Madhu Shah', path: '../public/images/nyks.jpg' },
+        { 'name': 'Ramesh Shah', path: '/public/images/nyks1.JPG' },
+        { 'name': 'Madhu Shah', path: '/public/images/21.jpg' },
       ];
 
     this.vidyasFamilyMembers =
       [
-        { 'name': 'Prabhakaran Pillai', path: '../public/images/nyks.jpg' },
-        { 'name': 'Santa Pillai', path: '../public/images/nyks.jpg' },
+        { 'name': 'Prabhakaran Pillai', path: '/public/images/8.jpg' },
+        { 'name': 'Santa Pillai', path: '/public/images/23.JPG' },
       ];
 
     this.paretsTestimony = {
       husband: {
         husbandName: "Late Shri. Rameshchandra",
         husbandPic: {
-          background: "url('../public/images/papa.jpg')",
+          background: "url('/public/images/papa.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "57% -7%",
           borderRadius: '50%',
@@ -80,7 +80,7 @@ export class ParentsComponent {
       wife: {
         wifeName: "Smt. Madhu",
         wifePic: {
-          background: "url('../public/images/21.jpg')",
+          background: "url('/public/images/21.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "50% 40%",
           borderRadius: '50%',
@@ -103,7 +103,7 @@ export class ParentsComponent {
       husband: {
         husbandName: "Shri. Prabhakaran",
         husbandPic: {
-          background: "url('../public/images/8.jpg')",
+          background: "url('/public/images/8.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "68.6% 54%",
           borderRadius: '50%',
@@ -116,7 +116,7 @@ export class ParentsComponent {
       wife: {
         wifeName: "Smt. Santha",
         wifePic: {
-          background: "url('../public/images/23.jpg')",
+          background: "url('/public/images/23.JPG')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "92.6% 32%",
           borderRadius: '50%',
@@ -139,7 +139,7 @@ export class ParentsComponent {
       husband: {
         husbandName: "Mr. Nilesh",
         husbandPic: {
-          background: "url('../public/images/15.jpg')",
+          background: "url('/public/images/15.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "16.6% 13%",
           borderRadius: '50%',
@@ -152,7 +152,7 @@ export class ParentsComponent {
       wife: {
         wifeName: "Mrs. Heena",
         wifePic: {
-          background: "url('../public/images/58.jpg')",
+          background: "url('/public/images/58.JPG')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "88.6% 26%",
           borderRadius: '50%',
@@ -164,7 +164,7 @@ export class ParentsComponent {
       child1: {
         child1Name: "Jay",
         child1Pic: {
-          background: "url('../public/images/22.jpg')",
+          background: "url('/public/images/22.JPG')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "10.6% 39%",
           borderRadius: '50%',
@@ -178,7 +178,7 @@ export class ParentsComponent {
         husband: {
           husbandName: "Mr. Sunand",
           husbandPic: {
-            background: "url('../public/images/13.jpg')",
+            background: "url('/public/images/13.jpg')",
             backgroundRepeat: 'no-repeat',
             backgroundPosition: "75.6% 20%",
             borderRadius: '50%',
@@ -191,7 +191,7 @@ export class ParentsComponent {
         wife: {
           wifeName: "Mrs. Reena",
           wifePic: {
-            background: "url('../public/images/12.jpg')",
+            background: "url('/public/images/12.JPG')",
             backgroundRepeat: 'no-repeat',
             backgroundPosition: "22.6% 27%",
             borderRadius: '50%',
@@ -203,7 +203,7 @@ export class ParentsComponent {
         child1: {
           child1Name: "Sanvi",
           child1Pic: {
-            background: "url('../public/images/20.jpg')",
+            background: "url('/public/images/20.jpg')",
             backgroundRepeat: 'no-repeat',
             backgroundPosition: "57.6% 64%",
             borderRadius: '50%',
@@ -219,7 +219,7 @@ export class ParentsComponent {
       husband: {
         husbandName: "Mr. Nilay",
         husbandPic: {
-          background: "url('../public/images/14.jpg')",
+          background: "url('/public/images/14.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "21.6% 17%",
           borderRadius: '50%',
@@ -232,7 +232,7 @@ export class ParentsComponent {
       wife: {
         wifeName: "Mrs. Monika",
         wifePic: {
-          background: "url('../public/images/14.jpg')",
+          background: "url('/public/images/14.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "79.6% 28%",
           borderRadius: '50%',
@@ -244,7 +244,7 @@ export class ParentsComponent {
       child1: {
         child1Name: "Aarav",
         child1Pic: {
-          background: "url('../public/images/14.jpg')",
+          background: "url('/public/images/14.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "47% 66%",
           borderRadius: '50%',
@@ -259,7 +259,7 @@ export class ParentsComponent {
       husband: {
         husbandName: "Mr. Amit",
         husbandPic: {
-          background: "url('../public/images/16.jpg')",
+          background: "url('/public/images/16.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "16% 19%",
           borderRadius: '50%',
@@ -272,7 +272,7 @@ export class ParentsComponent {
       wife: {
         wifeName: "Mrs. Pinkal",
         wifePic: {
-          background: "url('../public/images/16.jpg')",
+          background: "url('/public/images/16.jpg')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "85% 29%",
           borderRadius: '50%',
@@ -284,7 +284,7 @@ export class ParentsComponent {
       child1: {
         child1Name: "Dhruv",
         child1Pic: {
-          background: "url('../public/images/24.jpg')",
+          background: "url('/public/images/24.JPG')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "66.6% 53%",
           borderRadius: '50%',
@@ -296,7 +296,7 @@ export class ParentsComponent {
       child2: {
         child2Name: "Dhweep",
         child2Pic: {
-          background: "url('../public/images/24.jpg')",
+          background: "url('/public/images/24.JPG')",
           backgroundRepeat: 'no-repeat',
           backgroundPosition: "44% 57%",
           borderRadius: '50%',

@@ -16,7 +16,7 @@ var imagemin = require('gulp-imagemin');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 
 var tsFiles = 'app/**/*.ts';
 var jsFiles = "dist/app";
